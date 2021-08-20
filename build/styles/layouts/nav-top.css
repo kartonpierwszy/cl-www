@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  list-style: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 14 px;
+  color: #5d5d5d;
+  text-decoration: none;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  color: #5d5d5d;
+  text-decoration: none;
+}
+
+/* CONTAINER */
+.container-top {
+  background-color: #d9d9d9;
+  max-width: 1300px;
+  height: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* PHONE ICON & NUMBER ON TOP BAR ON THE LEFT SIDE */
+.nav-top-left {
+  display: flex;
+  align-items: center;
+  color: #5d5d5d;
+}
+
+.icon {
+  height: 14px;
+  margin: 0px 10px 0px 0px;
+  cursor: pointer;
+}
+
+/* NAVIGATIOB BAR WITH SOCIAL MEDIA ON THE RIGHT SIDE */
+.nav-top-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* TEXT CODE-PRICE IN TOP HEADER */
+.code-price {
+  font-size: medium;
+  color: #5d5d5d;
+  margin: 0px 40px 0px 0px;
+}
+
+.code-price a {
+  font-weight: bold;
+}
+
+.code-price a hover {
+  color: #ffffff;
+}
+/* SOCIAL MEDIA LINKS */
+.nav-top-ul {
+  list-style-type: none;
+  display: flex;
+}
+.nav-top-ul li {
+  margin: 0px 0px 0px 15px;
+}
