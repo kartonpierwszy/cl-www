@@ -8,3 +8,4 @@
 6. Css - czy jest sens korzystać z Less/Sass?
 7. Pliki css, czy robić do każdego szablonu/podstrony osobny plik i na koniec je łączyć? automatyzacja do 1-go pliku css?
 8. Optymalizacja strony, zapytania do serwera, jak minimalizować?
+9. Sekcja HEAD w plikach zewnętrznych php, czy ma jakąśwartość, co w niej zostawić?
