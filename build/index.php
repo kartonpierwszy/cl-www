@@ -13,9 +13,6 @@
       type="text/css"
       href="styles/layouts/main-page.css"
     />
-    <!-- <link rel="stylesheet" type="text/css" href="styles/layouts/nav-top.css" />
-    <link rel="stylesheet" type="text/css" href="styles/layouts/nav-bottom.css" /> -->
-
     <!-- <link rel="stylesheets" type="text/css" href="vendors/css/normalize.css" /> -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -43,7 +40,8 @@
         
 
       </div>
-      <div><p>test git brunch</p></div>
+      
     </header>
+    <div class="test"><p>test git brunch</p></div>
   </body>
 </html>
