@@ -13,6 +13,9 @@
       type="text/css"
       href="styles/layouts/main-page.css"
     />
+    <!-- <link rel="stylesheet" type="text/css" href="styles/layouts/nav-top.css" />
+    <link rel="stylesheet" type="text/css" href="styles/layouts/nav-bottom.css" /> -->
+
     <!-- <link rel="stylesheets" type="text/css" href="vendors/css/normalize.css" /> -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -36,12 +39,12 @@
         </div>
       </nav>
       <div class="hero-baner">
-        
-        
-
+        <div class="hero-text-box">
+            <h1>Tutaj tworzymy permanentne piękno</h1>
+            <a class="btn btn-full js--scroll-to-plans" href="#">Szkolenia</a>
+            <a class="btn btn-ghost js--scroll-to-start" href="#">Zabiegi</a>
+        </div>
       </div>
-      
     </header>
-    <div class="test"><p>test git brunch</p></div>
   </body>
 </html>

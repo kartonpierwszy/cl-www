@@ -74,3 +74,18 @@ a {
 .nav-top-ul li {
   margin: 0px 0px 0px 15px;
 }
+
+/* HERO TEXT BANER */
+.hero-text-box {
+  position: absolute;
+  width: 1140px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/* ------------------------------------------------ */
+/* SECTION O NAS */
+/* ------------------------------------------------ */

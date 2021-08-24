@@ -1,0 +1,197 @@
+/*
+Color: D9D9D9; light gray
+Color: 5D5D5D; dark grey
+*/
+
+/* ----------------------------------------------- */
+/* BASIC SETUP */
+/* ----------------------------------------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  /* background-color: #ffffff; */
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 14 px;
+  font-weight: 400;
+  color: #5d5d5d5d;
+  text-decoration: none;
+  text-rendering: optimizeLegibility;
+}
+
+h1 {
+  font-family: ;
+  font-size: 72px;
+  font-weight: 100;
+}
+
+a {
+  color: #5d5d5d;
+  text-decoration: none;
+}
+
+header {
+  background-image: url(../../img/baner-2.jpg);
+  background-size: cover;
+  background-color: #d9d9d9;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ---------------------------------------------*/
+/* TOP BAR */
+/* ---------------------------------------------*/
+.top {
+  background-color: #d9d9d9;
+  opacity: 0.8;
+  max-width: 100%;
+  /* min-height: 40px; */
+}
+
+/* CONTAINER */
+.container-top {
+  background-color: #d9d9d9;
+  max-width: 1300px;
+  min-height: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* PHONE ICON & NUMBER ON TOP BAR ON THE LEFT SIDE */
+.nav-top-left {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  color: #5d5d5d;
+}
+
+.icon {
+  height: 14px;
+  margin: 0px 10px 0px 0px;
+  cursor: pointer;
+}
+
+/* TEXT CODE-PRICE IN TOP HEADER */
+.code-price {
+  font-size: medium;
+  color: #5d5d5d;
+  margin: 0px 40px 0px 0px;
+}
+
+.code-price a {
+  font-weight: bold;
+}
+
+.code-price a hover {
+  color: #ffffff;
+}
+
+/* NAVIGATIOB BAR WITH SOCIAL MEDIA ON THE RIGHT SIDE */
+.nav-top-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* SOCIAL MEDIA LINKS */
+.nav-top-ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.nav-top-ul li {
+  margin: 0px 0px 0px 15px;
+}
+
+/* ------------------------------------------------ */
+/* BOTTOM BAR */
+/* ------------------------------------------------ */
+
+.bottom {
+  background-color: #ffffff;
+  opacity: 0.8;
+  max-width: 100%;
+  /* min-height: 145px; */
+}
+/* CONTAINER */
+.container-bottom {
+  background-color: #fff;
+  max-width: 1300px;
+  min-height: 145px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* LOGO ICON */
+.nav-bottom-left {
+  display: flex;
+  align-items: center;
+  color: #5d5d5d;
+  margin: 10px 0px 0px 10px;
+}
+
+.logo {
+  height: 115px;
+  margin: 0px 10px 0px 0px;
+  cursor: pointer;
+}
+
+/* MAIN NAV BAR ON THE RIGHT SIDE */
+.nav-bottom-right {
+  display: flex;
+  justify-content: space-between;
+  justify-items: ;
+}
+
+.nav-bottom-ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+
+  font-size: medium;
+}
+.nav-bottom-ul li {
+  text-transform: uppercase;
+  margin: 0px 20px 0px 20px;
+}
+
+/* ------------------------------------------------ */
+/* BANER */
+/* ------------------------------------------------ */
+
+.hero-baner {
+  height: 740px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* HERO TEXT BANER */
+.hero-text-box {
+  /* position: absolute; */
+  width: 1300px;
+  height: 740px;
+  display: flex;
+  flex-wrap: wrap;
+  top: 50%;
+  left: 20%;
+}
+
+.test {
+  background-color: rgb(23, 20, 220);
+  color: #bb0101;
+}
