@@ -13,21 +13,13 @@
     <link rel="stylesheet" type="text/css" href="styles/layouts/nav-bottom.css" /> -->
 
     <!-- <link rel="stylesheets" type="text/css" href="vendors/css/normalize.css" /> -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
-      rel="stylesheet"
-    />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;600&display=swap"
       rel="stylesheet"
     />
-
-    <!-- <script src="utils/less.js"></script> -->
 
     <title>Cookielookie</title>
   </head>
@@ -35,7 +27,7 @@
     <header>
       <nav>
         <div class="top">
-          <div class="container-top">
+          <div class="row">
             <div class="nav-top-left">
               <img
                 src="img/icon-phone.svg"
@@ -55,20 +47,28 @@
               <ul class="nav-top-ul">
                 <li>
                   <a href="https://pl-pl.facebook.com/cookielookiepl/"
-                    ><img src="img/icon-facebook.png" alt="facebook"
+                    ><img
+                      src="img/icon-facebook.svg"
+                      alt="facebook"
+                      class="icon"
                   /></a>
                 </li>
                 <li>
                   <a href="#"
-                    ><img src="img/icon-instagram.png" alt="instagram"
+                    ><img
+                      src="img/icon-instagram.svg"
+                      alt="instagram"
+                      class="icon"
                   /></a>
                 </li>
                 <li>
-                  <a href="#"><img src="img/icon-tiktok.png" alt="tiktok" /></a>
+                  <a href="#"
+                    ><img src="img/icon-tiktok.svg" alt="tiktok" class="icon"
+                  /></a>
                 </li>
                 <li>
                   <a href="#"
-                    ><img src="img/icon-youtube.png" alt="youtube"
+                    ><img src="img/icon-youtube.svg" alt="youtube" class="icon"
                   /></a>
                 </li>
               </ul>
@@ -77,36 +77,88 @@
         </div>
         <div class="bottom">
           <div class="container-bottom">
-            <div class="nav-bottom-left">
-              <img
-                src="img/logo-cookielookie.svg"
-                href="https://cookielookie.pl"
-                alt="cookielookiepl logo"
-                class="logo"
-              />
-            </div>
+            <!-- <div class="nav-bottom-left"> -->
+            <img
+              src="img/logo-cookielookie.svg"
+              href="https://cookielookie.pl"
+              alt="cookielookiepl logo"
+              class="logo"
+            />
+            <!-- </div> -->
 
-            <div class="nav-bottom-right">
-              <ul class="nav-bottom-ul">
-                <li><a href="">O nas</a></li>
-                <li><a href="">Szkolenia</a></li>
-                <li><a href="">Zabiegi</a></li>
-                <li><a href="">Cennik</a></li>
-                <li><a href="">Współpraca</a></li>
-                <li><a href="">Regulamin</a></li>
-                <li><a href="">Kontakt</a></li>
-              </ul>
-            </div>
+            <!-- <div class="nav-bottom-right"> -->
+            <ul class="nav-bottom-ul">
+              <li><a href="">O nas</a></li>
+              <li><a href="">Szkolenia</a></li>
+              <li><a href="">Zabiegi</a></li>
+              <li><a href="">Cennik</a></li>
+              <li><a href="">Współpraca</a></li>
+              <li><a href="">Regulamin</a></li>
+              <li><a href="">Kontakt</a></li>
+            </ul>
+            <!-- </div> -->
           </div>
         </div>
       </nav>
-      <!-- <div class="hero-baner"> -->
-      <div class="hero-text-box">
-        <h1>Tutaj tworzymy permanentne piękno</h1>
-        <a class="btn btn-full js--scroll-to-plans" href="#">Szkolenia</a>
-        <a class="btn btn-ghost js--scroll-to-start" href="#">Zabiegi</a>
+      <div class="hero-baner">
+        <div class="hero-text-box">
+          <h1>
+            Tutaj tworzymy<br />
+            permanentne piękno
+          </h1>
+          <a class="btn btn-full js--scroll-to-plans" href="#">Szkolenia</a>
+          <a class="btn btn-ghost js--scroll-to-start" href="#">Zabiegi</a>
+        </div>
       </div>
-      <!-- </div> -->
+
+      <section class="o_nas">
+        <div class="row">
+          <div clas="col-1-of-2 col-left">
+            <h1>Justyna Kryza</h1>
+            <img src="img/quantum_logo.svg" alt="quantum logo" />
+            <h3 class="uppercase">team trainer</h3>
+            <img src="img/proartist_logo.png" />
+            <img src="img/pmu_logo.png" />
+          </div>
+          <div class="col-1-of-2 col-right"><p>foto</p></div>
+        </div>
+      </section>
+
+      <section class="szkolenia">
+        <div class="row">
+          <div>
+            <h1>Szkolenia</h1>
+          </div>
+          <div class="button">
+            <a href="#">PixeLOVE Ombre Brows</a>
+            <a href="#">Aquarelle & Waterproof Lipstick</a>
+          </div>
+          <div class="col-1-of-3">
+            <div><h3>Basic</h3></div>
+            <div>
+              <h4>Intensywne szkolenie dla osób początkujących,2 modelki</h4>
+            </div>
+            <div>
+              <div>6000 zł</div>
+              <div>netto</div>
+            </div>
+            <div>
+              <div>7380 zł</div>
+              <div>brutto</div>
+            </div>
+            <div><p>Czas trwania: 3dni</p></div>
+            <ul>
+              <li>#</li>
+              <li>#</li>
+              <li>#</li>
+              <li>#</li>
+              <li>#</li>
+              <li>#</li>
+            </ul>
+            <a href="#">Szczegóły</a>
+          </div>
+        </div>
+      </section>
     </header>
   </body>
 </html>
