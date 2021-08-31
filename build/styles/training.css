@@ -1,0 +1,34 @@
+.training {
+  background: linear-gradient(#ffffff, #d5d5d5);
+  /* min-height: 910px; */
+  width: 100%;
+  margin: auto;
+  padding: auto;
+}
+
+.container-1 {
+  max-width: 1300px;
+  margin: auto;
+  padding: auto;
+}
+
+.rows {
+  max-width: 1300px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.plan-price {
+  display: flex;
+  width: 390px;
+  justify-content: space-between;
+}
+
+.price {
+  font-size: 2.571rem;
+}
+
+.bruttonetto {
+  font-size: 1.286rem;
+  text-align: right;
+}
