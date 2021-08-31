@@ -1,0 +1,93 @@
+/*
+Color: D9D9D9; light gray
+Color: 5D5D5D; dark grey
+*/
+
+/* ----------------------------------------------- */
+/* BASIC SETUP */
+/* ----------------------------------------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  /* background-color: #ffffff; */
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 14 px;
+  font-weight: 400;
+  color: #5d5d5d;
+  text-decoration: none;
+  text-rendering: optimizeLegibility;
+}
+
+/* ----------------------------------------------- */
+/* REUSABLE COMPONENTS */
+/* ----------------------------------------------- */
+
+.container {
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+}
+
+.row {
+  max-width: 1300px;
+  /* margin: 0 auto; */
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: flex-start;
+  /* flex-wrap: wrap; */
+  /* padding: 0; */
+}
+
+section {
+  padding: 80px 0;
+}
+
+/* HEADINGS */
+
+h1,
+h2,
+h3 {
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  font-size: 5.143rem;
+  font-weight: 100;
+  /* text-align: center; */
+  /* word-spacing: 4px;
+  letter-spacing: 1px; */
+}
+
+h2 {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-size: 2.571rem;
+  font-weight: 100;
+  word-spacing: 4px;
+  letter-spacing: 1px;
+}
+
+h3 {
+  margin: ;
+}
+a {
+  color: #5d5d5d;
+  text-decoration: none;
+}
