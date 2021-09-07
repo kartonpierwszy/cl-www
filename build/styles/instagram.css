@@ -1,0 +1,11 @@
+.instagram {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.row-insta {
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+}
