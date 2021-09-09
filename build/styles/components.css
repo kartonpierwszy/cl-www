@@ -4,81 +4,91 @@ Color: 5D5D5D; dark grey
 */
 
 /* ----------------------------------------------- */
-/* BASIC SETUP */
-/* ----------------------------------------------- */
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html,
-body {
-  /* background-color: #ffffff; */
-  font-family: 'Montserrat', sans-serif;
-  font-size: 14 px;
-  font-weight: 400;
-  color: #5d5d5d;
-  text-decoration: none;
-  text-rendering: optimizeLegibility;
-}
-
-/* ----------------------------------------------- */
 /* REUSABLE COMPONENTS */
 /* ----------------------------------------------- */
 
-.width-limiter {
-  max-width: 1300px;
+.width-full {
+  width: 100%;
 }
-
-/* .container {
-  max-width: 1300px;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-} */
+.width-limiter {
+  width: 1300px;
+}
 
 .center-horizontal {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
+
   padding: 0;
 }
 
-section {
-  padding: 60px 0px 40px 0px;
+.center-vertical {
+  display: flex;
+  flex-direction: col;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
 }
 
-/* HEADINGS */
+.space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ------ HEADINGS ------ */
 
 h1 {
-  margin: 20 0 20px 0;
-  font-size: 5.143rem;
+  font-size: 4.209rem;
   font-weight: 100;
-  /* text-align: center; */
-  /* word-spacing: 4px;
-  letter-spacing: 1px; */
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 40px;
 }
-
 h2 {
-  margin-top: 10px;
-  margin-bottom: 10px;
   font-size: 1.714rem;
-  font-weight: 400;
-  /* word-spacing: 4px;
-  letter-spacing: 1px; */
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 h3 {
-  font-size: 1.286rem;
+  font-size: 1.143rem;
   font-weight: 400;
+  font-style: normal;
   margin-top: 10px;
   margin-bottom: 10px;
 }
-a {
+
+/* ------ LINKS ------ */
+
+a:link,
+a:visited {
   color: #5d5d5d;
   text-decoration: none;
+  /* padding-bottom: 1px;
+  border-bottom: 1px solid #5d5d5d;
+  -webkit-transition: border-bottom 0.2s, color 0.2s;
+  transition: border-bottom 0.2s, color 0.2s; */
 }
+
+a:hover,
+a:active {
+  color: #d9d9d9;
+  border-bottom: 1px solid transparent;
+}
+
+/* ------ ICON ------ */
+
+.logo {
+  height: 115px;
+  margin: 10px 10px 10px 10px;
+  cursor: pointer;
+}
+
+.icon {
+  height: 25px;
+  cursor: pointer;
+}
+
+/* ------ BUTTONS ------ */
+

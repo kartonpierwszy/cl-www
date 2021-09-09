@@ -1,0 +1,76 @@
+.szkolenia {
+    background: linear-gradient(#ffffff, #d5d5d5);
+    width: 100%;
+    /* min-height: 910px; */
+}
+
+.tiles-container {
+  display: flex;
+  flex-wrap: wrap; /*TODO: consider using flex-direction: column; for mobile resolutions;*/
+}
+
+.tile {
+  width: 390px;
+  height: 635px;
+  margin: 20px;
+}
+
+.tile-content-wrapper {
+  background-color: #ffffff;
+  padding: 38px 45px;
+}
+
+.width-limiter .tile:first-child {
+  margin-left: 0px;
+}
+
+.width-limiter .tile:last-child {
+  margin-right: 0px;
+}
+
+.descr {
+    font-size: 0.75rem;
+    margin-top: 8px;
+    margin-bottom: 10px;
+    line-height: 2rem;
+  }
+  .plan-price {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 0px;
+  }
+  
+  .price {
+    font-size: 2.571rem;
+    font-weight: 400;
+  }
+  
+  .bruttonetto {
+    font-size: 1.286rem;
+    text-align: right;
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+  
+  .ul-col {
+    height: 200px;
+    display: flex;
+  }
+  .tile ul {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .tile ul li {
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: normal;
+  
+    margin: 0;
+    padding: 6px 0px 6px 14px;
+    list-style: none;
+    background-image: url('../img/li-dot.svg');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 2px;

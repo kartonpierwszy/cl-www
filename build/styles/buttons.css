@@ -1,119 +1,5 @@
-.buttons {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  position: relative;
-}
-
-.hero-baner .buttons {
-  justify-content: flex-start;
-}
-/* .button {
-  position: relative;
-  width: 276px;
-  height: 50px;
-  margin: 0px 20px 20px 0px;
-  background-color: #000000;
-  display: flex;
-  justify-content: center;
-  flex-wrap: nowrap;
-} */
-/* 
-.button {
-  position: relative;
-  width: 276px;
-  height: 50px;
-  margin: 0px 20px 20px 0px;
-  display: flex;
-  justify-content: center;
-  flex-wrap: nowrap;
-  align-items: center;
-} */
-
-.button-szkolenia {
-  position: relative;
-  width: 276px;
-  height: 50px;
-  margin: 0px 20px 20px 0px;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-items: center;
-  text-transform: uppercase;
-  letter-spacing: 0.281rem;
-}
-
-.button-zabiegi {
-  position: relative;
-  width: 226px;
-  height: 50px;
-  margin: 0px 20px 20px 0px;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-items: center;
-  text-transform: uppercase;
-  letter-spacing: 0.281rem;
-}
-
-/* 
-.button-hero {
-  position: relative;
-  width: 276px;
-  height: 50px;
-  margin: 0px 20px 20px 0px;
-  display: flex;
-  justify-content: center;
-  flex-wrap: nowrap;
-  align-items: center;
-} */
-
-.button-h {
-  position: relative;
-  width: 490px;
-  height: 60px;
-  margin: 40px 20px 40px 0px;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-items: center;
-  font-size: 1.714rem;
-  font-weight: 600;
-}
-
-.button-col {
-  position: relative;
-  width: 240px;
-  height: 47px;
-  margin: 0px 20px 20px 0px;
-  display: flex;
-  justify-content: center;
-  flex-wrap: nowrap;
-  align-items: center;
-  font-size: 1.143rem;
-  font-style: normal;
-  font-weight: 300;
-  line-height: 22px;
-  letter-spacing: 5px;
-}
-
-.button-m {
-  position: relative;
-  width: 337px;
-  height: 51px;
-  margin: 0px 20px 20px 0px;
-  display: flex;
-  justify-content: center;
-  flex-wrap: nowrap;
-  align-items: center;
-  font-size: 1.143rem;
-  font-style: normal;
-  font-weight: 300;
-  line-height: 22px;
-  letter-spacing: 5px;
-}
-
 /*  PRZYCISKI BUTTONS */
+
 .border-top {
   position: absolute;
   top: 0;
@@ -169,7 +55,7 @@
 }
 
 /* BUTTONS IN WHITE COLOR */
-.modeling .border-top {
+/* .modeling .border-top {
   background-color: #ffffff;
 }
 
@@ -196,4 +82,35 @@
 .modeling a {
   color: #ffffff;
   text-transform: uppercase;
+} */
+
+.btn {
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  height: 50px;
+  margin: 20px 20px 20px 0px;
+  text-transform: uppercase;
+}
+
+.button-szkolenia {
+  width: 276px;
+  letter-spacing: 0.281rem;
+}
+
+.button-zabiegi {
+  width: 226px;
+  letter-spacing: 0.281rem;
+}
+
+/* .button-content {
+  padding: 0 4rem 0 4rem;
+} */
+
+.btn-h {
+  width: 490px;
+  /* height: 60px; */
+}
+.btn-h h3 {
+  font-weight: 600;
 }
