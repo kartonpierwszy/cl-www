@@ -1,12 +1,16 @@
 /*  PRZYCISKI BUTTONS */
 
+.frames-btn {
+  background-color: #5d5d5d;
+}
+
 .border-top {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   height: 1px;
-  background-color: #5d5d5d;
+  /* background-color: #5d5d5d; */
 }
 
 .border-top-left {
@@ -15,7 +19,7 @@
   left: 0;
   height: 20%;
   width: 1px;
-  background-color: #5d5d5d;
+  /* background-color: #5d5d5d; */
 }
 
 .border-top-right {
@@ -24,7 +28,7 @@
   right: 0;
   height: 40%;
   width: 1px;
-  background-color: #5d5d5d;
+  /* background-color: #5d5d5d; */
 }
 
 .border-bottom {
@@ -33,7 +37,7 @@
   right: 0;
   bottom: 0;
   height: 1px;
-  background-color: #5d5d5d;
+  /* background-color: #5d5d5d; */
 }
 
 .border-bottom-left {
@@ -42,7 +46,7 @@
   left: 0;
   height: 40%;
   width: 1px;
-  background-color: #5d5d5d;
+  /* background-color: #5d5d5d; */
 }
 
 .border-bottom-right {
@@ -51,45 +55,45 @@
   right: 0;
   height: 20%;
   width: 1px;
-  background-color: #5d5d5d;
+  /* background-color: #5d5d5d; */
 }
 
-/* BUTTONS IN WHITE COLOR */
-/* .modeling .border-top {
+/*BUTTONS IN WHITE COLOR */
+.modelka .border-top {
   background-color: #ffffff;
 }
 
-.modeling .border-top-left {
+.modelka .border-top-left {
   background-color: #ffffff;
 }
 
-.modeling .border-top-right {
+.modelka .border-top-right {
   background-color: #ffffff;
 }
 
-.modeling .border-bottom {
+.modelka .border-bottom {
   background-color: #ffffff;
 }
 
-.modeling .border-bottom-left {
+.modelka .border-bottom-left {
   background-color: #ffffff;
 }
 
-.modeling .border-bottom-right {
+.modelka .border-bottom-right {
   background-color: #ffffff;
 }
 
-.modeling a {
+.modelka a {
   color: #ffffff;
   text-transform: uppercase;
-} */
+}
 
 .btn {
   display: flex;
   position: relative;
   flex-wrap: wrap;
   height: 50px;
-  margin: 20px 20px 20px 0px;
+  margin: 20px 20px 20px 20px;
   text-transform: uppercase;
 }
 
@@ -113,4 +117,24 @@
 }
 .btn-h h3 {
   font-weight: 600;
+}
+
+.button-content {
+  font-size: 1.2rem;
+}
+
+.tiles-container .button-content {
+  letter-spacing: 0.2rem;
+}
+
+/* ------------------------------------------------ */
+/* Szkolenia szablon 1 */
+/* ------------------------------------------------ */
+.btn-s {
+  width: 400px;
+}
+
+.btn-s .button-content {
+  text-transform: uppercase;
+  letter-spacing: 25%;
 }

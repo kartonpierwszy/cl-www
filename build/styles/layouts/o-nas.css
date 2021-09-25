@@ -1,22 +1,24 @@
 .o-nas {
-  background: linear-gradient(#d5d5d5, #ffffff);
-  min-height: 910px;
-  border-bottom: 1px solid #5d5d5d;
+  background: linear-gradient(#ffffff, #d5d5d5);
+  /* min-height: 910px; */
+  min-height: 100vh;
+  max-width: 100%;
+  /* border-bottom: 1px solid #5d5d5d; */
 }
 
-.row {
-  margin-top: 20px;
-  margin-bottom: 20px;
+.col {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.col h3 {
+.col p {
   text-transform: uppercase;
 }
 
-.col-logo {
-  margin-top: 40px;
-}
-.row img {
-  width: 150px;
-  height: 150px;
+/* .o-nas img {
+  width: 100%;
+} */
+.col img {
+  margin: 20px;
 }

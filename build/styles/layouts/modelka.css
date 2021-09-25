@@ -1,0 +1,43 @@
+/* .modeling {
+  background-image: url(../img/zostanmodelka-01.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  min-height: 868px;
+
+  /* color: #ffffff; */
+
+.modelka {
+  /* min-height: fit-content; */
+  min-height: 868px;
+  background-image: url(../../img/zostanmodelka-01.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 10%;
+  padding-bottom: 10%;
+
+  padding-left: 30%;
+}
+
+.modelka-wraper {
+}
+
+.modelka h1 {
+  text-align: left;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.modelka p {
+  font-size: 1.714rem;
+  font-weight: 200;
+  font-style: normal;
+  color: #ffffff;
+  margin-top: 0rem;
+  margin-left: 0;
+}
+.modelka .button-szkolenia {
+  color: #ffffff;
+  margin-top: 100px;
+}

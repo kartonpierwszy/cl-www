@@ -4,7 +4,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #d9d9d9;
-  background-attachment: cover;
+  /* background-attachment: cover; */
 }
 
 /* ------------------------------------------------ */
@@ -59,6 +59,10 @@ header {
   min-height: 145px;
 }
 
+/* .nav-bottom-right {
+  margin: 20px;
+} */
+
 /* MAIN NAV BAR ON THE RIGHT SIDE */
 
 .nav-bottom-ul {
@@ -69,7 +73,7 @@ header {
 }
 .nav-bottom-ul li {
   text-transform: uppercase;
-  margin: 40px 20px 0px 20px;
+  margin: 10px 20px 10px 20px;
 }
 
 .nav-bottom-ul li:last-child {
@@ -82,7 +86,10 @@ header {
 
 /* HERO TEXT */
 
+.hero-text-box {
+  padding: 20px;
+}
 .hero-text {
   text-align: left;
-  margin-top: 160px;
+  margin-top: 15%;
 }

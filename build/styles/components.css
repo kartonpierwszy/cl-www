@@ -14,12 +14,29 @@ Color: 5D5D5D; dark grey
   width: 1300px;
 }
 
+.width-limiter-1000 {
+  max-width: 1000px;
+}
+.width-limiter-1000 h1 {
+  text-align: left;
+}
+
+.zawijanie {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.text-container {
+  max-width: 1000px;
+  text-align: center;
+  padding: 20px;
+}
+
 .center-horizontal {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-
   padding: 0;
 }
 
@@ -36,24 +53,43 @@ Color: 5D5D5D; dark grey
   justify-content: space-between;
 }
 
+.relative-container {
+  position: relative;
+}
+
+.row {
+  display: flex;
+  margin: 20px 20px 20px 20px;
+}
+
+section {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  line-height: 150%;
+}
+
 /* ------ HEADINGS ------ */
 
 h1 {
   font-size: 4.209rem;
   font-weight: 100;
   text-align: center;
-  margin-top: 80px;
+  margin-top: 40px;
   margin-bottom: 40px;
 }
 h2 {
-  font-size: 1.714rem;
-  margin-top: 20px;
-  margin-bottom: 10px;
+  font-size: 2.369rem;
+  font-weight: 200;
+  margin-top: 40px;
+  margin-bottom: 20px;
 }
 
 h3 {
   font-size: 1.143rem;
-  font-weight: 400;
+  font-weight: 600;
   font-style: normal;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -91,4 +127,3 @@ a:active {
 }
 
 /* ------ BUTTONS ------ */
-

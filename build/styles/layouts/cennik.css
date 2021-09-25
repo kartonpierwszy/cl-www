@@ -1,0 +1,201 @@
+/* ------------------------------------------------ */
+/* NAV TOP BAR */
+/* ------------------------------------------------ */
+
+.nav-top {
+  background-color: #d9d9d9;
+  opacity: 80%;
+  min-height: 40px;
+}
+
+.nav-top p {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* TEXT CODE-PRICE IN TOP BAR */
+.code-price {
+  font-size: 1rem;
+  text-align: center;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.code-price a {
+  font-weight: 600;
+}
+
+.code-price a:hover {
+  color: #ffffff;
+}
+
+/* SOCIAL MEDIA LINKS */
+.nav-top-ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+.nav-top-ul li {
+  margin: 0px 5px 0px 5px;
+}
+
+/* ------------------------------------------------ */
+/* NAV BOTTOM BAR */
+/* ------------------------------------------------ */
+
+.nav-bottom {
+  background-color: #ffffff;
+  opacity: 80%;
+  min-height: 145px;
+}
+
+/* MAIN NAV BAR ON THE RIGHT SIDE */
+
+.nav-bottom-ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1rem;
+}
+.nav-bottom-ul li {
+  text-transform: uppercase;
+  margin: 40px 20px 0px 20px;
+}
+
+.nav-bottom-ul li:last-child {
+  margin-right: 10px;
+}
+
+/* ------------------------------------------------ */
+/* SECTION CENNIK */
+/* ------------------------------------------------ */
+
+.cennik {
+  background-color: #e5e5e5;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.cennik h1 {
+  font-size: 2.571rem;
+  font-weight: 500;
+  margin-top: 40px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.cennik h3 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* .cennik p {
+  margin: 40px;
+} */
+
+.cennik-container {
+  display: flex;
+  justify-content: space-between;
+}
+.cennik-nazwa {
+  width: 90%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.cennik-cena {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  width: 10%;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+}
+
+.white {
+  background-color: #ffffff;
+}
+.white {
+  background-color: #ffffff;
+}
+
+details {
+  margin: 0 1rem;
+}
+
+details > summary {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+
+  margin-top: 20px;
+  margin-bottom: 20px;
+  list-style: none;
+  cursor: pointer;
+}
+
+details > summary::-webkit-details-marker {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  list-style: none;
+}
+
+details > summary::after {
+  content: url(../../img/arrow-right.svg);
+  width: 1.2rem;
+  height: 1.2rem;
+  display: inline-flex;
+  transition: transform 0.3s ease;
+}
+
+details[open] > summary::after {
+  transform: rotate(90deg);
+}
+
+.details-content {
+  padding: 1rem 1.5rem;
+}
+
+details > ul {
+  line-height: 150%;
+}
+
+details > summary::-webkit-details-marker {
+  line-height: 150%;
+}
+
+/* ------------------------------------------------ */
+/* SECTION Q&A */
+/* ------------------------------------------------ */
+
+.question {
+  background-color: #ffffff;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.question h2 {
+  font-size: 1.714rem;
+  font-weight: 600;
+}
+
+.question-contact {
+  display: flex;
+  justify-content: left;
+  flex-wrap: nowrap;
+}
+
+.question-contact img {
+  margin: 10px;
+}
+.question-contact p {
+  margin: 10px;
+}
+hr {
+  height: 1px;
+  background-color: #5d5d5d;
+  border: 0;
+}

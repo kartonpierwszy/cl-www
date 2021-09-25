@@ -19,8 +19,29 @@ body {
   filter: contrast(110%);
   color: #5d5d5d;
   font-family: 'Montserrat', 'Verdana', sans-serif;
-  font-size: 14 px;
+  font-size: 12 px;
   font-weight: 400;
   text-decoration: none;
   text-rendering: optimizeLegibility;
 }
+
+.instagram {
+  width: 100%;
+  min-height: fit-content;
+}
+
+/** TODO: refactor that to utility classes */
+
+.gmaps {
+  /* height: 700px; */
+  background-color: #ffffff;
+  width: 100%;
+}
+
+/* .mapa {
+  height: 700px;
+} */
+
+/* ------------------------------------------------ */
+/* FOOTER */
+/* ------------------------------------------------ */

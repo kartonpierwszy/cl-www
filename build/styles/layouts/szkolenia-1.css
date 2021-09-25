@@ -1,0 +1,97 @@
+header {
+  min-height: 925px;
+  background-image: url(../../img/szkolenie-header-1.jpg);
+  opacity: 40%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #d9d9d9;
+  /* background-attachment: cover; */
+}
+
+/* ------------------------------------------------ */
+/* NAV TOP BAR */
+/* ------------------------------------------------ */
+
+.nav-top {
+  background-color: #d9d9d9;
+  opacity: 60%;
+  min-height: 40px;
+}
+
+.nav-top p {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* TEXT CODE-PRICE IN TOP BAR */
+.code-price {
+  font-size: 1rem;
+  text-align: center;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.code-price a {
+  font-weight: 600;
+}
+
+.code-price a:hover {
+  color: #ffffff;
+}
+
+/* SOCIAL MEDIA LINKS */
+.nav-top-ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  opacity: 100%;
+}
+.nav-top-ul li {
+  margin: 0px 5px 0px 5px;
+  z-index: 1;
+}
+
+/* ------------------------------------------------ */
+/* NAV BOTTOM BAR */
+/* ------------------------------------------------ */
+
+.nav-bottom {
+  background-color: #ffffff;
+  opacity: 80%;
+  min-height: 145px;
+}
+
+/* MAIN NAV BAR ON THE RIGHT SIDE */
+
+.nav-bottom-ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1rem;
+  color: #000000;
+  opacity: 100%;
+  z-index: 1;
+}
+.nav-bottom-ul li {
+  text-transform: uppercase;
+  margin: 40px 20px 0px 20px;
+}
+
+.nav-bottom-ul li:last-child {
+  margin-right: 10px;
+}
+
+/* ------------------------------------------------ */
+/* BANER */
+/* ------------------------------------------------ */
+
+/* HERO TEXT */
+
+.hero-text {
+  text-align: left;
+  text-transform: uppercase;
+  margin-top: 160px;
+  color: #ffffff;
+  opacity: 100%;
+}

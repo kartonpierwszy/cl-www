@@ -16,11 +16,19 @@
       type="text/css"
       href="styles/layouts/szkolenia.css"
     />
+    <link rel="stylesheet" type="text/css" href="styles/layouts/opinie.css" />
     <link rel="stylesheet" type="text/css" href="styles/layouts/youtube.css" />
     <link rel="stylesheet" type="text/css" href="styles/layouts/modelka.css" />
+    <link rel="stylesheet" type="text/css" href="styles/layouts/footer.css" />
 
     <link rel="stylesheet" type="text/css" href="styles/components.css" />
     <link rel="stylesheet" type="text/css" href="styles/buttons.css" />
+    <link rel="stylesheet" type="text/css" href="styles/swiper.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
 
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;600&display=swap"
@@ -86,20 +94,20 @@
               <img
                 src="img/logo-cookielookie.svg"
                 href="https://cookielookie.pl"
-                alt="cookielookiepl logo"
+                alt="cookielookie.pl"
                 class="logo"
               />
             </div>
 
             <div class="nav-bottom-right center-horizontal">
               <ul class="nav-bottom-ul">
-                <li><a href="">O nas</a></li>
-                <li><a href="">Szkolenia</a></li>
-                <li><a href="">Zabiegi</a></li>
-                <li><a href="">Cennik</a></li>
-                <li><a href="">Współpraca</a></li>
-                <li><a href="">Regulamin</a></li>
-                <li><a href="">Kontakt</a></li>
+                <li><a href="#section-o-nas">O nas</a></li>
+                <li><a href="#section-szkolenia">Szkolenia</a></li>
+                <li><a href="zabiegi.html">Zabiegi</a></li>
+                <li><a href="cennik">Cennik</a></li>
+                <li><a href="wspolpraca.html">Współpraca</a></li>
+                <li><a href="regulamin.html">Regulamin</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
               </ul>
             </div>
           </div>
@@ -115,22 +123,22 @@
 
             <div class="btn">
               <div class="button-szkolenia btn center-horizontal">
-                <div class="border-top"></div>
-                <div class="border-top-left"></div>
-                <div class="border-top-right"></div>
-                <div class="border-bottom"></div>
-                <div class="border-bottom-left"></div>
-                <div class="border-bottom-right"></div>
+                <div class="border-top frames-btn"></div>
+                <div class="border-top-left frames-btn"></div>
+                <div class="border-top-right frames-btn"></div>
+                <div class="border-bottom frames-btn"></div>
+                <div class="border-bottom-left frames-btn"></div>
+                <div class="border-bottom-right frames-btn"></div>
                 <div class="button-content"><a href="#">Szkolenia</a></div>
               </div>
 
               <div class="button-zabiegi btn center-horizontal">
-                <div class="border-top"></div>
-                <div class="border-top-left"></div>
-                <div class="border-top-right"></div>
-                <div class="border-bottom"></div>
-                <div class="border-bottom-left"></div>
-                <div class="border-bottom-right"></div>
+                <div class="border-top frames-btn"></div>
+                <div class="border-top-left frames-btn"></div>
+                <div class="border-top-right frames-btn"></div>
+                <div class="border-bottom frames-btn"></div>
+                <div class="border-bottom-left frames-btn"></div>
+                <div class="border-bottom-right frames-btn"></div>
                 <div class="button-content"><a href="#">Zabiegi</a></div>
               </div>
             </div>
@@ -141,39 +149,26 @@
 
     <section class="o-nas">
       <div class="center-horizontal">
-        <div class="width-limiter space-between">
-          <div class="col">
-            <h1>Justyna Kryza</h1>
-            <div class="center-horizontal">
-              <img src="img/quantum_logo.svg" alt="quantum logo" />
-            </div>
-            <div class="row center-horizontal">
-              <h3 class="uppercase">team trainer</h3>
-            </div>
-            <div class="row margin center-horizontal">
-              <img src="img/proartist_logo.png" class="col-logo" />
-            </div>
-            <div class="row margin center-horizontal">
-              <img src="img/pmu_logo.png" class="col-logo" />
-            </div>
-            <div class="row center-horizontal">
-              <div class="btn">
-                <div class="button-szkolenia btn center-horizontal">
-                  <div class="border-top"></div>
-                  <div class="border-top-left"></div>
-                  <div class="border-top-right"></div>
-                  <div class="border-bottom"></div>
-                  <div class="border-bottom-left"></div>
-                  <div class="border-bottom-right"></div>
-                  <div class="button-content">
-                    <a href="#">Czytaj więcej</a>
-                  </div>
-                </div>
+        <h1 id="section-o-nas">Justyna Kryza</h1>
+      </div>
+      <div class="center-horizontal">
+        <div class="width-limiter">
+          <div class="col center-horizontal">
+            <div>
+              <div class="row center-horizontal">
+                <img src="img/logo-quantum.svg" width="250" />
+              </div>
+              <div class="row center-horizontal"><p>Team trainer</p></div>
+              <div class="row center-horizontal col">
+                <img src="img/logo-proartist.png" width="150" />
+                <!-- </div>
+              <div class="row center-horizontal col"> -->
+                <img src="img/logo-pmu.png" width="150" />
               </div>
             </div>
-          </div>
-          <div class="col">
-            <img src="img/justyna-kryza.png" />
+            <div>
+              <img src="img/justyna-kryza.png" width="100%" />
+            </div>
           </div>
         </div>
       </div>
@@ -183,38 +178,40 @@
       <div class="center-horizontal">
         <div class="width-limiter">
           <div class="center-horizontal">
-            <h1>Szkolenia</h1>
+            <h1 id="section-szkolenia">Szkolenia</h1>
           </div>
           <div class="center-horizontal">
-            <div class="btn">
-              <div class="btn-h btn center-horizontal">
-                <div class="border-top"></div>
-                <div class="border-top-left"></div>
-                <div class="border-top-right"></div>
-                <div class="border-bottom"></div>
-                <div class="border-bottom-left"></div>
-                <div class="border-bottom-right"></div>
-                <div class="button-content">
-                  <a href="#"><h3>PixeLOVE Ombre Brows</h3></a>
+            <div class="zawijanie">
+              <div class="btn">
+                <div class="btn-h btn center-horizontal">
+                  <div class="border-top frames-btn"></div>
+                  <div class="border-top-left frames-btn"></div>
+                  <div class="border-top-right frames-btn"></div>
+                  <div class="border-bottom frames-btn"></div>
+                  <div class="border-bottom-left frames-btn"></div>
+                  <div class="border-bottom-right frames-btn"></div>
+                  <div class="button-content">
+                    <a href="#"><h3>PixeLOVE Ombre Brows</h3></a>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="btn">
-              <div class="btn-h btn center-horizontal">
-                <div class="border-top"></div>
-                <div class="border-top-left"></div>
-                <div class="border-top-right"></div>
-                <div class="border-bottom"></div>
-                <div class="border-bottom-left"></div>
-                <div class="border-bottom-right"></div>
-                <div class="button-content">
-                  <a href="#">Aquarelle & Waterproof Lipstick</a>
+              <div class="btn">
+                <div class="btn-h btn center-horizontal">
+                  <div class="border-top frames-btn"></div>
+                  <div class="border-top-left frames-btn"></div>
+                  <div class="border-top-right frames-btn"></div>
+                  <div class="border-bottom frames-btn"></div>
+                  <div class="border-bottom-left frames-btn"></div>
+                  <div class="border-bottom-right frames-btn"></div>
+                  <div class="button-content">
+                    <a href="#">Aquarelle & Waterproof Lipstick</a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="tiles-container">
+          <div class="tiles-container center-horizontal">
             <div class="tile tile-content-wrapper">
               <h2>Basic</h2>
               <p class="descr">
@@ -246,12 +243,12 @@
 
               <div>
                 <div class="btn center-horizontal">
-                  <div class="border-top"></div>
-                  <div class="border-top-left"></div>
-                  <div class="border-top-right"></div>
-                  <div class="border-bottom"></div>
-                  <div class="border-bottom-left"></div>
-                  <div class="border-bottom-right"></div>
+                  <div class="border-top frames-btn"></div>
+                  <div class="border-top-left frames-btn"></div>
+                  <div class="border-top-right frames-btn"></div>
+                  <div class="border-bottom frames-btn"></div>
+                  <div class="border-bottom-left frames-btn"></div>
+                  <div class="border-bottom-right frames-btn"></div>
                   <div class="button-content"><a href="#">SZCZEGÓŁY</a></div>
                 </div>
               </div>
@@ -285,12 +282,12 @@
 
               <div>
                 <div class="btn center-horizontal">
-                  <div class="border-top"></div>
-                  <div class="border-top-left"></div>
-                  <div class="border-top-right"></div>
-                  <div class="border-bottom"></div>
-                  <div class="border-bottom-left"></div>
-                  <div class="border-bottom-right"></div>
+                  <div class="border-top frames-btn"></div>
+                  <div class="border-top-left frames-btn"></div>
+                  <div class="border-top-right frames-btn"></div>
+                  <div class="border-bottom frames-btn"></div>
+                  <div class="border-bottom-left frames-btn"></div>
+                  <div class="border-bottom-right frames-btn"></div>
                   <div class="button-content"><a href="#">SZCZEGÓŁY</a></div>
                 </div>
               </div>
@@ -298,7 +295,9 @@
 
             <div class="tile tile-content-wrapper">
               <h2>Masterclass</h2>
-              <p class="descr">Dla osób już pigmentujących zaawansowanych</p>
+              <p class="descr">
+                Dla osób już pigmentujących <br />zaawansowanych
+              </p>
               <div class="plan-price">
                 <div>
                   <p class="price">2500zł</p>
@@ -322,12 +321,12 @@
 
               <div>
                 <div class="btn center-horizontal">
-                  <div class="border-top"></div>
-                  <div class="border-top-left"></div>
-                  <div class="border-top-right"></div>
-                  <div class="border-bottom"></div>
-                  <div class="border-bottom-left"></div>
-                  <div class="border-bottom-right"></div>
+                  <div class="border-top frames-btn"></div>
+                  <div class="border-top-left frames-btn"></div>
+                  <div class="border-top-right frames-btn"></div>
+                  <div class="border-bottom frames-btn"></div>
+                  <div class="border-bottom-left frames-btn"></div>
+                  <div class="border-bottom-right frames-btn"></div>
                   <div class="button-content"><a href="#">SZCZEGÓŁY</a></div>
                 </div>
               </div>
@@ -335,6 +334,147 @@
           </div>
         </div>
       </div>
+      <div class="center-horizontal">
+        <div class="text-container">
+          <h2>Chcesz zapisać się na szkolenie?</h2>
+          <p>
+            Skontaktuj się z nami mailowo bądź telefonicznie, w celu ustalenia
+            terminu. Następnie przekażemy Ci informację dotyczące zadatku, który
+            gwarantuje miejsce na szkoleniu. Zadatek należy uiścić do 2 dni
+            roboczych od ustalenia terminu. Jest on bezzwrotną formą pewnej
+            rezerwacji terminu natomiast cała jego kwota zostanie odliczona od
+            kosztu szkolenia w dniu jego wykonania. Możliwa jest jedna zmiana
+            terminu w ramach zadatku pod warunkiem, że na miejsce z którego się
+            rezygnuje znajdzie się inna kursantka.
+          </p>
+        </div>
+      </div>
     </section>
+
+    <section class="youtube">
+      <div class="center-horizontal">
+        <div class="width-limiter">
+          <!-- <div class="youtube-container"> -->
+          <!-- <video src="img/video.mov" class="video" autoplay loop>
+            <img src="img/section-yt-01.jpg" />
+          </video> -->
+          <!-- </div> -->
+          <div class="yt">
+            <div class="yt-col-left">
+              <a href="https://www.youtube.com/channel/UCPEwdOHQ4EBbDErKajWlAsA"
+                ><img src="/img/cta-play.svg" class="cta-play" />
+              </a>
+            </div>
+            <div class="yt-col-right">
+              <div>
+                <h1>Basic<br />Ombre<br />Brows</h1>
+              </div>
+              <div>
+                <a
+                  href="https://www.youtube.com/channel/UCPEwdOHQ4EBbDErKajWlAsA"
+                  ><img src="img/cta-youtube.svg" class="cta-yt" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="modelka">
+      <div class="center-horizontal">
+        <!-- <div class="width-limiter"> -->
+        <div class="modelka-wraper">
+          <h1>Zostań<br />Modelką<br />Na szkoleniu!</h1>
+          <p>makijaż permanentny w atrakcyjnej cenie</p>
+          <div class="btn">
+            <div class="button-szkolenia btn center-horizontal">
+              <div class="border-top"></div>
+              <div class="border-top-left"></div>
+              <div class="border-top-right"></div>
+              <div class="border-bottom"></div>
+              <div class="border-bottom-left"></div>
+              <div class="border-bottom-right"></div>
+              <div class="button-content">
+                <a href="#">Czytaj więcej</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- </div> -->
+      </div>
+    </section>
+
+    <section class="instagram">
+      <div>
+        <div class="center-horizontal">
+          <h1>Follow Us!</h1>
+        </div>
+        <div class="center-horizontal">
+          <!-- LightWidget WIDGET -->
+          <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
+          <iframe
+            src="//lightwidget.com/widgets/ed915de5613253eaa5ba6839059349e7.html"
+            scrolling="no"
+            allowtransparency="true"
+            class="lightwidget-widget"
+            style="width: 100%; border: 0; overflow: hidden"
+          ></iframe>
+
+          <!-- SnapWidget
+
+           <script src="https://snapwidget.com/js/snapwidget.js"></script>
+          <iframe
+            src="https://snapwidget.com/embed/960946"
+            class="snapwidget-widget"
+            allowtransparency="true"
+            frameborder="0"
+            scrolling="no"
+            style="border: none; overflow: hidden; width: 100%"
+          ></iframe> -->
+        </div>
+      </div>
+    </section>
+
+    <section class="gmaps">
+      <div class="center-horizontal">
+        <h1>Zapraszamy do Naszego Salonu</h1>
+      </div>
+      <div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2562.8798840327468!2d18.611813416286395!3d50.03234652528273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4716b3e2a832ccf1%3A0xaee98303449ba4d9!2sCookieLookie%20Makija%C5%BC%20Permanentny%20%26%20Szkolenia%20Justyna%20Kryza!5e0!3m2!1spl!2spl!4v1631022209250!5m2!1spl!2spl"
+          width="100%"
+          height="600px"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
+    </section>
+
+    <footer>
+      <div class="center-horizontal">
+        <div class="width-limiter">
+          <div class="tiles-container">
+            <div class="tile tile-content-wrapper">
+              <img
+                src="img/logo-cookielookie.svg"
+                href="https://cookielookie.pl"
+                alt="cookielookiepl logo"
+                class="logo-white"
+              />
+            </div>
+            <div class="tile tile-content-wrapper">2</div>
+            <div class="tile tile-content-wrapper">
+              <h3>Kontakt</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="script/swiper.js"></script>
   </body>
 </html>
