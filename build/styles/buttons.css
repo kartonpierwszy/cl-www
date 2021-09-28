@@ -93,7 +93,7 @@
   position: relative;
   flex-wrap: wrap;
   height: 50px;
-  margin: 20px 20px 20px 20px;
+  margin: 20px 20px 20px 0px;
   text-transform: uppercase;
 }
 
@@ -110,6 +110,14 @@
 /* .button-content {
   padding: 0 4rem 0 4rem;
 } */
+
+/* ------------------------------------------------ */
+/* Szkolenia szkolenia */
+/* ------------------------------------------------ */
+
+.btn-sz {
+  margin-left: 20px;
+}
 
 .btn-h {
   width: 490px;

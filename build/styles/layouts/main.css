@@ -43,5 +43,274 @@ body {
 } */
 
 /* ------------------------------------------------ */
-/* FOOTER */
+/* HEADER / MENU TOP / MENU BOTTOM /  */
 /* ------------------------------------------------ */
+
+/* ------------------------------------------------ */
+/* SEKCJA "O NAS" */
+/* ------------------------------------------------ */
+.o-nas {
+  background: linear-gradient(#ffffff, #d5d5d5);
+  min-height: 100vh;
+  max-width: 100%;
+}
+
+.col {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.col p {
+  text-transform: uppercase;
+}
+
+/* .o-nas img {
+  width: 100%;
+} */
+.col img {
+  margin: 20px;
+}
+
+/* ------------------------------------------------ */
+/* SEKCJA "SZKOLENIA" */
+/* ------------------------------------------------ */
+.szkolenia {
+  background: linear-gradient(#ffffff, #d5d5d5);
+  width: 100%;
+  /* padding-bottom: 80px; */
+  /* padding-left: 30px;
+  padding-right: 30px; */
+  /* min-height: 910px; */
+}
+
+.tiles-container {
+  display: flex;
+  flex-wrap: wrap; /*TODO: consider using flex-direction: column; for mobile resolutions;*/
+}
+
+.tile {
+  width: 390px;
+  /* height: 635px; */
+  margin: 20px;
+}
+
+.tile-content-wrapper {
+  background-color: #ffffff;
+  padding: 45px 45px;
+}
+
+/* .width-limiter .tile:first-child {
+  margin-left: 0px;
+} */
+
+.width-limiter .tile:last-child {
+  margin-right: 0px;
+}
+
+.descr {
+  font-size: 0.75rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: 1.5rem;
+}
+
+.plan-price {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-bottom: 0px;
+}
+
+.price {
+  font-size: 2.571rem;
+  font-weight: 400;
+}
+
+.bruttonetto {
+  font-size: 1.286rem;
+  text-align: right;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.ul-col {
+  height: 200px;
+  display: flex;
+}
+.tile ul {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.tile ul li {
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: normal;
+
+  margin: 0;
+  padding: 6px 0px 6px 14px;
+  list-style: none;
+  background-image: url('../img/li-dot.svg');
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 2px;
+}
+
+/* --- Zapisy na szkolenie --- */
+/* details {
+  margin: 0 1rem;
+} */
+/* 
+details > summary { */
+/* font-size: 1rem; */
+/* margin-top: 20px;
+  margin-bottom: 20px; */
+/* list-style: none;
+  cursor: pointer;
+}
+
+details > summary::-webkit-details-marker { */
+/* font-size: 1.2rem;
+  text-transform: uppercase; */
+/* margin-top: 20px;
+  margin-bottom: 20px; */
+/* list-style: none;
+} */
+/* 
+details > summary::after {
+  content: url(../../img/arrow-right.svg);
+  width: 3rem;
+  height: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  display: inline-flex;
+  transform: rotate(90deg);
+  transition: transform 0.3s ease;
+}
+
+details[open] > p {
+  line-height: 150%;
+} */
+/* 
+.details-content {
+  padding: 1rem 1.5rem;
+} */
+
+/* ------------------------------------------------ */
+/* SEKCJA "YOUTUBE" */
+/* ------------------------------------------------ */
+.youtube {
+  background-image: url(../../img/section-yt-01tiny.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom left;
+  filter: brightness(0.8);
+  -webkit-filter: brightness(0.8);
+  background-color: #d9d9d9;
+  min-height: 800px;
+  position: relative;
+}
+
+.yt {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 15%;
+}
+
+.yt-col-left {
+  width: 56%;
+  display: flex;
+  justify-content: flex-end;
+  margin: 30px 30px 30px 30px;
+}
+.yt-col-right {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 30px 30px 30px;
+}
+
+.cta-play {
+  /* margin: 30px 30px 30px 30px; */
+}
+
+.yt h1 {
+  color: #ffffff;
+  opacity: 80%;
+  text-align: left;
+  /* margin-left: 30%; */
+  text-transform: uppercase;
+}
+
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+/* ------------------------------------------------ */
+/* OPINIE UCZESTNIKÓW SZKOLEŃ */
+/* ------------------------------------------------ */
+
+/* ------------------------------------------------ */
+/* SEKCJA "ZOSTAŃ MODELKĄ" */
+/* ------------------------------------------------ */
+.modelka {
+  /* min-height: fit-content; */
+  min-height: 868px;
+  background-image: url(../../img/zostanmodelka-01tiny.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 10%;
+  padding-bottom: 10%;
+
+  padding-left: 30%;
+}
+
+.modelka-wraper {
+}
+
+.modelka h1 {
+  text-align: left;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.modelka p {
+  font-size: 1.714rem;
+  font-weight: 200;
+  font-style: normal;
+  color: #ffffff;
+  margin-top: 0rem;
+  margin-left: 0;
+}
+.modelka .button-szkolenia {
+  color: #ffffff;
+  margin-top: 100px;
+}
+
+/* ------------------------------------------------ */
+/* SEKCJA "GMAPS" */
+/* ------------------------------------------------ */
+
+/* ------------------------------------------------ */
+/* "FOOTER" */
+/* ------------------------------------------------ */
+footer {
+  width: 100%;
+  height: 400px;
+  background-color: #d9d9d9;
+}
+
+footer .tile {
+  background-color: #d9d9d9;
+}
+
+footer .logo-white {
+  color: #ffffff;
+}
