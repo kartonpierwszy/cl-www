@@ -107,11 +107,11 @@ a:visited {
   transition: border-bottom 0.2s, color 0.2s; */
 }
 
-a:hover,
+/* a:hover,
 a:active {
-  color: #d9d9d9;
-  border-bottom: 1px solid transparent;
-}
+  color: #5d5d5d;
+  border-bottom: 1px solid #5d5d5d;
+} */
 
 /* ------ ICON ------ */
 

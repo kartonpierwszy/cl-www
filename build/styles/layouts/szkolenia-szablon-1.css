@@ -1,7 +1,12 @@
+/* REUSABLE COMPONENTS */
+h3 {
+  font-size: 1rem;
+  margin: 20px 5px 20px 5px;
+}
+
 header {
   min-height: 740px;
   background-image: url(../../img/szkolenie-header-1-60tiny.jpg);
-
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #d9d9d9;
@@ -14,13 +19,13 @@ header {
 
 .nav-top {
   background-color: #d9d9d9;
-  opacity: 50%;
   min-height: 40px;
 }
 
 .nav-top p {
   margin-left: 20px;
   margin-right: 20px;
+  color: #5d5d5d;
 }
 
 /* TEXT CODE-PRICE IN TOP BAR */
@@ -30,13 +35,12 @@ header {
   padding-right: 20px;
   padding-left: 20px;
   font-weight: 800;
-  opacity: 100%;
+
   z-index: 1;
 }
 
 .code-price a {
   font-weight: 600;
-  opacity: 100%;
 }
 
 .code-price a:hover {
@@ -60,7 +64,7 @@ header {
 
 .nav-bottom {
   background-color: #ffffff;
-  opacity: 50%;
+
   min-height: 145px;
 }
 
@@ -94,22 +98,33 @@ header {
   text-transform: uppercase;
 }
 
+/* ------------------------------------------------ */
+/* SEKCJA "SZKOLENIA" */
+/* ------------------------------------------------ */
 .section-szkolenia {
   background-color: #e5e5e5;
   padding-top: 40px;
   padding-bottom: 40px;
-  padding-left: 20px;
-  padding-right: 20px;
+  /* padding-left: 20px;
+  padding-right: 20px; */
 }
 
-ul {
+.opis-sz {
+  font-style: italic;
+  margin: 40px 5px;
+}
+
+.ul-szkolenie {
   line-height: 150%;
+  margin: 5px 15px 5px 15px;
 }
 
 .price-sz {
-  margin-top: 40px;
+  margin: 40px 5px 40px 5px;
+}
+.price-sz p {
+  line-height: 200%;
   text-transform: uppercase;
-  font-weight: 600;
 }
 
 /* ------------------------------------------------ */
@@ -118,5 +133,35 @@ ul {
 
 .gallery {
   margin: 40px;
-  min-height: 606px;
+
+  /* min-height: 606px; */
+}
+
+.gallery img {
+  max-width: 100%;
+  margin: 20px;
+}
+
+/* ------------------------------------------------ */
+/* SECTION PROMOSZKOLENIA*/
+/* ------------------------------------------------ */
+.promo-szkolenia {
+  background-color: #e5e5e5;
+  text-align: center;
+  font-size: 1.714rem;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.promo-opis {
+  font-size: 1.714rem;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.klik {
+  text-align: center;
+  font-size: 1.714rem;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
