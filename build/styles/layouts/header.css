@@ -3,6 +3,9 @@ header {
   background-image: url(../../img/baner-2tiny.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: bottom;
+  background-attachment: scroll;
+
   background-color: #d9d9d9;
   /* background-attachment: cover; */
 }
@@ -80,21 +83,16 @@ header {
   line-height: 200%;
 }
 
-/* .nav-bottom-ul {
-  margin: 0;
-  padding: 0;
-} */
-
 .nav-bottom-ul li {
   text-transform: uppercase;
   list-style: none;
-  line-height: 200%;
+  line-height: 1.2rem;
   padding: 10px 20px 10px 20px;
 }
 
 .nav-bottom-ul li:hover {
   background-color: #d9d9d9;
-  transition: background 0.4s;
+  transition: background 0.3s;
 }
 
 .nav-bottom-ul li:last-child {
@@ -108,6 +106,14 @@ header {
   display: none;
   margin-top: 10px;
 }
+
+.submenu li {
+  text-transform: capitalize;
+}
+
+/* .lowercase {
+  text-transform: none;
+} */
 
 /* SHOW MENU ON HOVER */
 
