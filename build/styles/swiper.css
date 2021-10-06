@@ -1,8 +1,6 @@
 .swiper {
-  width: 1000px;
-  height: 400px;
-  display: flex;
-  flex-wrap: wrap;
+  max-width: 1000px;
+  min-height: 350px;
 }
 
 .swiper-slide {
@@ -10,6 +8,7 @@
   font-size: 1rem;
   font-weight: normal;
   background: #fff;
+  padding: 20px;
 
   /* Center slide text vertically */
   display: -webkit-box;
@@ -24,11 +23,20 @@
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
+  flex-direction: column;
 }
 
-.swiper-slide img {
-  display: block;
+/* ------------ moje ------------- */
+
+.opinie-kursantek {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.swiper-container {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-wrap: wrap;
 }

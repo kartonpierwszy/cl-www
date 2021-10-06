@@ -81,10 +81,6 @@ body {
 .szkolenia {
   background: linear-gradient(#ffffff, #d5d5d5);
   width: 100%;
-  /* padding-bottom: 80px; */
-  /* padding-left: 30px;
-  padding-right: 30px; */
-  /* min-height: 910px; */
 }
 
 .tiles-container {
@@ -160,46 +156,6 @@ body {
   background-size: 2px;
 }
 
-/* --- Zapisy na szkolenie --- */
-/* details {
-  margin: 0 1rem;
-} */
-/* 
-details > summary { */
-/* font-size: 1rem; */
-/* margin-top: 20px;
-  margin-bottom: 20px; */
-/* list-style: none;
-  cursor: pointer;
-}
-
-details > summary::-webkit-details-marker { */
-/* font-size: 1.2rem;
-  text-transform: uppercase; */
-/* margin-top: 20px;
-  margin-bottom: 20px; */
-/* list-style: none;
-} */
-/* 
-details > summary::after {
-  content: url(../../img/arrow-right.svg);
-  width: 3rem;
-  height: 3rem;
-  margin-top: 1rem;
-  margin-bottom: 2rem;
-  display: inline-flex;
-  transform: rotate(90deg);
-  transition: transform 0.3s ease;
-}
-
-details[open] > p {
-  line-height: 150%;
-} */
-/* 
-.details-content {
-  padding: 1rem 1.5rem;
-} */
-
 /* ------------------------------------------------ */
 /* SEKCJA "YOUTUBE" */
 /* ------------------------------------------------ */
@@ -255,9 +211,9 @@ details[open] > p {
   z-index: -1;
 }
 
-/* ------------------------------------------------ */
-/* OPINIE UCZESTNIKÓW SZKOLEŃ */
-/* ------------------------------------------------ */
+.opis {
+  line-height: 160%;
+}
 
 /* ------------------------------------------------ */
 /* SEKCJA "ZOSTAŃ MODELKĄ" */
@@ -271,11 +227,7 @@ details[open] > p {
   background-position: center;
   padding-top: 10%;
   padding-bottom: 10%;
-
   padding-left: 30%;
-}
-
-.modelka-wraper {
 }
 
 .modelka h1 {
@@ -305,15 +257,54 @@ details[open] > p {
 /* "FOOTER" */
 /* ------------------------------------------------ */
 footer {
+  background-color: #d5d5d5;
+  color: #5d5d5d;
   width: 100%;
-  height: 400px;
+  height: 100%;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+footer p {
+  font-size: 0.9rem;
+  line-height: 1.6rem;
+}
+.footer-logo {
+  width: 200px;
+}
+
+.footer-tile-container {
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.footer-tile {
+  width: auto;
+  margin: 10px;
+}
+
+.godziny-tile {
+  width: 300px;
+}
+
+.godz-white {
   background-color: #d9d9d9;
 }
 
-footer .tile {
-  background-color: #d9d9d9;
+.footer-ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 10px;
 }
 
-footer .logo-white {
-  color: #ffffff;
+.footer-ul li {
+  list-style: none;
+  margin: 5px;
+}
+
+.footer-ul li:first-child {
+  margin-left: 0;
 }

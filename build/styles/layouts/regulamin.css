@@ -20,10 +20,10 @@
   margin: 40px;
 } */
 
-ol {
+/* ol {
   margin-top: 20px;
   margin-left: 30px;
-}
+} */
 
 details {
   margin: 0 1rem;
@@ -58,10 +58,6 @@ details > summary::after {
 
 details[open] > summary::after {
   transform: rotate(90deg);
-}
-
-.details-content {
-  padding: 1rem 1.5rem;
 }
 
 details > ul {
