@@ -59,33 +59,41 @@
 }
 
 /*BUTTONS IN WHITE COLOR */
-.modelka .border-top {
+.btn-white .border-top {
   background-color: #ffffff;
 }
 
-.modelka .border-top-left {
+.btn-white .border-top-left {
   background-color: #ffffff;
 }
 
-.modelka .border-top-right {
+.btn-white .border-top-right {
   background-color: #ffffff;
 }
 
-.modelka .border-bottom {
+.btn-white .border-bottom {
   background-color: #ffffff;
 }
 
-.modelka .border-bottom-left {
+.btn-white .border-bottom-left {
   background-color: #ffffff;
 }
 
-.modelka .border-bottom-right {
+.btn-white .border-bottom-right {
   background-color: #ffffff;
+}
+
+.hero-text-box a {
+  color: #fff;
+  font-weight: 200;
+}
+.hero-text-box .btn {
+  margin: 20px 20px 20px 0px;
 }
 
 .modelka a {
+  font-weight: 200;
   color: #ffffff;
-  text-transform: uppercase;
 }
 
 .btn {
@@ -93,18 +101,18 @@
   position: relative;
   flex-wrap: wrap;
   height: 50px;
-  margin: 20px 20px 20px 0px;
+  margin: 0 1rem 1rem 1rem;
   text-transform: uppercase;
+  /* padding: 1em 3em 1em 3em; */
 }
 
-.button-szkolenia {
-  width: 276px;
-  letter-spacing: 0.281rem;
+.modelka .btn {
+  margin: 1rem 0 2rem 0;
 }
 
-.button-zabiegi {
-  width: 226px;
-  letter-spacing: 0.281rem;
+.btn-space-x {
+  padding: 0rem 3rem 0rem 3rem;
+  /* letter-spacing: 0.281rem; */
 }
 
 /* .button-content {
@@ -115,20 +123,17 @@
 /* Szkolenia szkolenia */
 /* ------------------------------------------------ */
 
-.btn-sz {
+/* .btn-sz {
   margin-left: 20px;
-}
+} */
 
-.btn-h {
-  width: 490px;
-  /* height: 60px; */
-}
-.btn-h h3 {
-  font-weight: 600;
-}
+/* .btn-h {
+  min-width: 350px;
+  max-width: 490px;
+} */
 
 .button-content {
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .tiles-container .button-content {

@@ -88,21 +88,21 @@ p {
 /* ------ HEADINGS FOR MAINPAGE------ */
 
 h1 {
-  font-size: 4.209rem;
+  /* font-size: 4.209rem; */
   font-weight: 100;
   text-align: center;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
 }
 h2 {
-  font-size: 2.369rem;
-  font-weight: 300;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  /* font-size: 2.369rem; */
+  font-weight: 200;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 h3 {
-  font-size: 1.143rem;
+  /* font-size: 1.143rem; */
   font-weight: 600;
   font-style: normal;
   margin-top: 20px;
@@ -123,34 +123,32 @@ a:visited {
 
 a:hover,
 a:active {
-  color: #000;
+  color: #2d2d2d;
   -webkit-transition: color 0.2s, color 0.2s;
   transition: color 0.2s, color 0.5s;
 }
 
 /* ------ OL Ul Li style ------ */
 ol {
-  /* margin-top: 40px;
-  margin-left: 20px; */
-  margin: 40px 20px;
+  list-style: none;
 }
 
 ul {
   list-style: url(img/li-dot.svg);
   line-height: 150%;
-  margin: 40px 20px;
 }
 
 /* ------ ICON ------ */
 
 .logo {
   height: 115px;
-  margin: 10px 10px 10px 10px;
-  cursor: pointer;
+  margin: 10px;
+  float: left;
 }
 
 .icon {
   height: 25px;
+  margin: 0px 5px 0px 5px;
   cursor: pointer;
 }
 
