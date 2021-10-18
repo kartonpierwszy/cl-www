@@ -1,43 +1,46 @@
 header {
-  min-height: 925px;
-  background-image: -webkit-linear-gradient(
-      rgba(0, 0, 0, 0.3),
-      rgba(0, 0, 0, 0.3)
-    ),
-    url(../../img/baner-1.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(../../img/baner-1.jpg);
+  min-height: 100vh;
+  background-image: url(../../img/header-1-filter.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: bottom;
+  background-position: bottom left -20em;
   background-attachment: scroll;
-
   background-color: #5d5d5d;
-  /* background-attachment: cover; */
+  
 }
 
+/* Landscape phone to portrait tablet */
+@media (min-width: 840px) {
+  header {
+    background-position: bottom;
+  }
+}
 /* ------------------------------------------------ */
 /* NAV TOP BAR */
 /* ------------------------------------------------ */
 
 .nav-top {
   background-color: #d9d9d9;
-  opacity: 80%;
+  /* opacity: 60%; */
   min-height: 40px;
+  display: flex;
 }
 
 .nav-top-right {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
+  margin-right: 1em;
 }
 
 /* TEXT CODE-PRICE IN TOP BAR */
 .code-price {
-  font-size: 1rem;
-  text-align: left;
+  font-size: 0.8rem;
+  text-align: center;
+  margin-left: 1em;
+  margin-right: 1em;
 }
 
 .code-price a {
@@ -50,99 +53,69 @@ header {
 
 /* SOCIAL MEDIA LINKS */
 .nav-top-right ul {
-  display: flex;
+  display: none;
   justify-content: end;
   align-items: center;
   flex-wrap: wrap;
   list-style: none;
-  /* padding-top: 3px; */
+  padding-top: 3px;
 }
 
 .nav-top-right li {
   padding-top: 3px;
 }
 
+
+/* --- MEDIA QUERIES --- */
+
+
+/* Landscape phones and down */
+@media (min-width: 480px) {
+  
+}
+
+/* Landscape phone to portrait tablet */
+@media (min-width: 840px) {
+  .nav-top {
+    opacity: 60%;
+  }
+
+  .nav-top ul {
+    display: flex;
+  }
+
+  .code-price {
+    font-size: 1em;
+    text-align: right;
+margin-right: 3em;
+  }
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 979px) {
+
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+  
+}
+
+/* ------------------------------------------------ */
+/* NAV TOP BAR END */
+/* ------------------------------------------------ */
+
 /* ------------------------------------------------ */
 /* NAV BOTTOM BAR */
 /* ------------------------------------------------ */
 
-.nav-bottom {
-  background-color: #ffffff;
-  min-height: 145px;
-}
 
-/* MAIN NAV BAR ON THE RIGHT SIDE */
-
-/* .nav-bottom-ul {
-  max-width: 880px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  align-items: flex-end;
-  font-size: 1rem;
-  line-height: 2em;
-}
-
-.nav-bottom-ul .after:after {
-  content: '▼';
-  opacity: 60%;
-  margin-left: 5px;
-}
-
-.nav-bottom-ul li {
-  text-transform: uppercase;
-  list-style: none;
-  line-height: 1rem;
-  padding: 10px 20px 10px 20px;
-}
-
-.nav-bottom-ul li:hover {
-  background-color: #d9d9d9;
-  transition: background 0.3s;
-} */
-
-/* .nav-bottom-ul li:last-child {
-  margin-right: 0px;
-} */
-
-/* SUBMENU */
-/* .submenu {
-  position: absolute;
-  width: 400px;
-  display: none;
-  flex-direction: column;
-  margin-top: 10px;
-}
-
-.submenu ul {
-  display: flex;
-}
-.submenu li {
-  text-transform: capitalize;
-} */
-
-/* SHOW MENU ON HOVER */
-
-/* .nav-bottom-ul li:hover > .submenu {
-  transition: background 0.3s;
-  display: flex;
-  background-color: #ffffff;
-}
-
-.nav-bottom-ul .submenu a:hover {
-  background-color: #d9d9d9;
-  transition: background 0.3s;
-} */
-
-/* ------------------------------------------------ */
-/* NAV BOTTOM BAR END*/
-/* ------------------------------------------------ */
 
 .nav-bottom ul {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex;
+  display: none;
   justify-content: flex-end;
   flex-wrap: wrap;
   align-items: flex-end;
@@ -163,14 +136,14 @@ header {
 } */
 
 .nav-bottom a {
+  font-size: 0.8em;
   text-transform: uppercase;
   display: block;
   background: #ffffff;
   padding: 10px;
   text-decoration: none;
   text-align: left;
-  /* border-bottom-width: thin;
-  border-bottom: 1px solid transparent; */
+
 }
 .nav-bottom a:hover {
   background: #d5d5d5;
@@ -198,27 +171,120 @@ header {
   padding-left: 5px;
 }
 
-/* ------------------------------------------------ */
-/* BANER */
-/* ------------------------------------------------ */
-
-/* HERO TEXT */
-
-.hero-text-box {
-  padding: 20px;
-}
-.hero-text {
-  color: #ffffff;
-  font-weight: 100;
-  text-align: left;
-  margin-top: 1.5em;
+.hamburger {
+  height: 25px;
+  margin: 1.5em;
 }
 
-/* @media screen and (max-width: 800px) and (min-width: 400px) {
-  h1 {
-    font-size: 1.286 rem;
-    font-weight: 100;
-    margin-top: 30px;
-    margin-bottom: 30px;
+/* --- MEDIA QUERIES --- */
+
+
+/* Landscape phones and down */
+@media (min-width: 480px) {
+  
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 870px) {
+  .nav-bottom {
+    background-color: #ffffff;
   }
-} */
+
+  .nav-bottom ul {
+    margin: 0;
+    
+    display: flex;
+  }
+  .nav-bottom a {
+    font-size: 1em;
+    padding: 10px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+  
+}
+
+/* ------------------------------------------------ */
+/* NAV BOTTOM BAR END*/
+/* ------------------------------------------------ */
+
+/* ------------------------------------------------ */
+/* BANER, HERO TEXT */
+/* ------------------------------------------------ */
+
+header .hero-text-box {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-content: flex-start;
+}
+
+header .hero-text-box h1 {
+  max-width: 200px;
+  font-size: 1.8em;
+  font-weight: 100;
+  color: #fff;
+  text-align: left;
+  margin: 1em;
+
+}
+
+/* --- MEDIA QUERIES --- */
+
+
+/* Landscape phones and down */
+@media (min-width: 480px) {
+  header .hero-text-box h1 {
+    font-size: 2em;
+  }
+}
+
+@media (min-width: 767px) {
+  header .hero-text-box {
+    margin-top: 15%;
+    }
+    
+  header .hero-text-box h1 {
+    max-width: 400px;
+    font-size: 2.4em;
+    margin-left: 0.5em;
+  }
+}
+
+/* Landscape phone to portrait tablet */
+@media (min-width: 840px) {
+  header .hero-text-box {
+    margin-top: 15%;
+  }
+  
+  header .hero-text-box h1 {
+    max-width: 600px;
+    font-size: 3em;
+    margin-left: 0.5em;
+  }
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 979px) {
+  
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+  header .hero-text-box {
+    margin-top: 10%;
+  }
+
+  header .hero-text-box h1 {
+    max-width: 800px;
+    font-size: 4.4em;
+    font-weight: 100;
+  }
+}

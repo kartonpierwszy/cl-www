@@ -3,6 +3,26 @@ Color: D9D9D9; light gray
 Color: 5D5D5D; dark grey
 */
 
+/* Landscape phones and down */
+@media (min-width: 480px) {
+  
+}
+
+/* Landscape phone to portrait tablet */
+@media (min-width: 767px) {
+  
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+  
+}
+
 /* ----------------------------------------------- */
 /* BASIC SETUP */
 /* ----------------------------------------------- */
@@ -13,17 +33,28 @@ Color: 5D5D5D; dark grey
   box-sizing: border-box;
 }
 
-html,
+/* html,
 body {
   background-color: #ffffff;
-  /* filter: contrast(110%); */
-  color: #5d5d5d;
+  filter: contrast(110%);
+color: #5d5d5d;
   font-family: 'Montserrat', 'Verdana', sans-serif;
-  font-size: 16 px;
-  font-weight: 400;
+  font-size: 16px;
+font-weight: 400;
   text-decoration: none;
   text-rendering: optimizeLegibility;
-}
+} */
+
+
+/* html {font-size: 100%;} /*16px*/
+/* 
+body {
+  background: white;
+  color: #5d5d5d;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  line-height: 1.75;
+}  */
 
 .instagram {
   width: 100%;
@@ -51,25 +82,43 @@ body {
 /* ------------------------------------------------ */
 .o-nas {
   background: linear-gradient(#ffffff, #d5d5d5);
-  min-height: 100vh;
-  max-width: 100%;
+  /* max-height: 500px; */
+  height: 100vh;
 }
-
-.col {
+.col-container {
   display: flex;
-  /* justify-content: space-between; */
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  flex-wrap: wrap;
+  align-content: flex-start;
+  
+}
+.col-1-od-2 {
+  width: 100px;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap; */
+}
+.col-2-of-2 {
+
 }
 
-.col p {
-  text-transform: uppercase;
+.o-nas-logo {
+  height: 40px;
+  margin: 1em;
 }
 
-.col img {
-  margin: 20px;
+.o-nas-logo-circle {
+  height: 120px;
+  margin: 1em;
+}
+
+.o-nas-kryza {
+  max-height: 100%;
+  /* display: none; */
+  background-image: url("../../img/justyna-kryza-crop.png");
 }
 
 /* ------------------------------------------------ */
@@ -81,85 +130,260 @@ body {
 }
 
 .tiles-container {
-  margin: 2rem 0 1rem 0;
+  margin: 1rem 0 1rem 0;
   display: flex;
-  flex-wrap: wrap; /*TODO: consider using flex-direction: column; for mobile resolutions;*/
-}
-
-.tile {
-  width: 380px;
-  /* height: 635px; */
-  margin: 0.9rem;
+  flex-direction: column;
+  flex-wrap: wrap;
+  /*TODO: consider using flex-direction: column; for mobile resolutions;*/
 }
 
 .tile-content-wrapper {
+  max-width: 380px;
+  margin: 0.5rem;
   background-color: #ffffff;
-  padding: 1.2rem 2.2rem;
-}
-
-/* .width-limiter .tile:first-child {
-  margin-left: 0px;
-} */
-
-/* .width-limiter .tile:last-child {
-  margin-right: 0px;
-} */
-
-.descr {
-  font-size: 0.8rem;
-  margin-top: 0.8rem;
-  margin-bottom: 0.8rem;
-  line-height: 1.5rem;
+  padding: .8rem .8rem;
 }
 
 .plan-price {
   display: flex;
   justify-content: space-between;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .price {
-  font-size: 2.571rem;
+  font-size: 1.953rem;
   font-weight: 300;
+  margin: 0;
 }
 
 .bruttonetto {
-  font-size: 1.286rem;
+  font-size: 0.8rem;
   text-align: right;
-  margin-top: 0;
-  margin-bottom: 0.5rem;
+}
+
+.descr {
+  font-size: 0.8rem;
+}
+
+.czas-trwania {
+  font-size: 1.25rem;
+  margin: 0;
 }
 
 .tile ul {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  list-style-type: none;
 }
 
 .tile ul li {
-  font-size: 1rem;
+  font-size: 0.8rem;
+  line-height: 160%;
+
   font-weight: 400;
   font-style: normal;
-
   margin: 0;
-  padding: 0.5rem 0 0.5rem 1.3rem;
+  padding: 0.2rem 0 0.2rem 1.1rem;
   list-style: url('../img/li-dot.svg') inside;
 }
 
+details {
+  max-width: 1000px;
+  font-size: 0.8rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+details[open] {
+  padding: 0.5rem;
+
+}
+
+details[open] summary {
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
 .opis {
+  font-size: 0.8rem;
   line-height: 160%;
+  margin:1rem;
+  margin-bottom: 1rem;
+  text-align: center;
 }
 
 .rules-title {
-  margin-top: 1.5rem;
-  margin-bottom: 2rem;
+  margin: 1.5rem 1rem 2rem 1rem;
+  text-align: center;
 }
 
 .question-contact {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+/* Landscape phones and down */
+@media (min-width: 480px) {
+  
+}
+
+/* Landscape phone to portrait tablet */
+@media (min-width: 767px) {
+  .tiles-container {
+    margin: 2rem 0 1rem 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .tile {
+    width: 380px;
+    margin: 0.9rem;
+  }
+  
+  .tile-content-wrapper {
+    padding: 1.2rem 2.2rem;
+  }
+
+  .price {
+    font-size: 1.953rem;
+  }
+  
+  .bruttonetto {
+    font-size: 1.286rem;
+    text-align: right;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+  }
+  
+  .tile ul {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .tile ul li {
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: normal;
+  
+    margin: 0;
+    padding: 0.5rem 0 0.5rem 1.3rem;
+    list-style: url('../img/li-dot.svg') inside;
+  }
+  
+
+  
+  .rules-title {
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .question-contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 979px) {
+
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+  .szkolenia {
+    background: linear-gradient(#ffffff, #d5d5d5);
+    width: 100%;
+  }
+  
+  .tiles-container {
+    margin: 2rem 0 2rem 0;
+    /*TODO: consider using flex-direction: column; for mobile resolutions;*/
+  }
+  
+  .tile-content-wraper {
+    margin: 1.2rem;
+    padding: 2.2rem 2.2rem;
+  }
+  
+  .price {
+    font-size: 2.441rem;
+    font-weight: 300;
+  }
+
+  .bruttonetto {
+    font-size: 1rem;
+    text-align: right;
+  }
+
+  .descr {
+    font-size: 1rem;
+  }
+  
+  .czas-trwania {
+    font-size: 1.563rem;
+    margin: 0;
+  }
+  
+  .tile ul {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    list-style-type: none;
+  }
+  
+  .tile ul li {
+    font-size: 1rem;
+    line-height: 160%;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0.5rem 0 0.5rem 1.3rem;
+    list-style: url('../img/li-dot.svg') inside;
+  }
+  
+  details {
+    max-width: 1000px;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  details[open] {
+    padding: 0.5rem;
+  
+  }
+  
+  details[open] summary {
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .opis {
+    font-size: 1rem;
+    line-height: 160%;
+    margin:1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .rules-title {
+    margin: 1.5rem 1rem 2rem 1rem;
+    text-align: center;
+  }
+  
+  .question-contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+  }
 }
 
 /* ------------------------------------------------ */
@@ -169,23 +393,30 @@ body {
   background-image: url(../../img/section-yt-01tiny.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: bottom left;
+  background-position: -16em;
   background-color: #d9d9d9;
-  min-height: 800px;
-  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  /* align-items: flex-start;
+  align-content: flex-start; */
+  padding: 1rem;
 }
 
-.yt {
-  /* width: 300px; */
-  position: absolute;
-  left: 60%;
-  top: 25%;
+.youtube .hero-text-box {
+  margin: 0;
 }
 
-.yt h1 {
+.youtube .hero-text-box h1 {
+  max-width: 200px;
+  font-size: 3em;
   color: #fff;
   text-align: left;
+
 }
+
 
 .video {
   position: absolute;
@@ -194,6 +425,12 @@ body {
   min-width: 100%;
   min-height: 100%;
 }
+
+.cta-yt {
+  width: 200px;
+  margin: 1em;
+}
+
 
 /* ------------------------------------------------ */
 /* SEKCJA "ZOSTAŃ MODELKĄ" */
@@ -204,18 +441,23 @@ body {
   background-image: url(../../img/zostanmodelka-01tiny2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: bottom left;
+  background-position: -200px;
   background-color: #d9d9d9;
-  min-height: 800px;
-  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  /* align-items: flex-start;
+  align-content: flex-start; */
+  padding: 1rem;
 }
 
 .modelka p {
   color: #fff;
   font-size: 1.5rem;
   font-weight: 200;
-  margin-top: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 /* ------------------------------------------------ */

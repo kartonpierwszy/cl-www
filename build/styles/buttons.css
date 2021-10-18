@@ -4,6 +4,14 @@
   background-color: #5d5d5d;
 }
 
+header .frames-btn {
+  opacity: 60%;
+}
+
+/* header .frames-btn:hover {
+  opacity: 0;
+} */
+
 .border-top {
   position: absolute;
   top: 0;
@@ -83,27 +91,31 @@
   background-color: #ffffff;
 }
 
-.hero-text-box a {
+.hero-text-box .btn a {
   color: #fff;
-  font-weight: 200;
-}
-.hero-text-box .btn {
-  margin: 20px 20px 20px 0px;
-}
-
-.modelka a {
-  font-weight: 200;
-  color: #ffffff;
+  font-weight: 100;
+  letter-spacing: .2em;
 }
 
 .btn {
   display: flex;
   position: relative;
   flex-wrap: wrap;
-  height: 50px;
+  height: 40px;
   margin: 0 1rem 1rem 1rem;
   text-transform: uppercase;
   /* padding: 1em 3em 1em 3em; */
+}
+
+.btn-sz {
+  font-size: 0.8em;
+  text-align: center;
+
+}
+
+.modelka a {
+  font-weight: 200;
+  color: #ffffff;
 }
 
 .modelka .btn {
@@ -112,28 +124,10 @@
 
 .btn-space-x {
   padding: 0rem 3rem 0rem 3rem;
-  /* letter-spacing: 0.281rem; */
 }
 
-/* .button-content {
-  padding: 0 4rem 0 4rem;
-} */
-
-/* ------------------------------------------------ */
-/* Szkolenia szkolenia */
-/* ------------------------------------------------ */
-
-/* .btn-sz {
-  margin-left: 20px;
-} */
-
-/* .btn-h {
-  min-width: 350px;
-  max-width: 490px;
-} */
-
 .button-content {
-  font-size: 1rem;
+  font-size: 0.8em;
 }
 
 .tiles-container .button-content {
@@ -150,4 +144,45 @@
 .btn-s .button-content {
   text-transform: uppercase;
   letter-spacing: 25%;
+}
+
+
+/* Landscape phones and down */
+@media (min-width: 480px) {
+  .btn-sz .button-content{
+    font-size: 1rem;
+  }
+}
+
+/* Landscape phone to portrait tablet */
+@media (min-width: 840px) {
+  .btn {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    height: 50px;
+    margin: 0 1rem 1rem 1rem;
+    text-transform: uppercase;
+    /* padding: 1em 3em 1em 3em; */
+  }
+
+  .hero-text-box .btn a {
+    color: #fff;
+    font-weight: 100;
+    letter-spacing: .2em;
+  }
+
+  .button-content {
+    font-size: 1em;
+  }
+  
+  .btn-sz .button-content{
+    font-size: 1.2rem;
+  }
+}
+
+
+/* Large desktop */
+@media (min-width: 1200px) {
+  
 }
