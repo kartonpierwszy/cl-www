@@ -1,6 +1,6 @@
 header {
   min-height: 100vh;
-  background-image: url(../../img/header-1-filter.jpg);
+  background-image: url(../../img/header-1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-repeat: no-repeat;
@@ -87,7 +87,7 @@ header {
   .code-price {
     font-size: 1em;
     text-align: right;
-margin-right: 3em;
+    margin-right: 3em;
   }
 }
 
@@ -230,7 +230,7 @@ header .hero-text-box h1 {
   max-width: 200px;
   font-size: 1.8em;
   font-weight: 100;
-  color: #fff;
+  color: #5d5d5d;
   text-align: left;
   margin: 1em;
 
@@ -266,7 +266,7 @@ header .hero-text-box h1 {
   
   header .hero-text-box h1 {
     max-width: 600px;
-    font-size: 3em;
+    font-size: 4.209em;
     margin-left: 0.5em;
   }
 }

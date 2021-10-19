@@ -80,9 +80,8 @@ body {
 /* ------------------------------------------------ */
 /* SEKCJA "O NAS" */
 /* ------------------------------------------------ */
-.o-nas {
+/* .o-nas {
   background: linear-gradient(#ffffff, #d5d5d5);
-  /* max-height: 500px; */
   height: 100vh;
 }
 .col-container {
@@ -92,18 +91,20 @@ body {
   align-items: flex-start;
   align-content: flex-start;
   
-}
+} */
+
+/* 
 .col-1-od-2 {
   width: 100px;
-  /* display: flex;
+  display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  flex-wrap: wrap; */
+  flex-wrap: wrap; 
 }
 .col-2-of-2 {
 
-}
+}*/
 
 .o-nas-logo {
   height: 40px;
@@ -130,7 +131,6 @@ body {
 }
 
 .tiles-container {
-  margin: 1rem 0 1rem 0;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -141,7 +141,7 @@ body {
   max-width: 380px;
   margin: 0.5rem;
   background-color: #ffffff;
-  padding: .8rem .8rem;
+  padding: 1rem 1rem;
 }
 
 .plan-price {
@@ -167,24 +167,22 @@ body {
 }
 
 .czas-trwania {
-  font-size: 1.25rem;
-  margin: 0;
+  font-size: 1rem;
 }
 
 .tile ul {
-  margin-top: 1rem;
-  margin-bottom: 1.5rem;
-  list-style-type: none;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  /* list-style-type: disc; */
 }
 
 .tile ul li {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   line-height: 160%;
-
   font-weight: 400;
   font-style: normal;
-  margin: 0;
-  padding: 0.2rem 0 0.2rem 1.1rem;
+  margin: 0.3rem;
+  /* padding: 0.2rem 0 0.2rem .1rem; */
   list-style: url('../img/li-dot.svg') inside;
 }
 
@@ -227,66 +225,98 @@ details[open] summary {
 }
 
 /* Landscape phones and down */
-@media (min-width: 480px) {
+/* @media (min-width: 480px) {
   
-}
+} */
 
 /* Landscape phone to portrait tablet */
-@media (min-width: 767px) {
+@media (min-width: 440px) {
   .tiles-container {
-    margin: 2rem 0 1rem 0;
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
   }
-
-  .tile {
-    width: 380px;
-    margin: 0.9rem;
-  }
-  
   .tile-content-wrapper {
-    padding: 1.2rem 2.2rem;
-  }
+    margin: .5rem;
 
-  .price {
+  }
+ 
+  
+  /* .price {
     font-size: 1.953rem;
-  }
+    font-weight: 300;
+    margin: 0;
+  } */
   
-  .bruttonetto {
-    font-size: 1.286rem;
+  /* .bruttonetto {
+    font-size: 0.8rem;
     text-align: right;
-    margin-top: 0;
-    margin-bottom: 0.5rem;
-  }
+  } */
   
-  .tile ul {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-  }
+  /* .descr {
+    font-size: 0.8rem;
+  } */
+  
+  /* .czas-trwania {
+    font-size: 1rem;
+  } */
+  
+  /* .tile ul {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  } */
   
   .tile ul li {
-    font-size: 1rem;
+    font-size: 0.7rem;
+    line-height: 160%;
     font-weight: 400;
     font-style: normal;
-  
-    margin: 0;
-    padding: 0.5rem 0 0.5rem 1.3rem;
+    margin: 0.3rem;
+    /* padding: 0.2rem 0 0.2rem .1rem; */
     list-style: url('../img/li-dot.svg') inside;
   }
   
 
+  .tile ul li::marker {
+  font-size: .7rem;
+  }
+  
+  details {
+    max-width: 1000px;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  details[open] {
+    padding: 0.5rem;
+  
+  }
+  
+  details[open] summary {
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .opis {
+    font-size: 1rem;
+    line-height: 160%;
+    margin:1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
   
   .rules-title {
-    margin-top: 1.5rem;
-    margin-bottom: 2rem;
+    margin: 1.5rem 1rem 2rem 1rem;
+    text-align: center;
   }
   
   .question-contact {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-top: 2rem;
     margin-bottom: 2rem;
+    font-size: 1rem;
   }
 }
 
@@ -297,20 +327,21 @@ details[open] summary {
 
 /* Large desktop */
 @media (min-width: 1200px) {
-  .szkolenia {
-    background: linear-gradient(#ffffff, #d5d5d5);
-    width: 100%;
-  }
+
   
   .tiles-container {
-    margin: 2rem 0 2rem 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     /*TODO: consider using flex-direction: column; for mobile resolutions;*/
   }
   
-  .tile-content-wraper {
-    margin: 1.2rem;
-    padding: 2.2rem 2.2rem;
+  .tile-content-wrapper {
+    max-width: 380px;
+    margin: 1.5rem;
+
   }
+
   
   .price {
     font-size: 2.441rem;
@@ -323,28 +354,38 @@ details[open] summary {
   }
 
   .descr {
-    font-size: 1rem;
+    font-size: 0.8rem;
+    line-height: 190%;
   }
   
   .czas-trwania {
-    font-size: 1.563rem;
+    font-size: 1rem;
     margin: 0;
   }
   
   .tile ul {
-    margin-top: 1rem;
-    margin-bottom: 1.5rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
     list-style-type: none;
+    list-style: url('../img/li-dot.svg') inside;
+
   }
   
   .tile ul li {
-    font-size: 1rem;
+    font-size: 0.8rem;
     line-height: 160%;
     font-weight: 400;
     font-style: normal;
     margin: 0;
-    padding: 0.5rem 0 0.5rem 1.3rem;
-    list-style: url('../img/li-dot.svg') inside;
+    padding: 0 0 0 1rem;
+    /* background-image: url('../img/li-dot.svg');
+  background-size: 5px;;
+  background-repeat: no-repeat;
+  margin-left: 0; */
+  }
+
+  .tile ul li::marker {
+  font-size: .7rem;
   }
   
   details {

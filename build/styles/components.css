@@ -86,9 +86,12 @@ small, .text_small {font-size: 0.8rem;}
     text-align: center;
   }
 
-  h2 {font-size: 3.157rem;}
+  /* h2 {font-size: 3.157rem;} */
 
-  /* h2 {font-size: 2.369em;} */
+  h2 {
+    font-size: 2.369em;
+    margin-top: 1.2rem;
+  }
 
   h3 {font-size: 1.777em;}
 
@@ -116,9 +119,6 @@ small, .text_small {font-size: 0.8rem;}
   text-align: left;
 }
 
-/* .height-limiter {
-  min-height: 100%;
-} */
 
 .zawijanie {
   display: flex;
