@@ -5,101 +5,6 @@ Color: 5D5D5D; dark grey
 
 
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,100');
-
-html {font-size: 100%;} /*16px*/
-
-body {
-  background: #5d5d5d;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
-  line-height: 1.75;
-  color: #000000;
-}
-
-p {margin-bottom: .6rem;}
-
-h1, h2, h3, h4, h5 {
-  margin: 0 0 1.38rem;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 100;
-  line-height: 1.3;
-}
-
-h1 {
-  margin-top: 1rem;
-  font-size: 3.052rem;
-}
-
-h2 {font-size: 2.441rem;}
-
-h3 {font-size: 1.953rem;}
-
-h4 {font-size: 1.563rem;}
-
-h5 {font-size: 1.25rem;}
-
-small, .text_small {font-size: 0.8rem;}
-
-
-/* Landscape phones and down */
-@media (min-width: 480px) {
- 
-}
-
-/* Landscape phone to portrait tablet */
-@media (min-width: 767px) {
-  
-}
-
-/* Portrait tablet to landscape and desktop */
-@media (min-width: 768px) and (max-width: 979px) {
-
-}
-
-/* Large desktop */
-@media (min-width: 1200px) {
-  html {font-size: 100%;} /*16px*/
-
-  body {
-    background: white;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    line-height: 1.75;
-    color: #000000;
-  }
-
-  p {margin-bottom: 1rem;}
-
-  h1, h2, h3, h4, h5 {
-   
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 100;
-    line-height: 1.3;
-  }
-
-
-  h1 {
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    font-size: 4.209rem;
-    text-align: center;
-  }
-
-  /* h2 {font-size: 3.157rem;} */
-
-  h2 {
-    font-size: 2.369em;
-    margin-top: 1.2rem;
-  }
-
-  h3 {font-size: 1.777em;}
-
-  h4 {font-size: 1.333em;}
-
-  small, .text_small {font-size: 0.75rem;}
-
-}
 
 /* ----------------------------------------------- */
 /* REUSABLE COMPONENTS */
@@ -135,14 +40,16 @@ small, .text_small {font-size: 0.8rem;}
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  align-content: center;
   padding: 0;
 }
 
 .center-vertical {
   display: flex;
-  flex-direction: col;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  align-content: center;
   padding: 0;
 }
 
@@ -206,7 +113,7 @@ ul {
 /* ------ ICON ------ */
 
 .logo {
-  height: 50px;
+  height: 3rem;
   margin: 1em;;
   float: left;
 }
@@ -222,36 +129,34 @@ ul {
 
 /* --- MEDIA QUERIES --- */
 
-
 /* Landscape phones and down */
-@media (min-width: 480px) {
+@media (min-width: 481px) {
   .logo {
     height: 60px;
   }
 }
 
 /* Landscape phone to portrait tablet */
-@media (min-width: 840px) {
+@media (min-width: 769px) {
   .logo {
     height: 80px;
-    background
+
   }
 }
 
 /* Portrait tablet to landscape and desktop */
-@media (min-width: 979px) {
+@media (min-width: 1025px) {
   .logo {
     height: 100px;
-    background
   }
 }
 
-/* Large desktop */
-@media (min-width: 1200px) {
+/* XLarge screen */
+@media (min-width: 1201px) {
   .logo {
     height: 125px;
   }
 }
-
+/* --- END MEDIA QUERIES --- *
 
 
