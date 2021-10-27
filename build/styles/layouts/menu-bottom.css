@@ -28,9 +28,9 @@ nav {
   background-color: rgba(255, 255, 255);
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
   height: 20vh;
-  padding: 2em;
+  padding: 1em;
   position: relative;
 }
 
@@ -46,6 +46,12 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  transform: translate(100%);
+  transition: 0.3s ease-in-out;
+}
+
+ul.active {
+  transform: translate(0%);
 }
 
 a {
@@ -53,7 +59,7 @@ a {
   font-size: 1rem;
   font-weight: 400;
   position: relative;
-  padding: 0.1em;
+  padding: 0em;
   color: var(--dark-grey);
   letter-spacing: 2px;
 }
@@ -61,12 +67,12 @@ a {
 a::after {
   content: '';
   position: absolute;
-  bottom: o;
+  bottom: 0;
   left: 0;
   width: 0%;
   background-color: var(--dark-grey);
   height: 0.15em;
-  border-radius: 10px;
+  border-radius: 0;
   transition: 0.3s ease-in-out;
 }
 
@@ -82,6 +88,26 @@ a:hover::after {
   outline: none;
   cursor: pointer;
   display: block;
+}
+
+.burger.active .line:first-child {
+  -webkit-transform: rotate(45deg) translateX(9px) translateY(10px);
+  -moz-transform: rotate(45deg) translateX(9px) translateY(10px);
+  -o-transform: rotate(45deg) translateX(9px) translateY(10px);
+  transform: rotate(45deg) translateX(9px) translateY(10px);
+}
+
+.burger.active .line:nth-child(2) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+.burger.active .line:nth-child(3) {
+  -webkit-transform: rotate(-45deg) translateX(9px) translateY(-10px);
+  -moz-transform: rotate(-45deg) translateX(9px) translateY(-10px);
+  -o-transform: rotate(-45deg) translateX(9px) translateY(-10px);
+  transform: rotate(-45deg) translateX(9px) translateY(-10px);
 }
 
 .line {
@@ -123,24 +149,15 @@ a:hover::after {
   a::after {
     content: '';
     position: absolute;
-    bottom: o;
+    bottom: 0;
     left: 0;
     width: 0%;
     background-color: var(--dark-grey);
-    height: 0.15em;
+    height: 0.15rem;
+    border-radius: 5px;
+em;
     border-radius: 10px;
-    transition: 0.3s ease-in-out;
-  }
-
-  a:hover::after {
-    width: 100%;
-  }
-
-  /* Burger styling */
-
-  .burger {
-    background: transparent;
-    border: none;
+e;
     outline: none;
     cursor: pointer;
     display: none;

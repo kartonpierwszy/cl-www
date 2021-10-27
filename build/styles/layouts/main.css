@@ -39,29 +39,32 @@ Color: 5D5D5D; dark grey
 }
 
 :root {
-  --dark-grey:  #5d5d5d;
-  --lite-grey:  #9d9d9d;
+  --dark-grey: #5d5d5d;
+  --lite-grey: #9d9d9d;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,100');
 
 html {
-  font-size: 100%;  /*16px*/
+  font-size: 100%; /*16px*/
   overflow-x: hidden;
 }
-
 
 body {
   background: #fff;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   line-height: 1.75;
-  color: #000000;
+  color: #5d5d5d;
 }
 
 /* p {margin-bottom: .6rem;} */
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   margin: 1rem 0 1rem 0;
   font-family: 'Montserrat', sans-serif;
   font-weight: 100;
@@ -74,39 +77,54 @@ h1, h2, h3, h4, h5 {
   font-size: 3.052rem;
 } */
 
-h1 {font-size: 2.441rem;}
+h1 {
+  font-size: 2.441rem;
+}
 
-h2 {font-size: 1.953rem;}
+h2 {
+  font-size: 1.953rem;
+}
 
-h3 {font-size: 1.563rem;}
+h3 {
+  font-size: 1.563rem;
+}
 
-h4 {font-size: 1.25rem;}
+h4 {
+  font-size: 1.25rem;
+}
 
-small, .text_small {font-size: 0.8rem;}
-
+small,
+.text_small {
+  font-size: 0.8rem;
+}
 
 /* --- MEDIA QUERIES --- */
 
 /* Landscape phones and down */
 @media (min-width: 481px) {
-  
 }
 
 /* Landscape phone to portrait tablet */
 @media (min-width: 769px) {
-  
 }
 
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 1025px) {
-
-  h1, h2, h3, h4, h5 {
-   
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 100;
     line-height: 1.3;
   }
 
+  h3,
+  h4,
+  h5 {
+    font-weight: 400;
+  }
 
   h1 {
     margin-top: 2rem;
@@ -122,25 +140,31 @@ small, .text_small {font-size: 0.8rem;}
     margin-top: 1.2rem;
   }
 
-  h3 {font-size: 1.777em;}
+  h3 {
+    font-size: 1.777em;
+  }
 
-  h4 {font-size: 1.333em;}
+  h4 {
+    font-size: 1.333em;
+  }
 
-  small, .text_small {font-size: 0.75rem;}
-
-}
+  small,
+  .text_small {
+    font-size: 0.75rem;
+  }
 }
 
 /* XLarge screen */
 @media (min-width: 1201px) {
-
-  h1, h2, h3, h4, h5 {
-   
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 100;
     line-height: 1.3;
   }
-
 
   h1 {
     margin-top: 2rem;
@@ -156,14 +180,19 @@ small, .text_small {font-size: 0.8rem;}
     margin-top: 1.2rem;
   }
 
-  h3 {font-size: 1.777em;}
+  h3 {
+    font-size: 1.777em;
+  }
 
-  h4 {font-size: 1.333em;}
+  h4 {
+    font-size: 1.333em;
+  }
 
-  small, .text_small {font-size: 0.75rem;}
-
+  small,
+  .text_small {
+    font-size: 0.75rem;
+  }
 }
-
 
 /* ------------------------------------------------ */
 /* SEKCJA "O NAS" */
@@ -274,18 +303,18 @@ small, .text_small {font-size: 0.8rem;}
   list-style: url('../img/li-dot.svg') inside;
 }
 
-details {
+.szkolenia .details {
   max-width: 1000px;
   font-size: 0.8rem;
   text-align: center;
   padding: 1rem;
 }
 
-details[open] {
+.szkolenia .details[open] {
   padding: 0.5rem;
 }
 
-details[open] summary {
+.szkolenia .details[open] summary {
   padding: 0.5rem;
   margin-bottom: 0.5rem;
 }
@@ -298,7 +327,7 @@ details[open] summary {
   text-align: center;
 }
 
-.rules-title {
+.szkolenia .rules-title {
   margin: 1.5rem 1rem 2rem 1rem;
   text-align: center;
 }
@@ -368,22 +397,22 @@ details[open] summary {
     font-size: 0.7rem;
   }
 
-  details {
+  .szkolenia details {
     max-width: 1000px;
     text-align: center;
     padding: 1rem;
   }
 
-  details[open] {
+  .szkolenia details[open] {
     padding: 0.5rem;
   }
 
-  details[open] summary {
+  .szkolenia details[open] summary {
     padding: 0.5rem;
     margin-bottom: 0.5rem;
   }
 
-  .opis {
+  .szkolenia .opis {
     font-size: 1rem;
     line-height: 160%;
     margin: 1rem;
@@ -391,7 +420,7 @@ details[open] summary {
     text-align: center;
   }
 
-  .rules-title {
+  .szkolenia .rules-title {
     margin: 1.5rem 1rem 2rem 1rem;
     text-align: center;
   }
@@ -473,17 +502,17 @@ details[open] summary {
     font-size: 0.7rem;
   }
 
-  details {
+  .szkolenia details {
     max-width: 1000px;
     text-align: center;
     padding: 1rem;
   }
 
-  details[open] {
+  .szkolenia details[open] {
     padding: 0.5rem;
   }
 
-  details[open] summary {
+  .szkolenia details[open] summary {
     padding: 0.5rem;
     margin-bottom: 0.5rem;
   }
@@ -730,7 +759,6 @@ footer hr {
   border-right: 0;
   margin-top: 1rem;
   margin-bottom: 10px;
-
 }
 footer h3 {
   font-size: 1rem;
@@ -745,6 +773,7 @@ footer p {
   font-size: 0.9rem;
   font-weight: 500;
   line-height: 1.2rem;
+  line-height: 180%;
 }
 
 footer .logo {
@@ -759,10 +788,7 @@ footer {
   text-align: left;
 }
 
-
-
 .footer-tile-container {
-
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -775,7 +801,7 @@ footer {
   width: 80%;
   max-width: 320px;
   height: 100%;
-} 
+}
 
 .footer-tile:first-child {
   width: 160px;
@@ -828,8 +854,6 @@ footer {
   margin-top: 1rem;
 } */
 
-
-
 /* --- MEDIA QUERIES --- */
 
 /* Landscape phones and down */
@@ -849,7 +873,11 @@ footer {
   .footer-tile {
     width: 320px;
     margin: 1rem;
-  } 
+  }
+
+  .link-tile {
+    width: auto;
+  }
 }
 
 /* Landscape phone to portrait tablet */
