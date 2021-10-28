@@ -1,0 +1,118 @@
+header {
+  background-color: #d9d9d9;
+}
+
+/* ------------------------------------------------ */
+/* NAV TOP BAR */
+/* ------------------------------------------------ */
+
+.nav-top {
+  background-color: #d9d9d9;
+  opacity: 80%;
+  min-height: 40px;
+}
+
+.nav-top p {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* TEXT CODE-PRICE IN TOP BAR */
+.code-price {
+  font-size: 1rem;
+  text-align: center;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.code-price a {
+  font-weight: 600;
+}
+
+.code-price a:hover {
+  color: #ffffff;
+}
+
+/* SOCIAL MEDIA LINKS */
+.nav-top-ul {
+  list-style: none;
+  margin: 5px;
+  display: flex;
+  /* justify-content: flex-end; */
+  flex-wrap: wrap;
+}
+.nav-top-ul li {
+  margin: 0px 5px 0px 5px;
+}
+
+/* ------------------------------------------------ */
+/* NAV BOTTOM BAR */
+/* ------------------------------------------------ */
+
+.nav-bottom {
+  background-color: #ffffff;
+  /* opacity: 80%; */
+  min-height: 145px;
+}
+
+/* @media screen and (max-width: 90px) {
+    .nav-bottom-ul {
+      display: flex;
+      flex-direction: column;
+    }
+  } */
+
+/* MAIN NAV BAR ON THE RIGHT SIDE */
+
+.nav-bottom-ul {
+  max-width: 880px;
+  /* display: block; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: flex-end;
+  font-size: 1rem;
+  line-height: 200%;
+}
+
+.nav-bottom-ul li {
+  text-transform: uppercase;
+  list-style: none;
+  line-height: 1.2rem;
+  padding: 10px 20px 10px 20px;
+}
+
+.nav-bottom-ul li:hover {
+  background-color: #d9d9d9;
+  transition: background 0.3s;
+}
+
+.nav-bottom-ul li:last-child {
+  margin-right: 0px;
+}
+
+/* SUBMENU */
+.submenu {
+  position: absolute;
+  width: 400px;
+  display: none;
+  margin-top: 10px;
+}
+
+.submenu li {
+  text-transform: capitalize;
+}
+
+/* SHOW MENU ON HOVER */
+
+.nav-bottom-ul li:hover > .submenu {
+  transition: background 0.3s;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+}
+
+.nav-bottom-ul .submenu a:hover {
+  background-color: #d9d9d9;
+  transition: background 0.3s;
+}

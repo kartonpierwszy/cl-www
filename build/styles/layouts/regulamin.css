@@ -120,11 +120,14 @@ hr {
 /* ------------------------------------------------ */
 
 .gallery {
-  margin: 40px;
-  max-height: 300px;
-  /* overflow-y: hidden; */
+  display: flex;
+  justify-content: space-between;
+  /* margin: 40px; */
+
+  /* min-height: 606px; */
 }
+
 .gallery img {
-  height: auto;
+  width: 400px;
   margin: 20px;
 }

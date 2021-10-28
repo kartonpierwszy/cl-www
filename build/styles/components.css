@@ -95,9 +95,10 @@ a:visited {
 
 a:hover,
 a:active {
-  color: #2d2d2d;
+  color: #1d1d1d;
   -webkit-transition: color 0.2s, color 0.2s;
   transition: color 0.2s, color 0.5s;
+  font-weight: 500;
 }
 
 /* ------ OL Ul Li style ------ */

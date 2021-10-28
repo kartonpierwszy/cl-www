@@ -66,7 +66,7 @@
 }
 
 .btn {
-  background-color: rgb(255, 255, 255, 0.4);
+  /* background-color: rgb(255, 255, 255, 0.4); */
   position: relative;
   flex-wrap: wrap;
   height: 40px;
@@ -80,6 +80,10 @@
   color: #5d5d5d;
   font-weight: 500;
   letter-spacing: 0.2rem;
+}
+
+.button-content-white a {
+  color: rgb(255, 255, 255);
 }
 
 .btn-space-x {
@@ -148,7 +152,7 @@
 /* Szkolenia szablon 1 */
 /* ------------------------------------------------ */
 .btn-s {
-  width: 400px;
+  width: 350px;
 }
 
 .btn-s .button-content {

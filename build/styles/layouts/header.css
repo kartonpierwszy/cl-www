@@ -1,6 +1,6 @@
 header {
   min-height: 100vh;
-  background-image: url(../../img/header-1.jpg);
+  background-image: url(../../img/header-1-dark.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom left 30%;
@@ -231,8 +231,9 @@ header .hero-text-box h1 {
   max-width: 200px;
   font-size: 1.8em;
   font-weight: 200;
-  color: #5d5d5d;
+  color: rgb(255, 255, 255);
   text-align: left;
+  text-transform: uppercase;
   margin-left: 1rem;
 }
 
