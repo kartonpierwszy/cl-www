@@ -93,19 +93,24 @@
           </div>
         </div>
       </div>
-      <nav>
-        <div class="nav-bottom center-horizontal">
-          <div class="width-limiter space-between">
-            <div>
-              <img
-                src="img/logo-cookielookie.svg"
-                href="https://cookielookie.pl"
-                alt="cookielookie.pl"
-                class="logo"
-              />
-            </div>
+      <!-- <nav> -->
+      <div class="nav-bottom center-horizontal">
+        <div class="width-limiter space-between">
+          <nav>
+            <img
+              src="img/logo-cookielookie.svg"
+              href="https://cookielookie.pl"
+              alt="logo cookielookie"
+              class="logo"
+            />
 
-            <ul class="active">
+            <button class="hamburger" id="hamburger">
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+            </button>
+
+            <ul class="nav-ul" id="nav-ul">
               <li><a href="index.html#section-o-nas">O&nbsp;nas</a></li>
               <li>
                 <a href="index.html#section-szkolenia">Szkolenia</a>
@@ -113,10 +118,6 @@
                   <li>
                     <a href="gob-basic.html">Szkolenia z pigmentacji brwi</a>
                   </li>
-                  <!-- <li>
-                    <a href="gob-basic.html">Galaxy Ombre Brows</a>
-                  </li>
-                  <li><a href="gob-booster.html">Booster</a></li> -->
                   <li>
                     <a href="wpl-basic.html">Szkolenia z pigmentacji ust</a>
                   </li>
@@ -144,15 +145,10 @@
               <li><a href="regulamin.html">Regulamin</a></li>
               <li><a href="kontakt.html">Kontakt</a></li>
             </ul>
-
-            <!-- <button class="burger">
-              <div class="line"></div>
-              <div class="line"></div>
-              <div class="line"></div>
-            </button> -->
-          </div>
+          </nav>
         </div>
-      </nav>
+      </div>
+      <!-- </nav> -->
       <div>
         <div class="center-horizontal">
           <div class="hero-text-box width-limiter">
@@ -713,8 +709,14 @@
       </div>
     </footer>
 
-    <!-- SCRIPTS -->
-    <script src="script/scripts.js" async></script>
+    <script>
+      const hamburger = document.getElementById('hamburger');
+      const navUL = document.getElementById('nav-ul');
+
+      hamburger.addEventListener('click', () => {
+        navUL.classList.toggle('show');
+      });
+    </script>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
     <!-- Swiper JS -->

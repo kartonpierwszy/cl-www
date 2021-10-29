@@ -297,7 +297,7 @@ small,
   font-style: normal;
   margin: 0.3rem;
   /* padding: 0.2rem 0 0.2rem .1rem; */
-  list-style: url('../img/li-dot.svg') inside;
+  list-style: url('/img/li-dot.svg') inside;
 }
 
 .szkolenia .details {
