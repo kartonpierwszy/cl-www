@@ -1,3 +1,7 @@
+h3 {
+  text-align: left;
+}
+
 header {
   min-height: 725px;
   background-image: url(../../img/szkolenie-header-2-60tiny.jpg);
