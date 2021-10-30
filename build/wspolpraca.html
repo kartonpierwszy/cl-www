@@ -74,32 +74,37 @@
           </div>
         </div>
       </div>
-      <nav>
-        <div class="nav-bottom center-horizontal">
-          <div class="width-limiter space-between">
-            <div class="nav-bottom-left center-horizontal">
-              <img
-                src="img/logo-cookielookie.svg"
-                href="https://cookielookie.pl"
-                alt="cookielookie.pl"
-                class="logo"
-              />
-            </div>
-            <ul class="nav-bottom-ul">
-              <li><a href="index.html#section-o-nas">O nas</a></li>
+      <!-- <nav> -->
+      <div class="nav-bottom center-horizontal">
+        <div class="width-limiter space-between">
+          <nav>
+            <img
+              src="img/logo-cookielookie.svg"
+              href="https://cookielookie.pl"
+              alt="logo cookielookie"
+              class="logo"
+            />
+
+            <button class="hamburger" id="hamburger">
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+            </button>
+
+            <ul class="nav-ul" id="nav-ul">
+              <li><a href="index.html#section-o-nas">O&nbsp;nas</a></li>
               <li>
                 <a href="index.html#section-szkolenia">Szkolenia</a>
                 <ul class="submenu">
                   <li>
-                    <a href="gob-basic.html">Galaxy Ombre Brows</a>
+                    <a href="gob-basic.html">Szkolenia z pigmentacji brwi</a>
                   </li>
-                  <li><a href="gob-booster.html">Booster</a></li>
                   <li>
-                    <a href="wpl-masterclass.html"
-                      >Aquarelle & Waterproof Lipstick</a
-                    >
+                    <a href="wpl-basic.html">Szkolenia z pigmentacji ust</a>
                   </li>
-                  <li><a href="warsztaty-pokazowe">Warsztaty pokazowe</a></li>
+                  <li>
+                    <a href="warsztaty-pokazowe.html">Warsztaty pokazowe</a>
+                  </li>
                   <li><a href="dla-modelki.html">Wymagania dla modelki</a></li>
                   <li><a href="qanda-szkolenia.html">Q&A</a></li>
                 </ul>
@@ -112,7 +117,7 @@
                       >Przeczytaj przed zabiegiem</a
                     >
                   </li>
-                  <li><a href="#">Zalecenia po zabiegu</a></li>
+                  <li><a href="po-zabiegu.html">Zalecenia po zabiegu</a></li>
                   <li><a href="qanda-zabiegi.html">Q&A</a></li>
                 </ul>
               </li>
@@ -121,9 +126,10 @@
               <li><a href="regulamin.html">Regulamin</a></li>
               <li><a href="kontakt.html">Kontakt</a></li>
             </ul>
-          </div>
+          </nav>
         </div>
-      </nav>
+      </div>
+      <!-- </nav> -->
     </header>
     <section class="rules">
       <div class="center-horizontal">
@@ -144,17 +150,17 @@
       </div>
     </section>
 
-    <section class="gallery">
+    <!-- <section class="gallery">
       <div class="center-horizontal">
         <div class="width-limiter">
           <div class="space-between center-horizontal">
             <img src="img/quantum-01.jpeg" />
             <img src="img/quantum-02.jpeg" />
-            <!-- <img src="img/quantum-03.jpeg" /> -->
+            <img src="img/quantum-03.jpeg" />
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <section class="question">
       <div class="center-horizontal">
@@ -179,13 +185,17 @@
 
     <footer>
       <div class="center-horizontal">
-        <div class="footer-tile-container width-limiter zawijanie">
+        <div class="width-limiter footer-tile-container">
+          <div class="footer-tile center-horizontal">
+            <img src="img/logo-cookielookie.svg" class="logo" />
+          </div>
+
           <div class="footer-tile">
-            <h3>Salon Cookielookiepl Justyna Kryza</h3>
+            <h3 class="zawijanie">Salon Cookielookiepl</h3>
 
             <p>Ul. Wodzisławska 231</p>
             <p>44-240 Żory</p>
-            <h3>Kontakt</h3>
+            <!-- <h3>Kontakt</h3> -->
             <p>tel. 517 105 318</p>
             <p>e-mail: cookielookiepl@gmail.com</p>
 
@@ -217,8 +227,10 @@
               <li><a href="cennik.html"></a></li>
             </ul>
           </div>
-          <div class="footer-tile godziny-tile">
+
+          <div class="footer-tile">
             <h3>Godziny otwarcia</h3>
+
             <div class="godz-otwarcia zawijanie space-between">
               <p>Poniedziałek</p>
               <p>10:00 - 18:00</p>
@@ -240,20 +252,31 @@
               <p>10:00 - 18:00</p>
             </div>
           </div>
-          <div class="footer-tile">
+
+          <div class="footer-tile link-tile">
             <h3>Linki</h3>
-            <p><a href="mapa-strony.html">Mapa strony</a></p>
+
             <p><a href="regulamin.html">Regulamin</a></p>
+            <p><a href="mapa-strony.html">Mapa strony</a></p>
           </div>
         </div>
       </div>
+      <hr />
       <div class="copyrights">
-        <hr />
         <p>
           © 2021 <a href="https://cookielookie.pl">Cookielookiepl</a> Justyna
           Kryza. All rights reserved.
         </p>
       </div>
     </footer>
+
+    <script>
+      const hamburger = document.getElementById('hamburger');
+      const navUL = document.getElementById('nav-ul');
+
+      hamburger.addEventListener('click', () => {
+        navUL.classList.toggle('show');
+      });
+    </script>
   </body>
 </html>

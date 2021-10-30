@@ -54,6 +54,10 @@ Color: 5D5D5D; dark grey
   justify-content: space-between;
 }
 
+.space-around {
+  display: flex;
+  justify-content: space-around;
+}
 .relative-container {
   position: relative;
   top: 0;
