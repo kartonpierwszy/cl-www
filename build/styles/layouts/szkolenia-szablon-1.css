@@ -3,9 +3,11 @@ header {
   background-image: url(../../img/szkolenie-header-1-60tiny.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: bottom;
+  background-position: bottom left 60%;
+
   background-attachment: scroll;
   background-color: #d9d9d9;
+
   /* background-attachment: cover; */
 }
 /* HERO TEXT */
@@ -15,6 +17,7 @@ header {
   margin-top: 160px;
   color: #ffffff;
   text-transform: uppercase;
+  padding: 1em;
 }
 
 /* ------------------------------------------------ */
@@ -22,11 +25,7 @@ header {
 /* ------------------------------------------------ */
 .section-szkolenia {
   background-color: #e5e5e5;
-padding-top: 40px;
-  padding-bottom: 40px;
-  
-  /* padding-left: 20px;
-  padding-right: 20px; */
+  padding: 2em;
 }
 
 .opis-sz {
@@ -76,10 +75,9 @@ padding-top: 40px;
 .promo-szkolenia {
   background-color: #fff;
   font-size: 1.714rem;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin: 1em;
 }
-
 .promo-opis {
-  font-size: 1.714rem;
+  font-size: 1.25rem;
+  text-align: center;
 }

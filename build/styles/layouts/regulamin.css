@@ -1,44 +1,151 @@
+/* h1 {
+  font-size: 2.441rem;
+} */
+
+h1 {
+  font-size: 1.953rem;
+}
+
+h2 {
+  font-size: 1.563rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+small,
+.text_small {
+  font-size: 0.8rem;
+}
+
+/* --- MEDIA QUERIES --- */
+
+/* Landscape phones and down */
+@media (min-width: 481px) {
+}
+
+/* Landscape phone to portrait tablet */
+@media (min-width: 769px) {
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 1025px) {
+  h1,
+  h2 {
+    font-weight: 100;
+    line-height: 1.3;
+  }
+
+  h3,
+  h4,
+  h5 {
+    font-weight: 300;
+  }
+
+  h1 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 2.441rem;
+    text-align: center;
+  }
+
+  /* h2 {font-size: 3.157rem;} */
+
+  h2 {
+    font-size: 2.369em;
+    margin-top: 1.2rem;
+  }
+
+  h3 {
+    font-size: 1.777em;
+  }
+
+  h4 {
+    font-size: 1.333em;
+  }
+
+  small,
+  .text_small {
+    font-size: 0.75rem;
+  }
+}
+
+/* XLarge screen */
+@media (min-width: 1201px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    line-height: 1.3;
+  }
+
+  h1 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 4.209rem;
+    text-align: center;
+  }
+
+  /* h2 {font-size: 3.157rem;} */
+
+  h2 {
+    font-size: 2.369em;
+    margin-top: 1.2rem;
+  }
+
+  h3 {
+    font-size: 1.777em;
+  }
+
+  h4 {
+    font-size: 1.333em;
+  }
+
+  small,
+  .text_small {
+    font-size: 0.75rem;
+  }
+}
+
+/* END MEDIA QUERIES */
+
 /* ------------------------------------------------ */
 /* SECTION RULES */
 /* ------------------------------------------------ */
 
 .rules {
   background-color: #e5e5e5;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding: 1em;
   overflow-x: hidden;
 }
 
 .rules h1 {
-  font-size: 2.571rem;
-  font-weight: 500;
-  margin-top: 40px;
+  /* font-size: 2.4411rem; */
+  font-weight: 300;
+  margin-top: 1em;
   text-align: left;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 .rules ol {
   list-style-type: decimal;
-  margin-top: 4em;
+  margin-left: 1em;
 }
 
 .rules .rules-title {
-  margin: 0.5rem 1rem 1rem 1rem;
-  text-align: center;
+  margin: 0.5em 0.2em 0.5em 0.2em;
+  text-align: left;
 }
 
 .rules-content {
   text-align: left;
-  margin-bottom: 3em;
-}
-/* .rules p {
-  margin: 40px;
-} */
 
-/* ol {
-  margin-top: 20px;
-  margin-left: 30px;
-} */
+  margin-bottom: 2em;
+}
 
 .rules details {
   margin: 0 1em;
@@ -55,7 +162,7 @@
 }
 
 .rules details > summary::-webkit-details-marker {
-  font-size: 1.2rem;
+  font-size: 1rem;
   text-transform: uppercase;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -64,9 +171,9 @@
 
 .rules details > summary::after {
   content: url(../../img/arrow-right.svg);
-  width: 1.2rem;
-  height: 1.2rem;
-  display: inline-flex;
+  width: 0.8rem;
+  height: 0.8rem;
+  display: none;
   transition: transform 0.3s ease;
 }
 
@@ -74,32 +181,25 @@
   transform: rotate(90deg);
 }
 
-/* .rules details > ul {
-  line-height: 100%;
-}
-
-.rules details > summary::-webkit-details-marker {
-  line-height: 100%;
-} */
-
 /* ------------------------------------------------ */
 /* SECTION Q&A */
 /* ------------------------------------------------ */
 
 .question {
   background-color: #ffffff;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding: 1em;
 }
 
 .question h2 {
-  font-size: 1.714rem;
-  font-weight: 600;
+  font-size: 1.563rem;
+  font-weight: 400;
+  /* text-align: left; */
 }
 
 .question-contact {
   display: flex;
   justify-content: left;
+  align-items: center;
   flex-wrap: nowrap;
 }
 
@@ -114,6 +214,30 @@ hr {
   background-color: #5d5d5d;
   border: 0;
 }
+
+/* --- MEDIA QUERIES --- */
+
+/* Landscape phones and down */
+@media (min-width: 481px) {
+}
+
+/* Landscape phone to portrait tablet */
+@media (min-width: 769px) {
+  .question {
+    background-color: #ffffff;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 1025px) {
+}
+
+/* XLarge screen */
+@media (min-width: 1201px) {
+}
+/* --- END MEDIA QUERIES --- */
 
 /* ------------------------------------------------ */
 /* GALLERY */
@@ -130,4 +254,74 @@ hr {
 .gallery img {
   width: 400px;
   margin: 20px;
+}
+
+/* SUBPAGES CENNIK */
+.cennik-container {
+  display: flex;
+  justify-content: space-between;
+}
+.cennik-nazwa {
+  width: 80%;
+  margin: 10px 10px 10px 10px;
+}
+
+.cennik-cena {
+  margin: 10px 10px 10px 10px;
+
+  display: flex;
+  width: 15%;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+}
+
+.white {
+  background-color: #f5f5f5;
+}
+
+details {
+  margin: 0 1rem;
+}
+
+details > summary {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+
+  margin-top: 20px;
+  margin-bottom: 20px;
+  list-style: none;
+  cursor: pointer;
+}
+
+details > summary::-webkit-details-marker {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  list-style: none;
+}
+
+details > summary::after {
+  content: url(../../img/arrow-right.svg);
+  width: 1.2rem;
+  height: 1.2rem;
+  display: inline-flex;
+  transition: transform 0.3s ease;
+}
+
+details[open] > summary::after {
+  transform: rotate(90deg);
+}
+
+.details-content {
+  padding: 1rem 1.5rem;
+}
+
+details > ul {
+  line-height: 150%;
+}
+
+details > summary::-webkit-details-marker {
+  line-height: 150%;
 }
