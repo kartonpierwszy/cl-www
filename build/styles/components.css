@@ -129,6 +129,7 @@ ul {
 @media (min-width: 769px) {
   .logo {
     height: 80px;
+    margin: 20px;
   }
 }
 
