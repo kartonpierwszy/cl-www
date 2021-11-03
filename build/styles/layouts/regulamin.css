@@ -263,11 +263,11 @@ hr {
 }
 .cennik-nazwa {
   width: 80%;
-  margin: 10px 10px 10px 10px;
+  margin: 1em;
 }
 
 .cennik-cena {
-  margin: 10px 10px 10px 10px;
+  margin: 1em;
 
   display: flex;
   width: 15%;
