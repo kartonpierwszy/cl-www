@@ -12,6 +12,7 @@ h2 {
 
 h3 {
   font-size: 1.25rem;
+  margin-top: 2em;
 }
 
 small,
@@ -133,6 +134,10 @@ small,
 
 .rules ol {
   list-style-type: decimal;
+  margin-left: 1em;
+}
+
+.rules ul {
   margin-left: 1em;
 }
 
