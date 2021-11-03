@@ -23,15 +23,13 @@ header {
 /* ------------------------------------------------ */
 .section-szkolenia {
   background-color: #e5e5e5;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  /* padding-left: 20px;
-  padding-right: 20px; */
+  padding: 3em 1em;
+  background-position: bottom left -40px;
 }
 
 .opis-sz {
   font-style: italic;
-  margin: 40px 5px;
+  margin: 2em 0;
 }
 
 .ul-szkolenie {
