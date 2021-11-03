@@ -194,53 +194,76 @@ small,
 /* ------------------------------------------------ */
 /* SEKCJA "O NAS" */
 /* ------------------------------------------------ */
-/* .o-nas {
-  background: linear-gradient(#ffffff, #d5d5d5);
-  height: 100vh;
+.o-nas {
+  background-color: #fff;
 }
-.col-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  align-content: flex-start;
-  
-} */
 
-/* 
-.col-1-od-2 {
-  width: 100px;
+.col-1-of-2 {
+  height: 40vh;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-around;
   align-items: center;
-  flex-wrap: wrap; 
+  align-content: center;
+  /* padding: 1em; */
 }
-.col-2-of-2 {
-
-}*/
 
 .o-nas-logo {
-  height: 40px;
-  margin: 1em;
+  height: 20px;
+  margin-bottom: 1em;
 }
 
 .o-nas-logo-circle {
-  height: 120px;
+  width: 70px;
+  display: block;
   margin: 1em;
 }
 
 .o-nas-kryza {
-  max-height: 100%;
-  /* display: none; */
-  background-image: url('../../img/justyna-kryza-crop.png');
+  width: 80%;
+  display: block;
+  /* margin: 1em; */
 }
+
+/* --- MEDIA QUERIES --- */
+
+/* Landscape phones and down */
+@media (min-width: 481px) {
+}
+
+/* Landscape phone to portrait tablet */
+@media (min-width: 769px) {
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 1025px) {
+  .col-1-of-2 {
+    height: 80vh;
+  }
+
+  .o-nas-logo {
+    height: 40px;
+    margin-bottom: 1em;
+  }
+
+  .o-nas-logo-circle {
+    width: 100px;
+    display: block;
+    margin: 1em;
+  }
+}
+
+/* XLarge screen */
+@media (min-width: 1201px) {
+}
+
+/* --- END MEDIA QUERIES --- */
 
 /* ------------------------------------------------ */
 /* SEKCJA "SZKOLENIA" */
 /* ------------------------------------------------ */
 .szkolenia {
-  background: linear-gradient(#ffffff, #d5d5d5);
+  background: linear-gradient(#d5d5d5, #ffffff);
   width: 100%;
 }
 

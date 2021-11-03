@@ -151,16 +151,14 @@
 /* ------------------------------------------------ */
 /* Szkolenia szablon 1 */
 /* ------------------------------------------------ */
-/* .btn-s {
-  letter-spacing: 0.1em;
-  line-height: 1rem;
-  display: flex;
-} */
+.btn-s {
+  width: 350px;
+}
 
-/* .btn-s .button-content {
+.btn-s .button-content {
   text-transform: uppercase;
   /* letter-spacing: 25%; */
-} */
+}
 
 /* --- MEDIA QUERIES --- */
 
