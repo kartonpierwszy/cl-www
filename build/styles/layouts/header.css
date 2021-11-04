@@ -1,6 +1,6 @@
 header {
   min-height: 100vh;
-  background-image: url(../../img/header-1-dark.jpg);
+  background-image: url(../../img/header-4b.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom left 30%;
@@ -131,7 +131,7 @@ nav {
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 1em;
-  transition: 0.3s ease-in-out;
+  /* transition: 0.3s ease-in-out; */
 }
 
 .nav-ul {
@@ -298,8 +298,13 @@ nav {
     text-align: left;
   }
   .nav-bottom a:hover {
-    background: #d5d5d5;
+    /* background: #d5d5d5; */
     transition: all 0.3s;
+  }
+
+  .nav-bottom li:hover {
+    background: #d5d5d5;
+    transition: 0.3s ease-in-out;
   }
 
   .nav-bottom .submenu li > a {

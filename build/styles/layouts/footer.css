@@ -24,7 +24,8 @@ footer p {
   font-size: 0.9rem;
   font-weight: 500;
   line-height: 1.2rem;
-  line-height: 180%;
+  line-height: 200%;
+  /* margin-bottom: 0.2em; */
 }
 
 footer .logo {
@@ -36,7 +37,7 @@ footer {
   background-color: rgb(217, 217, 217, 0.4);
   color: #5d5d5d;
   width: 100%;
-  padding: 1rem 1rem 0 1rem;
+  /* padding: 1rem 1rem 0 1rem; */
   text-align: left;
 }
 
@@ -51,8 +52,9 @@ footer {
 
 .footer-tile {
   width: 80%;
-  max-width: 320px;
+  max-width: 310px;
   height: 100%;
+  margin: 1em;
 }
 
 .footer-tile:first-child {
