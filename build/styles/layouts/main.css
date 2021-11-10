@@ -258,6 +258,9 @@ small,
 
 /* XLarge screen */
 @media (min-width: 1201px) {
+  .col-1-of-2 {
+    width: 40%;
+  }
 }
 
 /* --- END MEDIA QUERIES --- */
