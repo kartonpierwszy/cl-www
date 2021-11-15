@@ -186,7 +186,7 @@
   }
 
   .button-content {
-    font-size: 1em;
+    font-size: 0.8em;
   }
 
   .btn-sz .button-content {
@@ -196,8 +196,17 @@
 
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 1025px) {
+  .btn-s {
+    width: 350px;
+  }
 }
 
 /* Large desktop */
 @media (min-width: 1200px) {
+  .btn-s {
+    width: 380px;
+  }
+  .button-content {
+    font-size: 1em;
+  }
 }

@@ -79,3 +79,20 @@ header {
   font-size: 1.25rem;
   text-align: center;
 }
+
+/* ------------------------------------------------ */
+/* SECTION ZAPISY NA SZKOLENIA*/
+/* ------------------------------------------------ */
+
+.zapisy-na-szkolenie {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+/* ------------------------------------------------ */
+/* SECTION QUESTION/CONTACT*/
+/* ------------------------------------------------ */
+.question {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
