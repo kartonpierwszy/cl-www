@@ -202,6 +202,13 @@ p {
   transform: rotate(90deg);
 }
 
+.code-price-big {
+  font-size: 0.8em;
+  text-align: center;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
 /* ------------------------------------------------ */
 /* SECTION Q&A */
 /* ------------------------------------------------ */
@@ -240,6 +247,9 @@ hr {
 
 /* Landscape phones and down */
 @media (min-width: 481px) {
+  .code-price-big {
+    font-size: 1em;
+  }
 }
 
 /* Landscape phone to portrait tablet */
@@ -252,10 +262,17 @@ hr {
   .subpage-cennik h3 {
     margin: 1em 0;
   }
+
+  .code-price-big {
+    font-size: 1.4em;
+  }
 }
 
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 1025px) {
+  .code-price-big {
+    font-size: 2em;
+  }
 }
 
 /* XLarge screen */
