@@ -1,6 +1,6 @@
 header {
-  min-height: 925px;
-  background-image: url(../../img/szkolenie-header-1.jpg);
+  min-height: 100vh;
+  background-image: url(../../img/header-4-vertical-5.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
@@ -8,20 +8,14 @@ header {
   background-color: #5d5d5d;
 }
 
-/* HERO TEXT */
-
-/* .hero-text {
-  text-align: left;
-  text-transform: uppercase;
-  margin-top: 160px;
-  color: #ffffff;
-  opacity: 100%;
-} */
-
 /* --- MEDIA QUERIES --- */
 
 /* Landscape phones and down */
 @media (min-width: 481px) {
+  header {
+    background-image: url(../../img/header-4-1.jpg);
+    background-position: bottom right;
+  }
 }
 
 /* Landscape phone to portrait tablet */

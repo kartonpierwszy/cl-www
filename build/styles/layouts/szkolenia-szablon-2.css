@@ -8,6 +8,7 @@ header {
   background-color: #d9d9d9;
   /* background-attachment: cover; */
 }
+
 /* HERO TEXT */
 
 .hero-text {
@@ -23,13 +24,12 @@ header {
 /* ------------------------------------------------ */
 .section-szkolenia {
   background-color: #e5e5e5;
-  padding: 3em 1em;
-  background-position: bottom left -40px;
+  padding: 2em;
 }
 
 .opis-sz {
   font-style: italic;
-  margin: 2em 0;
+  margin: 40px 5px;
 }
 
 .ul-szkolenie {
@@ -79,4 +79,21 @@ header {
 .promo-opis {
   font-size: 1.25rem;
   text-align: center;
+}
+
+/* ------------------------------------------------ */
+/* SECTION ZAPISY NA SZKOLENIA*/
+/* ------------------------------------------------ */
+
+.zapisy-na-szkolenie {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+/* ------------------------------------------------ */
+/* SECTION QUESTION/CONTACT*/
+/* ------------------------------------------------ */
+.question {
+  margin-top: 2em;
+  margin-bottom: 2em;
 }

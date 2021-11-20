@@ -137,10 +137,6 @@
 }
 
 /* ------------------------------------------------ */
-/* BUTTON SUBPAGE SZKOLENIA */
-/* ------------------------------------------------ */
-
-/* ------------------------------------------------ */
 /* Szkolenia szablon 1 */
 /* ------------------------------------------------ */
 
@@ -172,7 +168,7 @@
 /* Landscape phone to portrait tablet */
 @media (min-width: 769px) {
   .btn-container {
-    padding-top: 70px;
+    padding-top: 2rem;
   }
 
   .btn {

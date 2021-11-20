@@ -14,22 +14,10 @@ Color: 5D5D5D; dark grey
   width: 1300px;
 }
 
-.width-limiter-1000 {
-  max-width: 1000px;
-}
-.width-limiter-1000 h1 {
-  text-align: left;
-}
-
 .zawijanie {
   display: flex;
   flex-wrap: wrap;
 }
-
-/* .text-container {
-  text-align: center;
-  padding: 1rem;
-} */
 
 .center-horizontal {
   display: flex;
@@ -63,10 +51,10 @@ Color: 5D5D5D; dark grey
   top: 0;
 }
 
-.row {
+/* .row {
   display: flex;
   margin: 80px 20px 20px 20px;
-}
+} */
 
 .space-x {
   margin-left: 20px;
@@ -77,75 +65,173 @@ Color: 5D5D5D; dark grey
   margin-bottom: 20px;
 }
 
-p {
-  line-height: 150%;
-}
-
 /* ------ LINKS ------ */
 
 a:link,
 a:visited {
-  color: #5d5d5d;
+  color: rgb(93, 93, 93);
   text-decoration: none;
 }
 
 a:hover,
 a:active {
-  color: #1d1d1d;
-  -webkit-transition: color 0.2s, color 0.2s;
-  transition: color 0.2s, color 0.5s;
-  font-weight: 500;
+  color: rgb(1, 1, 1);
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+/* ------ TEXT ------ */
+/* .opis {
+  text-align: left;
+  margin: 1rem;
+} */
+
+/* ----------------------------------------------- */
+/* HEADINGS */
+/* ----------------------------------------------- */
+h1,
+h2 {
+  margin: 1rem 0 1rem 0;
+  font-weight: 300;
+  line-height: 1.3;
+  text-align: center;
+}
+
+h3,
+h4,
+h5 {
+  font-weight: 400;
+}
+
+/* h1 {
+  margin-top: 1rem;
+  font-size: 3.052rem;
+} */
+
+h1 {
+  font-size: 2.441rem;
+}
+
+h2 {
+  font-size: 1.953rem;
+}
+
+h3 {
+  font-size: 1.563rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+small,
+.text_small {
+  font-size: 0.8rem;
 }
 
 /* ------ OL Ul Li style ------ */
+ul,
 ol {
-  list-style: none;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 ul {
-  list-style: url(img/li-dot.svg);
-  line-height: 150%;
+  list-style: url('/img/li-dot.svg') inside;
 }
 
-/* ------ ICON ------ */
-
-.logo {
-  height: 50px;
-  margin: 0.5rem 1rem;
+ul li {
+  font-size: 0.9rem;
+  line-height: 160%;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0.3rem;
+  /* padding: 0.2rem 0 0.2rem .1rem; */
+  /* list-style: url('/img/li-dot.svg') inside; */
 }
-
-.icon {
-  height: 25px;
-  margin: 0px 5px 0px 5px;
-  cursor: pointer;
+ul li::marker {
+  font-size: 0.7rem;
 }
 
 /* --- MEDIA QUERIES --- */
 
 /* Landscape phones and down */
 @media (min-width: 481px) {
-  .logo {
-    height: 70px;
-  }
 }
 
 /* Landscape phone to portrait tablet */
 @media (min-width: 769px) {
-  .logo {
-    height: 80px;
-    margin: 20px;
-  }
 }
 
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 1025px) {
-  .logo {
-    height: 100px;
+  h1,
+  h2 {
+    font-weight: 100;
+    line-height: 1.3;
+  }
+
+  h1 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 3.052rem;
+    text-align: center;
+  }
+
+  /* h2 {font-size: 3.157rem;} */
+
+  h2 {
+    font-size: 2.369em;
+    margin-top: 1.2rem;
+  }
+
+  h3 {
+    font-size: 1.777em;
+  }
+
+  h4 {
+    font-size: 1.333em;
+  }
+
+  small,
+  .text_small {
+    font-size: 0.75rem;
   }
 }
 
 /* XLarge screen */
 @media (min-width: 1201px) {
-}
+  h1,
+  h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    line-height: 1.3;
+  }
 
-/* --- END MEDIA QUERIES --- */
+  h1 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 4.209rem;
+    text-align: center;
+  }
+
+  /* h2 {font-size: 3.157rem;} */
+
+  h2 {
+    font-size: 2.369em;
+    margin-top: 1.2rem;
+  }
+
+  h3 {
+    font-size: 1.777em;
+  }
+
+  h4 {
+    font-size: 1.333em;
+  }
+
+  small,
+  .text_small {
+    font-size: 0.75rem;
+  }
+}

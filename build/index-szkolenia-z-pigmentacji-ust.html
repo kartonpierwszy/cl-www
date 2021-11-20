@@ -11,16 +11,16 @@
     <!-- <link rel="stylesheet" type="text/css" href="styles/layouts/media-q.css" /> -->
 
     <link rel="stylesheet" type="text/css" href="styles/layouts/main.css" />
-    <link rel="stylesheet" type="text/css" href="styles/layouts/header.css" />
-    <!-- <link rel="stylesheet" type="text/css" href="styles/layouts/o-nas.css" />
     <link
       rel="stylesheet"
       type="text/css"
-      href="styles/layouts/szkolenia.css"
+      href="styles/layouts/main-header.css"
     />
-    <link rel="stylesheet" type="text/css" href="styles/layouts/opinie.css" />
-    <link rel="stylesheet" type="text/css" href="styles/layouts/youtube.css" />
-    <link rel="stylesheet" type="text/css" href="styles/layouts/modelka.css" /> -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="styles/layouts/main-menu.css"
+    />
     <link rel="stylesheet" type="text/css" href="styles/layouts/footer.css" />
 
     <link rel="stylesheet" type="text/css" href="styles/components.css" />
@@ -96,13 +96,13 @@
       <div class="nav-bottom center-horizontal">
         <div class="width-limiter space-between">
           <nav>
-            <img
-              src="img/logo-cookielookie.svg"
-              href="https://cookielookie.pl"
-              alt="logo cookielookie"
-              class="logo"
-            />
-
+            <a href="index.html" class="logo-link">
+              <img
+                src="img/logo-cookielookie.svg"
+                alt="logo cookielookie"
+                class="logo"
+              />
+            </a>
             <button class="hamburger" id="hamburger">
               <div class="line"></div>
               <div class="line"></div>
@@ -315,86 +315,85 @@
           <div class="center-horizontal">
             <div class="tiles-container">
               <div class="tile tile-content-wrapper">
-                <h2>Basic</h2>
-                <p class="descr">
-                  Intensywne szkolenie z makijażu permanentnego ust dla osób już
-                  pigmentujących
-                </p>
-                <div class="plan-price">
-                  <!-- <div>
-                    <p class="price">6000zł</p>
-                    <p class="bruttonetto">netto</p>
-                  </div> -->
-                  <div>
-                    <p class="price">5000zł</p>
-                    <p class="bruttonetto">brutto</p>
+                <div class="row-1">
+                  <h2>Basic</h2>
+                  <p class="descr">
+                    Intensywne szkolenie z makijażu permanentnego ust dla osób
+                    już pigmentujących
+                  </p>
+                </div>
+                <div class="row-2">
+                  <p class="price">5000zł brutto</p>
+                </div>
+                <div class="row-3">
+                  <p class="czas-trwania">Czas trwania: <b>3 dni</b></p>
+                </div>
+                <div class="row-4">
+                  <div class="ul-col">
+                    <ul>
+                      <li>jedna modelka pokazowa</li>
+                      <li>dwie modelki dla kursantek</li>
+                      <li>fotografia i postprodukcja</li>
+                      <li>jeden dzień gratis - shadow day</li>
+                    </ul>
                   </div>
                 </div>
-                <p class="czas-trwania">Czas trwania: <b>3 dni</b></p>
-                <div class="ul-col">
-                  <ul>
-                    <li>jedna modelka pokazowa</li>
-                    <li>dwie modelki dla kursantek</li>
-                    <li>fotografia i postprodukcja</li>
-                    <li>jeden dzień gratis - shadow day</li>
-                  </ul>
-                </div>
-
-                <div class="btn-container">
-                  <div class="btn center-horizontal">
-                    <div class="border-top frames-btn-dark"></div>
-                    <div class="border-top-left frames-btn-dark"></div>
-                    <div class="border-top-right frames-btn-dark"></div>
-                    <div class="border-bottom frames-btn-dark"></div>
-                    <div class="border-bottom-left frames-btn-dark"></div>
-                    <div class="border-bottom-right frames-btn-dark"></div>
-                    <div class="button-content">
-                      <a href="wpl-basic.html">SZCZEGÓŁY</a>
+                <div class="row-5">
+                  <div class="btn-container">
+                    <div class="btn center-horizontal">
+                      <div class="border-top frames-btn-dark"></div>
+                      <div class="border-top-left frames-btn-dark"></div>
+                      <div class="border-top-right frames-btn-dark"></div>
+                      <div class="border-bottom frames-btn-dark"></div>
+                      <div class="border-bottom-left frames-btn-dark"></div>
+                      <div class="border-bottom-right frames-btn-dark"></div>
+                      <div class="button-content">
+                        <a href="wpl-basic.html">SZCZEGÓŁY</a>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
 
               <div class="tile tile-content-wrapper">
-                <h2>Masterclass</h2>
-                <p class="descr">
-                  Szkolenie z makijażu permanentnego ust dla osób zaawansowanych
-                  w celu udoskonalenia warsztatu i poznania moich technik pracy
-                  oraz fotografii.
-                </p>
-                <div class="plan-price">
-                  <!-- <div>
-                    <p class="price">2500zł</p>
-                    <p class="bruttonetto">netto</p>
-                  </div> -->
-                  <div>
-                    <p class="price">3000zł</p>
-                    <p class="bruttonetto">brutto</p>
+                <div class="row-1">
+                  <h2>Masterclass</h2>
+                  <p class="descr">
+                    Szkolenie z makijażu permanentnego ust dla osób
+                    zaawansowanych w celu udoskonalenia warsztatu i poznania
+                    moich technik pracy oraz fotografii.
+                  </p>
+                </div>
+                <div class="row-2">
+                  <p class="price">3000zł brutto</p>
+                </div>
+                <div class="row-3">
+                  <p class="czas-trwania">Czas trwania: <b>1 dzień</b></p>
+                </div>
+                <div class="row-4">
+                  <div class="ul-col">
+                    <ul>
+                      <li>
+                        prezentacja techniki SOFT OMBRE LIPS lub AQUARELLE LIPS
+                        na modelce
+                      </li>
+                      <li>jedna modelka dla kursantki</li>
+                      <li>fotografia oraz postprodukcja</li>
+                    </ul>
                   </div>
                 </div>
-                <p class="czas-trwania">Czas trwania: <b>1 dzień</b></p>
-
-                <div class="ul-col">
-                  <ul>
-                    <li>
-                      prezentacja techniki SOFT OMBRE LIPS LUB AQUARELLE LIPS na
-                      modelce
-                    </li>
-                    <li>jedna modelka dla kursantki</li>
-                    <li>fotografia oraz postprodukcja</li>
-                  </ul>
-                </div>
-
-                <div class="btn-container">
-                  <div class="btn center-horizontal">
-                    <div class="border-top frames-btn-dark"></div>
-                    <div class="border-top-left frames-btn-dark"></div>
-                    <div class="border-top-right frames-btn-dark"></div>
-                    <div class="border-bottom frames-btn-dark"></div>
-                    <div class="border-bottom-left frames-btn-dark"></div>
-                    <div class="border-bottom-right frames-btn-dark"></div>
-                    <div class="button-content">
-                      <a href="wpl-masterclass.html">SZCZEGÓŁY</a>
+                <div class="row-5">
+                  <div class="btn-container">
+                    <div class="btn center-horizontal">
+                      <div class="border-top frames-btn-dark"></div>
+                      <div class="border-top-left frames-btn-dark"></div>
+                      <div class="border-top-right frames-btn-dark"></div>
+                      <div class="border-bottom frames-btn-dark"></div>
+                      <div class="border-bottom-left frames-btn-dark"></div>
+                      <div class="border-bottom-right frames-btn-dark"></div>
+                      <div class="button-content">
+                        <a href="wpl-masterclass.html">SZCZEGÓŁY</a>
+                      </div>
                     </div>
                   </div>
                 </div>

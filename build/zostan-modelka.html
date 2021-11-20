@@ -5,20 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Rafał Mikulski" />
-    <meta name="description" content="cookielookiepl" />
+    <meta name="description" content="cookielookie" />
     <meta name="keywords" content="makijaż permanentny" />
 
+    <!-- <link rel="stylesheet" type="text/css" href="styles/layouts/media-q.css" /> -->
+
     <link rel="stylesheet" type="text/css" href="styles/layouts/main.css" />
-    <link rel="stylesheet" type="text/css" href="styles/layouts/header-1.css" />
-    <link rel="stylesheet" type="text/css" href="styles/layouts/footer.css" />
+
     <link
       rel="stylesheet"
       type="text/css"
-      href="styles/layouts/regulamin.css"
+      href="styles/layouts/main-menu.css"
     />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="styles/layouts/text-subpages.css"
+    />
+    <link rel="stylesheet" type="text/css" href="styles/layouts/footer.css" />
 
     <link rel="stylesheet" type="text/css" href="styles/components.css" />
     <link rel="stylesheet" type="text/css" href="styles/buttons.css" />
+    <link rel="stylesheet" type="text/css" href="styles/swiper.css" />
+
+    <!-- <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    /> -->
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
 
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;600&display=swap"
@@ -75,116 +94,115 @@
         </div>
       </div>
       <!-- <nav> -->
-        <div class="nav-bottom center-horizontal">
-          <div class="width-limiter space-between">
-            <nav>
+      <div class="nav-bottom center-horizontal">
+        <div class="width-limiter space-between">
+          <nav>
+            <a href="index.html" class="logo-link">
               <img
                 src="img/logo-cookielookie.svg"
-                href="https://cookielookie.pl"
                 alt="logo cookielookie"
                 class="logo"
               />
-  
-              <button class="hamburger" id="hamburger">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-              </button>
-  
-              <ul class="nav-ul" id="nav-ul">
-                <li><a href="index.html#section-o-nas">O&nbsp;nas</a></li>
-                <li>
-                  <a href="index.html#section-szkolenia">Szkolenia</a>
-                  <ul class="submenu">
-                    <li>
-                      <a href="gob-basic.html">Szkolenia z pigmentacji brwi</a>
-                    </li>
-                    <li>
-                      <a href="wpl-basic.html">Szkolenia z pigmentacji ust</a>
-                    </li>
-                    <li>
-                      <a href="warsztaty-pokazowe.html">Warsztaty pokazowe</a>
-                    </li>
-                    <li>
-                      <a href="terminarz-szkolen.html">Terminarz szkoleń</a>
-                    </li>
-                    <li><a href="qanda-szkolenia.html">Q&A</a></li>
-                  </ul>
-                </li>
-                <li><a href="zostan-modelka.html">Zostań&nbsp;modelką</a></li>
-                <li>
-                  <a href="przeciwskazania-do-zabiegu.html">Zabiegi</a>
-                  <ul class="submenu">
-                    <li>
-                      <a href="przed-zabiegiem-makijaz-permanentny.html"
-                        >Przeczytaj przed zabiegiem</a
-                      >
-                    </li>
-                    <!-- <li><a href="po-zabiegu.html">Zalecenia po zabiegu</a></li> -->
-                    <li>
-                      <a href="dzialalnosc-charytatywna.html"
-                        >Działalność charytatywna</a
-                      >
-                    </li>
-                    <li>
-                      <a href="download/cookielookie-informator-b-20.pdf"
-                        >Informator</a
-                      >
-                    </li>
-                    <li><a href="qanda-zabiegi.html">Q&A</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="https://www.instagram.com/cookielookie.pl/">Galeria</a>
-                </li>
-                <li><a href="cennik.html">Cennik</a></li>
-                <li><a href="wspolpraca.html">Współpraca</a></li>
-                <li><a href="regulamin.html">Regulamin</a></li>
-                <li><a href="kontakt.html">Kontakt</a></li>
-                <li>
-                  <ul class="hamburger-social">
-                    <li>
-                      <a href="https://pl-pl.facebook.com/cookielookiepl/"
-                        ><img
-                          src="img/icon-facebook.svg"
-                          alt="facebook"
-                          class="icon"
-                      /></a>
-                    </li>
-                    <li>
-                      <a href="https://www.instagram.com/cookielookie.pl/"
-                        ><img
-                          src="img/icon-instagram.svg"
-                          alt="instagram"
-                          class="icon"
-                      /></a>
-                    </li>
-                    <li>
-                      <a href="https://www.tiktok.com/@cookielookiepl?"
-                        ><img src="img/icon-tiktok.svg" alt="tiktok" class="icon"
-                      /></a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://www.youtube.com/channel/UCPEwdOHQ4EBbDErKajWlAsA"
-                        ><img
-                          src="img/icon-youtube.svg"
-                          alt="youtube"
-                          class="icon"
-                      /></a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </nav>
-          </div>
+            </a>
+            <button class="hamburger" id="hamburger">
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+            </button>
+
+            <ul class="nav-ul" id="nav-ul">
+              <li><a href="index.html#section-o-nas">O&nbsp;nas</a></li>
+              <li>
+                <a href="index.html#section-szkolenia">Szkolenia</a>
+                <ul class="submenu">
+                  <li>
+                    <a href="gob-basic.html">Szkolenia z pigmentacji brwi</a>
+                  </li>
+                  <li>
+                    <a href="wpl-basic.html">Szkolenia z pigmentacji ust</a>
+                  </li>
+                  <li>
+                    <a href="warsztaty-pokazowe.html">Warsztaty pokazowe</a>
+                  </li>
+                  <li>
+                    <a href="terminarz-szkolen.html">Terminarz szkoleń</a>
+                  </li>
+                  <li><a href="qanda-szkolenia.html">Q&A</a></li>
+                </ul>
+              </li>
+              <li><a href="zostan-modelka.html">Zostań&nbsp;modelką</a></li>
+              <li>
+                <a href="przed-zabiegiem-makijaz-permanentny.html">Zabiegi</a>
+                <ul class="submenu">
+                  <li>
+                    <a href="przed-zabiegiem-makijaz-permanentny.html"
+                      >Przeczytaj przed zabiegiem</a
+                    >
+                  </li>
+                  <!-- <li><a href="po-zabiegu.html">Zalecenia po zabiegu</a></li> -->
+                  <li>
+                    <a href="dzialalnosc-charytatywna.html"
+                      >Działalność charytatywna</a
+                    >
+                  </li>
+                  <li>
+                    <a href="download/cookielookie-informator-b-20.pdf"
+                      >Informator</a
+                    >
+                  </li>
+                  <li><a href="qanda-zabiegi.html">Q&A</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/cookielookie.pl/">Galeria</a>
+              </li>
+              <li><a href="cennik.html">Cennik</a></li>
+              <li><a href="wspolpraca.html">Współpraca</a></li>
+              <li><a href="regulamin.html">Regulamin</a></li>
+              <li><a href="kontakt.html">Kontakt</a></li>
+              <li>
+                <ul class="hamburger-social">
+                  <li>
+                    <a href="https://pl-pl.facebook.com/cookielookiepl/"
+                      ><img
+                        src="img/icon-facebook.svg"
+                        alt="facebook"
+                        class="icon"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="https://www.instagram.com/cookielookie.pl/"
+                      ><img
+                        src="img/icon-instagram.svg"
+                        alt="instagram"
+                        class="icon"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="https://www.tiktok.com/@cookielookiepl?"
+                      ><img src="img/icon-tiktok.svg" alt="tiktok" class="icon"
+                    /></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.youtube.com/channel/UCPEwdOHQ4EBbDErKajWlAsA"
+                      ><img
+                        src="img/icon-youtube.svg"
+                        alt="youtube"
+                        class="icon"
+                    /></a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
         </div>
-        <!-- </nav> -->
+      </div>
+      <!-- </nav> -->
     </header>
     <section class="rules">
       <div class="center-horizontal">
         <div class="width-limiter">
-          
           <!-- <h1>
             Modelki na szkolenia z makijażu permanentnego
           </h1> -->
@@ -197,31 +215,80 @@
             dopigmentowanie wykonywane jest zawsze przez szkoleniowca co daje
             pewność najlepszej jakości pigmentacji!
           </p>
-          <h3>Możesz wykonać całościowy makijaż permanentny w atrakcyjnej cenie</h3>
-          <p>Cena makijażu permanetnego:
-            <ul>
-              <li>wykonanego przez kursantkę - 200zł + dopigmentowanie - 200zł</li>
-              <li>wykonanego przez szkoleniowca - 500zł + dopigmentowanie - 200zł</li>
-            </ul>
-          </p>
+          <h3>
+            Możesz wykonać całościowy makijaż permanentny w atrakcyjnej cenie
+          </h3>
+          <div>
+            <h3>Cena makijażu permanetnego:</h3>
+            <div class="cennik-container">
+              <div class="cennik-nazwa">
+                <p>wykonanego przez kursantkę</p>
+              </div>
+              <div class="cennik-cena">
+                <p>200,00 zł</p>
+              </div>
+            </div>
+            <div class="cennik-container white">
+              <div class="cennik-nazwa space-x">
+                <p>+ dopigmentowanie</p>
+              </div>
+              <div class="cennik-cena">
+                <p>200,00 zł</p>
+              </div>
+            </div>
+            <div class="cennik-container">
+              <div class="cennik-nazwa">
+                <p>wykonanego przez szkoleniowca</p>
+              </div>
+              <div class="cennik-cena">
+                <p>500,00 zł</p>
+              </div>
+            </div>
+            <div class="cennik-container">
+              <div class="cennik-nazwa space-x">
+                <p>+ dopigmentowanie</p>
+              </div>
+              <div class="cennik-cena">
+                <p>200,00 zł</p>
+              </div>
+            </div>
+          </div>
+
           <h3>Wymagania dla modelek:</h3>
-          <ul>
+          <ul class="rules-content">
             <li>18-45 lat</li>
             <li>zadbana sucha lub normalna skóra</li>
             <li>brak makijażu permanentnego brwi/ust</li>
             <li>brak znamion oraz blizn na brwiach/ustach</li>
-            <li>brak przeciwwskazań do zabiegu - <a href="przeciwskazania-do-zabiegu.html"><em>przeczytaj!</em></a></li>
+            <li>
+              brak przeciwwskazań do zabiegu -
+              <a href="przeciwskazania-do-zabiegu.html"
+                ><em><strong>przeczytaj!</strong></em></a
+              >
+            </li>
           </ul>
           <p>
             Jeśli chcesz zostać modelką na szkoleniu z pigmentacji ust, a
             posiadasz skłonności do opryszki, pamiętaj o odpowiedniej prewencji
             przed zabiegiem.
           </p>
-          <h3> Jak zostać modelką?</h3>
+          <h3>Jak zostać modelką?</h3>
           <ol>
-            <li>Sprawdź dostępność terminów, które podane są na instagramie.</li>
-            <li>W wiadomości prywatnej na instagramie napisz, który termin Cię interesuje. Wyślij nam zdjęcie całej buzi bez makijażu oraz osobno zdjęcie ust/brwi.</li>
-            <li>Następnie przekażemy Ci informację dotyczące zadatku, który gwarantuje termin zabiegu. Zadatek należy uiścić do 2 dni roboczych od ustalenia terminu. Jest on bezzwrotną formą pewnej rezerwacji terminu natomiast cała jego kwota zostanie odliczona od kosztu zabiegu w dniu jego wykonania.</li>
+            <li>
+              Sprawdź dostępność terminów, które podane są na instagramie.
+            </li>
+            <li>
+              W wiadomości prywatnej na instagramie napisz, który termin Cię
+              interesuje. Wyślij nam zdjęcie całej buzi bez makijażu oraz osobno
+              zdjęcie ust/brwi.
+            </li>
+            <li>
+              Następnie przekażemy Ci informację dotyczące zadatku, który
+              gwarantuje termin zabiegu. Zadatek należy uiścić do 2 dni
+              roboczych od ustalenia terminu. Jest on bezzwrotną formą pewnej
+              rezerwacji terminu natomiast cała jego kwota zostanie odliczona od
+              kosztu zabiegu w dniu jego wykonania.
+            </li>
           </ol>
         </div>
       </div>
