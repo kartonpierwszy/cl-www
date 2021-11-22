@@ -46,6 +46,7 @@ Color: 5D5D5D; dark grey
   display: flex;
   justify-content: space-around;
 }
+
 .relative-container {
   position: relative;
   top: 0;
@@ -57,12 +58,19 @@ Color: 5D5D5D; dark grey
 } */
 
 .space-x {
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 .space-y {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.light-grey {
+  background-color: rgb(217, 217, 217);
+}
+.white {
+  background-color: rgb(255, 255, 255);
 }
 
 /* ------ LINKS ------ */
@@ -81,10 +89,10 @@ a:active {
 }
 
 /* ------ TEXT ------ */
-/* .opis {
+.opis {
   text-align: left;
   margin: 1rem;
-} */
+}
 
 /* ----------------------------------------------- */
 /* HEADINGS */

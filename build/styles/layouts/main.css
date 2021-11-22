@@ -96,11 +96,47 @@ body {
 /* --- END MEDIA QUERIES --- */
 
 /* ------------------------------------------------ */
-/* GALLERY */
+/* GALERIA */
 /* ------------------------------------------------ */
 
 .photo {
   max-width: 90%;
+  height: auto;
+  margin: 1rem;
+  /* display: block; */
+}
+
+/* ------------------------------------------------ */
+/* GALLERY */
+/* ------------------------------------------------ */
+
+/* .gallery {
+  margin: 1rem;
+  /* min-height: 606px; */
+  display: block;
+}
+
+.gallery img {
+  max-width: 100%;
+  margin: 1rem;
+} */
+
+/* --- MEDIA QUERIES --- */
+
+/* Landscape phones and down */
+@media (min-width: 481px) {
+}
+
+/* Landscape phone to portrait tablet */
+@media (min-width: 769px) {
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 1025px) {
+}
+
+/* XLarge screen */
+@media (min-width: 1201px) {
 }
 
 /* ------------------------------------------------ */
@@ -243,23 +279,6 @@ body {
   font-size: 1rem;
 }
 
-/* .tile ul {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-} */
-
-/* .tile ul li {
-  font-size: 0.8rem;
-  line-height: 160%;
-  font-weight: 400;
-  font-style: normal;
-  margin: 0.3rem;
-  list-style: url('/img/li-dot.svg') inside;
-}
-.tile ul li::marker {
-  font-size: 0.7rem;
-} */
-
 .zapisy-szkolenie {
   margin: 1rem;
   text-align: center;
@@ -291,31 +310,10 @@ body {
     /*TODO: consider using flex-direction: column; for mobile resolutions;*/
   }
 
-  .tile ul li {
-    /* font-size: 0.9rem;
-    line-height: 160%;
-    font-weight: 400;
-    font-style: normal;
-    margin: 0.3rem; */
-    /* padding: 0.2rem 0 0.2rem .1rem; */
-  }
   .row-1 {
     height: 25%;
     padding-bottom: 1.5rem;
   }
-
-  /* .szkolenia .opis {
-    font-size: 1em;
-    line-height: 160%;
-    margin: 1em;
-    margin-bottom: 1rem;
-    text-align: center;
-  } */
-
-  /* .szkolenia .rules-title {
-    margin: 1.5em 1em 2em 1em;
-    text-align: center;
-  } */
 
   .question-contact {
     display: flex;
@@ -356,26 +354,6 @@ body {
     font-size: 1rem;
     margin: 0;
   }
-
-  /* .tile ul {
-    margin-top: 3rem;
-    margin-bottom: 1rem;
-    list-style-type: none;
-    list-style: url('../img/li-dot.svg') inside;
-  } */
-
-  /* .tile ul li {
-    font-size: 0.8rem;
-    line-height: 160%;
-    font-weight: 400;
-    font-style: normal;
-    margin: 0;
-    padding: 0 0 0 1rem;
-  }
-
-  .tile ul li::marker {
-    font-size: 0.7rem;
-  } */
 
   .zapisy-szkolenie {
     font-size: 1rem;
@@ -478,6 +456,26 @@ body {
 @media (min-width: 1201px) {
 }
 /* --- END MEDIA QUERIES --- */
+
+/* ------------------------------------------------ */
+/* SEKCJA "PROMO" */
+/* ------------------------------------------------ */
+
+.promo {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+/* .promo p {
+  margin: 1.4rem 1rem 0 1rem;
+} */
+
+.promo-opis {
+  font-size: 1.25rem;
+  margin: 1.4rem 1rem 0 1rem;
+
+  /* text-align: center; */
+}
 
 /* ------------------------------------------------ */
 /* SEKCJA "YOUTUBE" */

@@ -1,0 +1,40 @@
+/* ------------------------------------------------ */
+/* BANER */
+/* ------------------------------------------------ */
+
+/* HERO TEXT */
+
+.hero-text {
+  text-align: left;
+  text-transform: uppercase;
+  margin-top: 160px;
+  color: #ffffff;
+  opacity: 100%;
+  padding: 1rem;
+}
+
+/* ------------------------------------------------ */
+/* SEKCJA "SZKOLENIA" */
+/* ------------------------------------------------ */
+.section-szkolenia {
+  background-color: #e5e5e5;
+  padding: 2em;
+}
+
+.opis-sz {
+  font-style: italic;
+  margin: 40px 5px;
+}
+
+.ul-szkolenie {
+  line-height: 150%;
+  margin: 5px 15px 5px 15px;
+}
+
+.price-sz {
+  margin: 40px 5px 40px 5px;
+}
+.price-sz p {
+  line-height: 200%;
+  text-transform: uppercase;
+}

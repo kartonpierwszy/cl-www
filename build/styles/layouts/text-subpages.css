@@ -52,37 +52,37 @@
   margin: 0;
 }
 
-.rules details {
+/* details {
   margin: 0 1em;
 }
 
-.rules details > summary {
+details > summary {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   font-size: 1rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  list-style: none;
+  list-style: square;
   cursor: pointer;
 }
 
-.rules details > summary::-webkit-details-marker {
+details > summary::-webkit-details-marker {
   font-size: 1rem;
   text-transform: uppercase;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  list-style: none;
+  list-style: circle;
 }
 
-.rules details > summary::after {
+details > summary::after {
   content: url(../../img/arrow-right.svg);
   width: 0.8rem;
   height: 0.8rem;
-  display: none;
+  display: block;
   transition: transform 0.3s ease;
 }
 
-.rules details[open] > summary::after {
+details[open] > summary::after {
   transform: rotate(90deg);
 }
 
@@ -91,7 +91,7 @@
   text-align: center;
   margin-left: 1em;
   margin-right: 1em;
-}
+} */
 
 /* ------------------------------------------------ */
 /* SECTION Q&A */
@@ -164,40 +164,6 @@ hr {
 }
 /* --- END MEDIA QUERIES --- */
 
-/* ------------------------------------------------ */
-/* GALLERY */
-/* ------------------------------------------------ */
-/* 
-.gallery {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-}
-
-.gallery img {
-  max-width: 100%;
-  max-width: 512px;
-  margin: 20px;
-} */
-
-/* ------------------------------------------------ */
-/* GALLERY */
-/* ------------------------------------------------ */
-
-.gallery {
-  margin: 1rem;
-  /* min-height: 606px; */
-  display: block;
-  align: center;
-}
-
-.gallery img {
-  max-width: 100%;
-  margin: 1rem;
-}
-
 .cennik-container {
   display: flex;
   justify-content: space-between;
@@ -222,22 +188,31 @@ hr {
 
 details {
   margin: 0 1rem;
+  list-style: none;
 }
 
-details > summary {
+/* details > summary {
   display: flex;
   justify-content: space-between;
   font-size: 1rem;
 
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   list-style: none;
   cursor: pointer;
-}
+} */
 
+details > summary {
+  list-style: none;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+details > summary::-webkit-details-marker {
+  display: none;
+}
+/* 
 details > summary::-webkit-details-marker {
   font-size: 1.2rem;
-  text-transform: uppercase;
   margin-top: 20px;
   margin-bottom: 20px;
   list-style: none;
@@ -265,7 +240,7 @@ details > ul {
 
 details > summary::-webkit-details-marker {
   line-height: 150%;
-}
+} */
 
 @media (min-width: 769px) {
   /* .subpage-cennik h3 {
