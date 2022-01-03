@@ -14,8 +14,13 @@
   top: 0;
   left: 0;
   height: 20%;
+  transition: height 0.3s;
   width: 1px;
   /* background-color: #5d5d5d; */
+}
+
+.border-top-left:hover {
+  height: 40%;
 }
 
 .border-top-right {
@@ -23,8 +28,13 @@
   top: 0;
   right: 0;
   height: 40%;
+  transition: height 0.3s;
   width: 1px;
   /* background-color: #5d5d5d; */
+}
+
+.border-top-right:hover {
+  height: 20%;
 }
 
 .border-bottom {
@@ -41,8 +51,13 @@
   bottom: 0;
   left: 0;
   height: 40%;
+  transition: height 0.3s;
   width: 1px;
   /* background-color: #5d5d5d; */
+}
+
+.border-bottom-left:hover {
+  height: 20%;
 }
 
 .border-bottom-right {
@@ -50,8 +65,13 @@
   bottom: 0;
   right: 0;
   height: 20%;
+  transition: height 0.3s;
   width: 1px;
   /* background-color: #5d5d5d; */
+}
+
+.border-bottom-right:hover {
+  height: 40%;
 }
 
 /* ------------------------------------------------ */
