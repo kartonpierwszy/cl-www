@@ -113,13 +113,13 @@ body {
 /* .gallery {
   margin: 1rem;
   /* min-height: 606px; */
-  display: block;
-}
+/* display: block;
+} */
 
 .gallery img {
   max-width: 100%;
   margin: 1rem;
-} */
+}
 
 /* --- MEDIA QUERIES --- */
 
@@ -232,7 +232,7 @@ body {
   max-width: 370px;
   margin: 0.8rem;
   background-color: #ffffff;
-  padding: 1rem 1.2rem;
+  padding: 2rem 1.2rem;
 }
 
 .row-1 {
@@ -327,8 +327,10 @@ body {
 
 /* Landscape phone to portrait tablet */
 @media (min-width: 769px) {
+  .tiles-container {
+    margin: 1rem 0 1rem 0;
+  }
 }
-
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 1025px) {
 }
@@ -555,7 +557,7 @@ body {
   font-size: 1.25rem;
   font-weight: 200;
   letter-spacing: 1px;
-  margin: 1rem 1rem 2rem 1rem;
+  margin: 1rem 1rem 1rem 1rem;
 }
 
 /* --- MEDIA QUERIES --- */

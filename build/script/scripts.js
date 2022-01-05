@@ -5,10 +5,10 @@ hamburger.addEventListener('click', () => {
   navUL.classList.toggle('show');
 });
 
-// BUTTONS ANIMATION
-const btn = document.getElementById('btn');
-const borderTopLeft = getElementById('border-top-left:hover');
+//Buttons hover animation
+// const buttonLink = document.getElementById('button-link');
+// const borderTopLeft = getElementById('border-top-left', ':hover');
 
-btn.addEventListener('mouseover', () => {
-  borderTopLeft.classList.toggle('show');
-});
+// buttonLink.addEventListener('onmouseover', () => {
+//   borderTopLeft.classList.toggle('show');
+// });
