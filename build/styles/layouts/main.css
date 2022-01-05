@@ -293,8 +293,8 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-top: 0.4rem;
+  margin-bottom: 0.4rem;
 }
 
 /* --- MEDIA QUERIES --- */
@@ -316,12 +316,8 @@ body {
   }
 
   .question-contact {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    font-size: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 }
 
@@ -368,15 +364,6 @@ body {
   .rules-title {
     margin: 1.5rem 1rem 2rem 1rem;
     text-align: center;
-  }
-
-  .question-contact {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    font-size: 1rem;
   }
 }
 
