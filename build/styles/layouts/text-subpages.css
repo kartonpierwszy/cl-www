@@ -1,4 +1,6 @@
-/* END MEDIA QUERIES */
+h3 {
+  margin-top: 2rem;
+}
 
 /* ------------------------------------------------ */
 /* SECTION RULES */
@@ -51,47 +53,6 @@
 .rules-title p {
   margin: 0;
 }
-
-/* details {
-  margin: 0 1em;
-}
-
-details > summary {
-  display: flex;
-  justify-content: flex-start;
-  font-size: 1rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  list-style: square;
-  cursor: pointer;
-}
-
-details > summary::-webkit-details-marker {
-  font-size: 1rem;
-  text-transform: uppercase;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  list-style: circle;
-}
-
-details > summary::after {
-  content: url(../../img/arrow-right.svg);
-  width: 0.8rem;
-  height: 0.8rem;
-  display: block;
-  transition: transform 0.3s ease;
-}
-
-details[open] > summary::after {
-  transform: rotate(90deg);
-}
-
-.code-price-big {
-  font-size: 0.8em;
-  text-align: center;
-  margin-left: 1em;
-  margin-right: 1em;
-} */
 
 /* ------------------------------------------------ */
 /* SECTION Q&A */
@@ -191,17 +152,6 @@ details {
   list-style: none;
 }
 
-/* details > summary {
-  display: flex;
-  justify-content: space-between;
-  font-size: 1rem;
-
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  list-style: none;
-  cursor: pointer;
-} */
-
 details > summary {
   list-style: none;
   margin-top: 1rem;
@@ -210,40 +160,6 @@ details > summary {
 details > summary::-webkit-details-marker {
   display: none;
 }
-/* 
-details > summary::-webkit-details-marker {
-  font-size: 1.2rem;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  list-style: none;
-}
-
-details > summary::after {
-  content: url(../../img/arrow-right.svg);
-  width: 1.2rem;
-  height: 1.2rem;
-  display: inline-flex;
-  transition: transform 0.3s ease;
-}
-
-details[open] > summary::after {
-  transform: rotate(90deg);
-}
-
-.details-content {
-  padding: 1rem 1.5rem;
-}
-
-details > ul {
-  line-height: 150%;
-}
-
-details > summary::-webkit-details-marker {
-  line-height: 150%;
-} */
 
 @media (min-width: 769px) {
-  /* .subpage-cennik h3 {
-    margin: 1em;
-  } */
 }

@@ -532,8 +532,8 @@ body {
 /* SEKCJA "ZOSTAŃ MODELKĄ" */
 /* ------------------------------------------------ */
 .zostan-modelka {
-  background-image: url(../../img/zostanmodelka-01tiny2.jpg);
-  background-position: bottom left -15em;
+  background-image: url(../../img/zostanmodelka-03.jpg);
+  background-position: bottom left -20em;
 }
 .zostan-modelka .hero-text-box h1 {
   width: 300px;
@@ -541,7 +541,7 @@ body {
 
 .zostan-modelka p {
   color: #fff;
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 200;
   letter-spacing: 1px;
   margin: 1rem 1rem 1rem 1rem;
@@ -551,6 +551,9 @@ body {
 
 /* Landscape phones and down */
 @media (min-width: 481px) {
+  .zostan-modelka {
+    background-position: bottom left -10em;
+  }
   .zostan-modelka .hero-text-box h1 {
     width: 350px;
   }
@@ -558,6 +561,9 @@ body {
 
 /* Landscape phone to portrait tablet */
 @media (min-width: 769px) {
+  .zostan-modelka {
+    background-position: top;
+  }
   .zostan-modelka .hero-text-box h1 {
     width: 380px;
   }
@@ -566,7 +572,7 @@ body {
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 1025px) {
   .zostan-modelka {
-    background-position: bottom;
+    /* background-position: bottom; */
   }
 
   .zostan-modelka .hero-text-box h1 {

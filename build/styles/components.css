@@ -10,6 +10,10 @@ Color: 5D5D5D; dark grey
 .width-full {
   width: 100%;
 }
+
+.width-limiter-1000 {
+  width: 1000px;
+}
 .width-limiter {
   width: 1300px;
 }
