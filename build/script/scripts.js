@@ -1,8 +1,15 @@
+// const hamburger = document.getElementById('hamburger');
+// const navUL = document.getElementById('nav-ul');
+
+// hamburger.addEventListener('click', () => {
+//   navUL.classList.toggle('show');
+// });
+
 const hamburger = document.getElementById('hamburger');
-const navUL = document.getElementById('nav-ul');
+const navMenu = document.getElementById('nav-menu');
 
 hamburger.addEventListener('click', () => {
-  navUL.classList.toggle('show');
+  navMenu.classList.toggle('show');
 });
 
 //Buttons hover animation
@@ -11,4 +18,11 @@ hamburger.addEventListener('click', () => {
 
 // buttonLink.addEventListener('onmouseover', () => {
 //   borderTopLeft.classList.toggle('show');
+// });
+
+// const hamburger = document.querySelector('#hamburger');
+// const navUL = document.querySelector('.nav-ul');
+
+// hamburger.addEventListener('click', () => {
+//   navUL.classList.toggle('show');
 // });
