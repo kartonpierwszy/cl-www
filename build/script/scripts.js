@@ -1,28 +1,16 @@
-// const hamburger = document.getElementById('hamburger');
-// const navUL = document.getElementById('nav-ul');
+const hamburger = document.querySelector('.hamburger');
+const navMenu = document.querySelector('.nav-menu');
+const subMenu = document.querySelector('.sub-menu');
 
-// hamburger.addEventListener('click', () => {
-//   navUL.classList.toggle('show');
-// });
-
-const hamburger = document.getElementById('hamburger');
-const navMenu = document.getElementById('nav-menu');
-
-hamburger.addEventListener('click', () => {
-  navMenu.classList.toggle('show');
+hamburger.addEventListener('click', function () {
+  navMenu.classList.toggle('active');
+  hamburger.classList.toggle('active');
+  // console.log('ok');
 });
 
-//Buttons hover animation
-// const buttonLink = document.getElementById('button-link');
-// const borderTopLeft = getElementById('border-top-left', ':hover');
-
-// buttonLink.addEventListener('onmouseover', () => {
-//   borderTopLeft.classList.toggle('show');
-// });
-
-// const hamburger = document.querySelector('#hamburger');
-// const navUL = document.querySelector('.nav-ul');
-
-// hamburger.addEventListener('click', () => {
-//   navUL.classList.toggle('show');
-// });
+document.querySelectorAll('.nav-link').forEach((n) =>
+  n.addEventListener('click', () => {
+    hamburger.classList.remove('active');
+    navMenu.classList.remove('active');
+  })
+);
