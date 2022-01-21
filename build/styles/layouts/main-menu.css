@@ -102,7 +102,7 @@ nav {
   padding: 1rem;
 }
 
-.nav-menu {
+.menu {
   width: 100%;
   display: none;
   align-items: center;
@@ -111,13 +111,13 @@ nav {
   list-style: none;
 }
 
-.nav-menu.active {
+.menu.active {
   display: flex;
   width: 100%;
   /* height: 80vh; */
 }
 
-.nav-menu li {
+.menu li {
   display: inline-block;
   color: rgb(39, 39, 39);
 }
@@ -165,7 +165,7 @@ nav {
 
 /* Landscape phones and down */
 @media (min-width: 481px) {
-  /* .nav-menu.show {
+  /* .menu.show {
     height: 96vh;
   } */
 }
@@ -205,7 +205,7 @@ nav {
     background-color: rgb(255, 255, 255);
   }
 
-  .nav-menu .sub-menu li {
+  .menu .sub-menu li {
     margin: 0;
   }
 
