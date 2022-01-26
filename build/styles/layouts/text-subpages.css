@@ -58,30 +58,23 @@ h3 {
 /* SECTION Q&A */
 /* ------------------------------------------------ */
 
-.question {
+/* .question {
   background-color: #ffffff;
-  padding: 1em;
-}
+} */
 
-.question h2 {
-  font-size: 1.563rem;
-  font-weight: 400;
-  /* text-align: left; */
-}
-
-.question-contact {
+/* .question-contact {
   display: flex;
   justify-content: left;
   align-items: center;
   flex-wrap: nowrap;
-}
-
+} */
+/* 
 .question-contact img {
   margin: 10px;
 }
 .question-contact p {
   margin: 10px;
-}
+} */
 hr {
   height: 1px;
   background-color: #5d5d5d;
@@ -99,11 +92,11 @@ hr {
 
 /* Landscape phone to portrait tablet */
 @media (min-width: 769px) {
-  .question {
+  /* .question {
     background-color: #ffffff;
     padding-top: 40px;
     padding-bottom: 40px;
-  }
+  } */
   /* .subpage-cennik h3 {
     margin: 1em 0;
   } */

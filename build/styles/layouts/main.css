@@ -293,8 +293,12 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-top: 0.4rem;
-  margin-bottom: 0.4rem;
+  margin: 1rem 0;
+}
+
+.question-contact .icon {
+  height: 20px;
+  margin: 0.4rem 0.6rem;
 }
 
 /* --- MEDIA QUERIES --- */
@@ -315,9 +319,13 @@ body {
     padding-bottom: 1.5rem;
   }
 
-  .question-contact {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+  .question-contact .icon {
+    height: 20px;
+    margin: 0.6rem 1.4rem;
+  }
+
+  .contact-box {
+    margin: 0 2rem;
   }
 }
 
@@ -325,6 +333,10 @@ body {
 @media (min-width: 769px) {
   .tiles-container {
     margin: 1rem 0 1rem 0;
+  }
+  .question-contact .icon {
+    /* height: 30px; */
+    margin: 0.6rem 1.4rem;
   }
 }
 /* Portrait tablet to landscape and desktop */
