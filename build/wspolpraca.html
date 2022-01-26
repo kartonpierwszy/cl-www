@@ -104,62 +104,73 @@
                 class="logo"
               />
             </a>
-            <button class="hamburger" id="hamburger">
+            <div class="hamburger" id="hamburger">
               <div class="line"></div>
               <div class="line"></div>
               <div class="line"></div>
-            </button>
+            </div>
 
-            <ul class="nav-ul" id="nav-ul">
-              <li><a href="index.html#section-o-nas">O&nbsp;nas</a></li>
-              <li>
+            <ul class="menu" id="menu">
+              <li class="menu-item">
+                <a href="index.html#section-o-nas">O&nbsp;nas</a>
+              </li>
+              <li class="menu-item">
                 <a href="index.html#section-szkolenia">Szkolenia</a>
-                <ul class="submenu">
-                  <li>
+                <ul class="sub-menu">
+                  <li class="menu-item">
                     <a href="gob-basic.html">Szkolenia z pigmentacji brwi</a>
                   </li>
-                  <li>
+                  <li class="menu-item">
                     <a href="wpl-basic.html">Szkolenia z pigmentacji ust</a>
                   </li>
-                  <li>
+                  <li class="menu-item">
                     <a href="warsztaty-pokazowe.html">Warsztaty pokazowe</a>
                   </li>
-                  <li>
+                  <li class="menu-item">
                     <a href="terminarz-szkolen.html">Terminarz szkoleń</a>
                   </li>
-                  <li><a href="qanda-szkolenia.html">Q&A</a></li>
+                  <li class="menu-item">
+                    <a href="qanda-szkolenia.html">Q&A</a>
+                  </li>
                 </ul>
               </li>
-              <li><a href="zostan-modelka.html">Zostań&nbsp;modelką</a></li>
-              <li>
+
+              <li class="menu-item">
                 <a href="przed-zabiegiem-makijaz-permanentny.html">Zabiegi</a>
-                <ul class="submenu">
-                  <li>
+                <ul class="sub-menu">
+                  <li class="menu-item">
                     <a href="przed-zabiegiem-makijaz-permanentny.html"
                       >Przeczytaj przed zabiegiem</a
                     >
                   </li>
                   <!-- <li><a href="po-zabiegu.html">Zalecenia po zabiegu</a></li> -->
-                  <li>
+                  <li class="menu-item">
                     <a href="dzialalnosc-charytatywna.html"
                       >Działalność charytatywna</a
                     >
                   </li>
-                  <li>
+                  <li class="menu-item">
                     <a href="download/cookielookie-informator-b-20.pdf"
                       >Informator</a
                     >
                   </li>
-                  <li><a href="qanda-zabiegi.html">Q&A</a></li>
+                  <li class="menu-item">
+                    <a href="qanda-zabiegi.html">Q&A</a>
+                  </li>
                 </ul>
               </li>
-              <li>
+              <li class="menu-item">
+                <a href="zostan-modelka.html">Zostań&nbsp;modelką</a>
+              </li>
+              <li class="menu-item">
                 <a href="https://www.instagram.com/cookielookie.pl/">Galeria</a>
               </li>
-              <li><a href="cennik.html">Cennik</a></li>
-              <li><a href="wspolpraca.html">Współpraca</a></li>
-              <li><a href="regulamin.html">Regulamin</a></li>
-              <li><a href="kontakt.html">Kontakt</a></li>
+              <li class="menu-item"><a href="cennik.html">Cennik</a></li>
+              <li class="menu-item">
+                <a href="wspolpraca.html">Współpraca</a>
+              </li>
+              <li class="menu-item"><a href="regulamin.html">Regulamin</a></li>
+              <li class="menu-item"><a href="kontakt.html">Kontakt</a></li>
               <li>
                 <ul class="hamburger-social">
                   <li>
@@ -290,13 +301,16 @@
             <p>Ul. Wodzisławska 231</p>
             <p>44-240 Żory</p>
             <!-- <h3>Kontakt</h3> -->
-            <p>tel. 517 105 318</p>
+            <p><b>Recepcja:</b></p>
+            <p><a href="tel:517 105 318">tel. 517 105 318</a></p>
             <p>
               e-mail:
               <a href="mailto:cookielookiepl@gmail.com"
                 >cookielookiepl@gmail.com</a
               >
             </p>
+            <p><b>Szkolenia Basic Brows:</b></p>
+            <p><a href="tel:507 619 719">tel. 507 619 719</a></p>
             <p>
               e-mail:
               <a href="mailto:basic.pmu.academy@gmail.com"
@@ -329,7 +343,6 @@
                   ><img src="img/icon-youtube.svg" alt="youtube" class="icon"
                 /></a>
               </li>
-              <li><a href="cennik.html"></a></li>
             </ul>
           </div>
 
@@ -375,13 +388,7 @@
       </div>
     </footer>
 
-    <script>
-      const hamburger = document.getElementById('hamburger');
-      const navUL = document.getElementById('nav-ul');
-
-      hamburger.addEventListener('click', () => {
-        navUL.classList.toggle('show');
-      });
-    </script>
+    <!-- SCRIPTS -->
+    <script src="script/scripts.js" async></script>
   </body>
 </html>
