@@ -142,11 +142,11 @@ small,
 }
 
 /* ------ OL Ul Li style ------ */
-ul,
+/* ul,
 ol {
   margin-top: 1rem;
   margin-bottom: 1rem;
-}
+} */
 
 ul {
   list-style: url('/img/li-dot.svg') inside;
@@ -157,7 +157,7 @@ ul li {
   line-height: 160%;
   font-weight: 400;
   font-style: normal;
-  margin: 0.3rem;
+  /* margin: 0.3rem; */
   /* padding: 0.2rem 0 0.2rem .1rem; */
   /* list-style: url('/img/li-dot.svg') inside; */
 }
