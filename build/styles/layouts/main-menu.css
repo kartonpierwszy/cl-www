@@ -78,11 +78,16 @@
 /* .header .nav-bottom a {
   font-size: 1em;
 } */
-
-/* ------------------------------------------------ */
-/* NAV BOTTOM BAR END */
-/* ------------------------------------------------ */
-
+.arrow-szkolenia,
+.arrow-zabiegi {
+  height: 0.7rem;
+  margin: 0 0.8em;
+  transition: 0.3s;
+}
+.arrow-szkolenia.active,
+.arrow-zabiegi.active {
+  transform: rotate(90deg);
+}
 /* NAV MENU */
 .header .nav-bottom .nav-menu {
   /* background-color: rgba(255, 255, 255, 0.6); */
@@ -103,18 +108,14 @@
 }
 
 .header .nav-bottom .nav-menu .menu {
-  /* position: relative; */
-  /* padding-top: 4rem; */
-  background-color: rgba(255, 255, 255, 0.9);
+  padding-top: 4rem;
+  background-color: rgba(255, 255, 255, 0.8);
   width: 100%;
-  min-height: 96vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  min-height: 100vh;
+  position: relative;
 }
 
 .header .nav-bottom .nav-menu .menu-item {
-  list-style: none;
   height: 40px;
   text-align: center;
   transition: all 0.3s ease-in-out;
@@ -144,6 +145,23 @@
   margin: 0.2rem;
 }
 
+.header .nav-bottom .nav-menu .menu-item .sub-menu-szkolenia,
+.header .nav-bottom .nav-menu .menu-item .sub-menu-zabiegi {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  display: none;
+  /* visibility: hidden; */
+  text-transform: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.header .nav-bottom .nav-menu .menu-item > .sub-menu-szkolenia.active,
+.header .nav-bottom .nav-menu .menu-item > .sub-menu-zabiegi.active {
+  /* visibility: visible; */
+  position: absolute;
+  display: block;
+}
+
 /* --- MEDIA QUERIES --- */
 
 /* Landscape phones and down */
@@ -152,6 +170,10 @@
 
 /* Landscape phone to portrait tablet */
 @media (min-width: 769px) {
+  .arrow-szkolenia,
+  .arrow-zabiegi {
+    display: none;
+  }
   .header .nav-bottom {
     background-color: rgba(255, 255, 255);
     /* display: flex; */
@@ -171,16 +193,37 @@
   .header .nav-bottom .nav-menu .menu {
     background-color: rgba(255, 255, 255, 0);
     min-height: auto;
-    padding: 0;
+    padding-top: 0;
     display: flex;
-    flex-direction: row;
     justify-content: flex-end;
     align-items: flex-end;
     align-content: flex-end;
     flex-wrap: wrap;
   }
+
+  .header .nav-bottom .nav-menu .menu-item {
+    display: block;
+    text-align: left;
+  }
+
   .header .nav-bottom .nav-menu .menu-item > .hamburger-social {
     display: none;
+  }
+
+  /* SUBMENU */
+  .header .nav-bottom .sub-menu-szkolenia,
+  .header .nav-bottom .sub-menu-zabiegi {
+    position: absolute;
+    display: none;
+    /* visibility: hidden; */
+    /* transition: 0.3s ease-in-out; */
+  }
+
+  .header .nav-bottom .menu-item:hover > .sub-menu-szkolenia,
+  .header .nav-bottom .menu-item:hover > .sub-menu-zabiegi {
+    display: block;
+    width: 300px;
+    /* visibility: visible; */
   }
 }
 
@@ -193,18 +236,11 @@
 }
 /* --- END MEDIA QUERIES --- */
 
-/* SUBMENU */
-.header .nav-bottom .sub-menu {
-  display: none;
-}
-
 /* HAMBURGER STYLING */
 .header .hamburger {
-  position: absolute;
-  right: 0.8rem;
   display: block;
   cursor: pointer;
-  margin: 1.2rem;
+  margin: 1.2rem 2rem 0 0;
   z-index: 9;
 }
 
@@ -248,3 +284,7 @@
   }
 }
 /* --- END MEDIA QUERIES --- */
+
+/* ------------------------------------------------ */
+/* NAV BOTTOM BAR END */
+/* ------------------------------------------------ */
