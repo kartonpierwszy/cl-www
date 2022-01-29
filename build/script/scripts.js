@@ -1,19 +1,35 @@
 const openCloseNavMenu = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
-const menuLink = document.querySelector('.menu-link');
-const subMenu = document.querySelector('.sub-menu');
+const subSzkolenia = document.querySelector('.sub-szkolenia');
+const subMenuSzkolenia = document.querySelector('.sub-menu-szkolenia');
+const subZabiegi = document.querySelector('.sub-zabiegi');
+const subMenuZabiegi = document.querySelector('.sub-menu-zabiegi');
+const arrowSzkolenia = document.querySelector('.arrow-szkolenia');
+const arrowZabiegi = document.querySelector('.arrow-zabiegi');
+// const arrow = document.querySelector('.arrow');
 // const screenSize = 769;
 
-// openCloseNavMenu.addEventListener('click', function () {
-//   navMenu.classList.toggle('active');
-//   openCloseNavMenu.classList.toggle('active');
-// });
+// Open/close mobile menu on click hamburger icon
 openCloseNavMenu.addEventListener('click', toggleNav);
 
 function toggleNav() {
   navMenu.classList.toggle('open');
   openCloseNavMenu.classList.toggle('active');
 }
+
+// Collapse submenu for szkolenia & zabiegi link
+subSzkolenia.addEventListener('click', subMenuSzkoleniaCollapse);
+subZabiegi.addEventListener('click', subMenuZabiegiCollapse);
+
+function subMenuSzkoleniaCollapse() {
+  subMenuSzkolenia.classList.toggle('active');
+  arrowSzkolenia.classList.toggle('active');
+}
+function subMenuZabiegiCollapse() {
+  subMenuZabiegi.classList.toggle('active');
+  arrowZabiegi.classList.toggle('active');
+}
+
 // document.querySelectorAll('.menuLink').forEach((n) =>
 //   n.addEventListener('click', () => {
 //     navMenu.classList.remove('active');
