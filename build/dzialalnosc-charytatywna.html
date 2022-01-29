@@ -46,7 +46,7 @@
     <title>Makijaż permanentny charytatywnie - Cookielookie</title>
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="nav-top center-horizontal">
         <div class="width-limiter space-between">
           <div class="nav-top-left center-horizontal">
@@ -93,30 +93,28 @@
           </div>
         </div>
       </div>
-      <!-- <nav> -->
+      <!-- main nav start -->
       <div class="nav-bottom center-horizontal">
         <div class="width-limiter space-between">
-          <nav>
-            <a href="index.html" class="logo-link">
+          <div>
+            <a href="index.html">
               <img
                 src="img/logo-cookielookie.svg"
                 alt="logo cookielookie"
                 class="logo"
-              />
-            </a>
-            <div class="hamburger" id="hamburger">
-              <div class="line"></div>
-              <div class="line"></div>
-              <div class="line"></div>
-            </div>
+            /></a>
+          </div>
 
-            <ul class="menu" id="menu">
+          <nav class="nav-menu">
+            <ul class="menu">
               <li class="menu-item">
                 <a href="index.html#section-o-nas">O&nbsp;nas</a>
               </li>
               <li class="menu-item">
-                <a href="index.html#section-szkolenia">Szkolenia</a>
-                <ul class="sub-menu">
+                <a href="#" class="sub-szkolenia"
+                  >Szkolenia<img src="img/arrow.svg" class="arrow-szkolenia"
+                /></a>
+                <ul class="sub-menu-szkolenia">
                   <li class="menu-item">
                     <a href="gob-basic.html">Szkolenia z pigmentacji brwi</a>
                   </li>
@@ -136,8 +134,10 @@
               </li>
 
               <li class="menu-item">
-                <a href="przed-zabiegiem-makijaz-permanentny.html">Zabiegi</a>
-                <ul class="sub-menu">
+                <a href="#" class="sub-zabiegi"
+                  >Zabiegi<img src="img/arrow.svg" class="arrow-zabiegi"
+                /></a>
+                <ul class="sub-menu-zabiegi">
                   <li class="menu-item">
                     <a href="przed-zabiegiem-makijaz-permanentny.html"
                       >Przeczytaj przed zabiegiem</a
@@ -171,7 +171,7 @@
               </li>
               <li class="menu-item"><a href="regulamin.html">Regulamin</a></li>
               <li class="menu-item"><a href="kontakt.html">Kontakt</a></li>
-              <li>
+              <li class="menu-item">
                 <ul class="hamburger-social">
                   <li>
                     <a href="https://pl-pl.facebook.com/cookielookiepl/"
@@ -207,9 +207,14 @@
               </li>
             </ul>
           </nav>
+          <div class="hamburger" id="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
         </div>
       </div>
-      <!-- </nav> -->
+      <!-- main nav end -->
     </header>
     <section class="rules">
       <div class="center-horizontal">

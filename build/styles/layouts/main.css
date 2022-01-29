@@ -52,25 +52,39 @@ body {
   overflow-x: hidden;
 }
 
-/* ------ ICON ------ */
+/* ------ LINKS ------ */
 
-.logo {
-  height: 50px;
-  margin: 0;
+a:link,
+a:visited {
+  color: rgb(93, 93, 93);
+  text-decoration: none;
 }
 
+a:hover,
+a:active {
+  color: rgb(1, 1, 1);
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+/* ------ ICON ------ */
 .icon {
   height: 25px;
   margin: 0px 5px 0px 5px;
   cursor: pointer;
 }
 
-/* --- MEDIA QUERIES --- */
+.logo {
+  height: 50px;
+  margin: 1rem;
+}
+
+/* --- LOGO MEDIA QUERIES --- */
 
 /* Landscape phones and down */
 @media (min-width: 481px) {
   .logo {
-    height: 70px;
+    height: 60px;
   }
 }
 
@@ -78,7 +92,7 @@ body {
 @media (min-width: 769px) {
   .logo {
     height: 80px;
-    margin: 0.2rem;
+    margin: 0.8rem;
   }
 }
 
