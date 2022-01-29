@@ -29,7 +29,7 @@ Color: 5D5D5D; dark grey
   justify-content: center;
   align-items: center;
   align-content: center;
-  padding: 0;
+  /* padding: 0; */
 }
 
 .center-vertical {
@@ -38,7 +38,7 @@ Color: 5D5D5D; dark grey
   justify-content: center;
   align-items: center;
   align-content: center;
-  padding: 0;
+  /* padding: 0; */
 }
 
 .space-between {
@@ -55,11 +55,6 @@ Color: 5D5D5D; dark grey
   position: relative;
   top: 0;
 }
-
-/* .row {
-  display: flex;
-  margin: 80px 20px 20px 20px;
-} */
 
 .space-x {
   margin-left: 1rem;
@@ -163,6 +158,11 @@ ul li {
 }
 ul li::marker {
   font-size: 0.7rem;
+}
+
+.header ul li {
+  font-size: 1rem;
+  list-style: none;
 }
 
 /* --- MEDIA QUERIES --- */
