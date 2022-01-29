@@ -52,6 +52,21 @@ body {
   overflow-x: hidden;
 }
 
+/* ------ LINKS ------ */
+
+a:link,
+a:visited {
+  color: rgb(93, 93, 93);
+  text-decoration: none;
+}
+
+a:hover,
+a:active {
+  color: rgb(1, 1, 1);
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
 /* ------ ICON ------ */
 .icon {
   height: 25px;
