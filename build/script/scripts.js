@@ -1,5 +1,6 @@
 const openCloseNavMenu = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
+const Menu = document.querySelector('.menu');
 const subSzkolenia = document.querySelector('.sub-szkolenia');
 const subMenuSzkolenia = document.querySelector('.sub-menu-szkolenia');
 const subZabiegi = document.querySelector('.sub-zabiegi');
@@ -30,11 +31,24 @@ function subMenuZabiegiCollapse() {
   arrowZabiegi.classList.toggle('active');
 }
 
-// document.querySelectorAll('.menuLink').forEach((n) =>
+// Closing menu, when click on any links from menu
+// document.querySelectorAll('.menu').forEach((n) =>
 //   n.addEventListener('click', () => {
-//     navMenu.classList.remove('active');
+//     navMenu.classList.remove('open');
+//     subMenuSzkolenia.remove('active');
+//     subMenuZabiegi.remove('active');
 //   })
 // );
+
+function closeMenu() {
+  document.querySelectorAll('.hamburger', '.menu').forEach((n) =>
+    n.addEventListener('click', () => {
+      navMenu.classList.remove('open');
+      subMenuSzkolenia.remove('active');
+      subMenuZabiegi.remove('active');
+    })
+  );
+}
 
 // function collapseNavMenu() {
 //   navMenu.querySelector('.navMenu.open').classList.remove('.open');
