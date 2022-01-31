@@ -31,7 +31,7 @@
     <title>Zabiegi - najczęściej zadawane pytania - Cookielookie</title>
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="nav-top center-horizontal">
         <div class="width-limiter space-between">
           <div class="nav-top-left center-horizontal">
@@ -78,123 +78,128 @@
           </div>
         </div>
       </div>
-      <!-- <nav> -->
-        <div class="nav-bottom center-horizontal">
-          <div class="width-limiter space-between">
-            <nav>
-              <a href="index.html" class="logo-link">
-                <img
-                  src="img/logo-cookielookie.svg"
-                  alt="logo cookielookie"
-                  class="logo"
-                />
-              </a>
-              <div class="hamburger" id="hamburger">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-              </div>
-  
-              <ul class="menu" id="menu">
-                <li class="menu-item">
-                  <a href="index.html#section-o-nas">O&nbsp;nas</a>
-                </li>
-                <li class="menu-item">
-                  <a href="index.html#section-szkolenia">Szkolenia</a>
-                  <ul class="sub-menu">
-                    <li class="menu-item">
-                      <a href="gob-basic.html">Szkolenia z pigmentacji brwi</a>
-                    </li>
-                    <li class="menu-item">
-                      <a href="wpl-basic.html">Szkolenia z pigmentacji ust</a>
-                    </li>
-                    <li class="menu-item">
-                      <a href="warsztaty-pokazowe.html">Warsztaty pokazowe</a>
-                    </li>
-                    <li class="menu-item">
-                      <a href="terminarz-szkolen.html">Terminarz szkoleń</a>
-                    </li>
-                    <li class="menu-item">
-                      <a href="qanda-szkolenia.html">Q&A</a>
-                    </li>
-                  </ul>
-                </li>
-  
-                <li class="menu-item">
-                  <a href="przed-zabiegiem-makijaz-permanentny.html">Zabiegi</a>
-                  <ul class="sub-menu">
-                    <li class="menu-item">
-                      <a href="przed-zabiegiem-makijaz-permanentny.html"
-                        >Przeczytaj przed zabiegiem</a
-                      >
-                    </li>
-                    <!-- <li><a href="po-zabiegu.html">Zalecenia po zabiegu</a></li> -->
-                    <li class="menu-item">
-                      <a href="dzialalnosc-charytatywna.html"
-                        >Działalność charytatywna</a
-                      >
-                    </li>
-                    <li class="menu-item">
-                      <a href="download/cookielookie-informator-b-20.pdf"
-                        >Informator</a
-                      >
-                    </li>
-                    <li class="menu-item">
-                      <a href="qanda-zabiegi.html">Q&A</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="menu-item">
-                  <a href="zostan-modelka.html">Zostań&nbsp;modelką</a>
-                </li>
-                <li class="menu-item">
-                  <a href="https://www.instagram.com/cookielookie.pl/">Galeria</a>
-                </li>
-                <li class="menu-item"><a href="cennik.html">Cennik</a></li>
-                <li class="menu-item">
-                  <a href="wspolpraca.html">Współpraca</a>
-                </li>
-                <li class="menu-item"><a href="regulamin.html">Regulamin</a></li>
-                <li class="menu-item"><a href="kontakt.html">Kontakt</a></li>
-                <li>
-                  <ul class="hamburger-social">
-                    <li>
-                      <a href="https://pl-pl.facebook.com/cookielookiepl/"
-                        ><img
-                          src="img/icon-facebook.svg"
-                          alt="facebook"
-                          class="icon"
-                      /></a>
-                    </li>
-                    <li>
-                      <a href="https://www.instagram.com/cookielookie.pl/"
-                        ><img
-                          src="img/icon-instagram.svg"
-                          alt="instagram"
-                          class="icon"
-                      /></a>
-                    </li>
-                    <li>
-                      <a href="https://www.tiktok.com/@cookielookiepl?"
-                        ><img src="img/icon-tiktok.svg" alt="tiktok" class="icon"
-                      /></a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://www.youtube.com/channel/UCPEwdOHQ4EBbDErKajWlAsA"
-                        ><img
-                          src="img/icon-youtube.svg"
-                          alt="youtube"
-                          class="icon"
-                      /></a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </nav>
+      <!-- main nav start -->
+      <div class="nav-bottom center-horizontal">
+        <div class="width-limiter space-between">
+          <div>
+            <a href="index.html">
+              <img
+                src="img/logo-cookielookie.svg"
+                alt="logo cookielookie"
+                class="logo"
+            /></a>
+          </div>
+
+          <nav class="nav-menu">
+            <ul class="menu">
+              <li class="menu-item">
+                <a href="index.html#section-o-nas">O&nbsp;nas</a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="sub-szkolenia"
+                  >Szkolenia<img src="img/arrow.svg" class="arrow-szkolenia"
+                /></a>
+                <ul class="sub-menu-szkolenia">
+                  <li class="menu-item">
+                    <a href="gob-basic.html">Szkolenia z pigmentacji brwi</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="wpl-basic.html">Szkolenia z pigmentacji ust</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="warsztaty-pokazowe.html">Warsztaty pokazowe</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="terminarz-szkolen.html">Terminarz szkoleń</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="qanda-szkolenia.html">Q&A</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="menu-item">
+                <a href="#" class="sub-zabiegi"
+                  >Zabiegi<img src="img/arrow.svg" class="arrow-zabiegi"
+                /></a>
+                <ul class="sub-menu-zabiegi">
+                  <li class="menu-item">
+                    <a href="przed-zabiegiem-makijaz-permanentny.html"
+                      >Przeczytaj przed zabiegiem</a
+                    >
+                  </li>
+                  <!-- <li><a href="po-zabiegu.html">Zalecenia po zabiegu</a></li> -->
+                  <li class="menu-item">
+                    <a href="dzialalnosc-charytatywna.html"
+                      >Działalność charytatywna</a
+                    >
+                  </li>
+                  <li class="menu-item">
+                    <a href="download/cookielookie-informator-b-20.pdf"
+                      >Informator</a
+                    >
+                  </li>
+                  <li class="menu-item">
+                    <a href="qanda-zabiegi.html">Q&A</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item">
+                <a href="zostan-modelka.html">Zostań&nbsp;modelką</a>
+              </li>
+              <li class="menu-item">
+                <a href="https://www.instagram.com/cookielookie.pl/">Galeria</a>
+              </li>
+              <li class="menu-item"><a href="cennik.html">Cennik</a></li>
+              <li class="menu-item">
+                <a href="wspolpraca.html">Współpraca</a>
+              </li>
+              <li class="menu-item"><a href="regulamin.html">Regulamin</a></li>
+              <li class="menu-item"><a href="kontakt.html">Kontakt</a></li>
+              <li class="menu-item">
+                <ul class="hamburger-social">
+                  <li>
+                    <a href="https://pl-pl.facebook.com/cookielookiepl/"
+                      ><img
+                        src="img/icon-facebook.svg"
+                        alt="facebook"
+                        class="icon"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="https://www.instagram.com/cookielookie.pl/"
+                      ><img
+                        src="img/icon-instagram.svg"
+                        alt="instagram"
+                        class="icon"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="https://www.tiktok.com/@cookielookiepl?"
+                      ><img src="img/icon-tiktok.svg" alt="tiktok" class="icon"
+                    /></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.youtube.com/channel/UCPEwdOHQ4EBbDErKajWlAsA"
+                      ><img
+                        src="img/icon-youtube.svg"
+                        alt="youtube"
+                        class="icon"
+                    /></a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <div class="hamburger" id="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
           </div>
         </div>
-        <!-- </nav> -->
+      </div>
+      <!-- main nav end -->
     </header>
     <section class="rules">
       <div class="center-horizontal">
