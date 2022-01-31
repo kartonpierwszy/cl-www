@@ -165,6 +165,15 @@ ul li::marker {
   font-size: 0.7rem;
 }
 
+<<<<<<< HEAD
+=======
+.header ul li {
+  font-size: 1rem;
+  list-style-type: none;
+  list-style: none;
+}
+
+>>>>>>> mobilemenu
 /* --- MEDIA QUERIES --- */
 
 /* Landscape phones and down */
