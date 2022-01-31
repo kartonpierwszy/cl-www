@@ -558,8 +558,8 @@ a:active {
 /* SEKCJA "ZOSTAŃ MODELKĄ" */
 /* ------------------------------------------------ */
 .zostan-modelka {
-  background-image: url(../../img/zostanmodelka-03.jpg);
-  background-position: bottom left -20em;
+  background-image: url(../../img/zostanmodelka-04.jpg);
+  background-position: center;
 }
 .zostan-modelka .hero-text-box h1 {
   width: 300px;
@@ -576,20 +576,22 @@ a:active {
 /* --- MEDIA QUERIES --- */
 
 /* Landscape phones and down */
-@media (min-width: 481px) {
+@media (orientation: landscape) {
   .zostan-modelka {
-    background-position: bottom left -10em;
+    background-image: url(../../img/zostanmodelka-04-h.jpg);
   }
+}
+@media (min-width: 481px) {
   .zostan-modelka .hero-text-box h1 {
     width: 350px;
   }
 }
 
 /* Landscape phone to portrait tablet */
-@media (min-width: 769px) {
+/* @media (min-width: 769px) {
   .zostan-modelka {
-    background-position: top;
-  }
+    background-image: url(../../img/zostanmodelka-04-h.jpg);
+  } */
   .zostan-modelka .hero-text-box h1 {
     width: 380px;
   }
@@ -597,10 +599,6 @@ a:active {
 
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 1025px) {
-  .zostan-modelka {
-    /* background-position: bottom; */
-  }
-
   .zostan-modelka .hero-text-box h1 {
     width: 380px;
   }
