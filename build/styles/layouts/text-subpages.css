@@ -12,6 +12,10 @@ h3 {
   overflow-x: hidden;
 }
 
+.rules .question-contact p {
+  margin: 0;
+}
+
 .rules h1 {
   /* font-size: 2.4411rem; */
   font-weight: 300;
