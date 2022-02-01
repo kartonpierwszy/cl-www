@@ -588,10 +588,10 @@ a:active {
 }
 
 /* Landscape phone to portrait tablet */
-/* @media (min-width: 769px) {
+@media (min-width: 769px) {
   .zostan-modelka {
     background-image: url(../../img/zostanmodelka-04-h.jpg);
-  } */
+  }
   .zostan-modelka .hero-text-box h1 {
     width: 380px;
   }
