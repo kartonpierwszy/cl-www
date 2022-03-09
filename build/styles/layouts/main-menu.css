@@ -120,6 +120,9 @@
   text-align: center;
   transition: all 0.3s ease-in-out;
 }
+.header .nav-bottom .nav-menu .menu-item-high {
+  height: 70px;
+}
 
 .header .nav-bottom .nav-menu .menu-item:hover {
   /* background-color: rgb(217, 217, 217); */
