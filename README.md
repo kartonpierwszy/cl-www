@@ -1,5 +1,5 @@
 # cookielookiepl - website project
-link to website: http://rjmikulski1.usermd.net/
+link to website: http://cookielookie.pl
 
 ### Technologies:
 
