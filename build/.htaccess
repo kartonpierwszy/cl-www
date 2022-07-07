@@ -1,0 +1,17 @@
+#Przekierowanie na https
+RewriteEngine On
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://cookielookie.pl/$1 [R,L]
+
+#Przekierowanie na WWW
+#Options +FollowSymLinks
+#RewriteEngine on
+#RewriteCond %{HTTP_HOST} ^cookielookie.pl [nc]
+#RewriteRule ^(.*)$ https://www.cookielookie.pl/$1 [r=301,nc]
+
+#Przekierowanie na bezWWW
+RewriteCond %{HTTP_HOST} ^www.cookielookie.pl$ [NC]
+RewriteRule ^(.*)$ https://cookielookie.pl/$1 [R=301,L]
+
+#Ustawienie strony głównej
+DirectoryIndex index.html index.php
