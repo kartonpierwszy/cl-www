@@ -1,9 +1,9 @@
 header {
   min-height: 100vh;
-  background-image: url(../../img/header-v-11.jpg);
+  background-image: url(../../img/header-v-21.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top;
+  background-position: bottom;
   background-attachment: scroll;
   background-color: #5d5d5d;
 }
@@ -11,6 +11,11 @@ header {
 /* --- MEDIA QUERIES --- */
 
 /* Landscape phones and down */
+@media (orientation: landscape) {
+  header {
+    background-position: right;
+  }
+}
 @media (min-width: 481px) {
   /* header {
     background-image: url(../../img/header-4-1.jpg);
