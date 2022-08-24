@@ -158,16 +158,22 @@ a:active {
 /* ------------------------------------------------ */
 .o-nas {
   background-color: #fff;
+  padding-top: 2rem;
 }
 
 .col-1-of-2 {
-  height: 40vh;
+  /* height: 40vh; */
+  width: 40%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   align-content: center;
   /* padding: 1em; */
+}
+
+.col-2-of-2 {
+  width: 100%;
 }
 
 .o-nas-logo {
@@ -182,9 +188,14 @@ a:active {
 }
 
 .o-nas-kryza {
-  width: 80%;
+  width: 100%;
   display: block;
-  /* margin: 1em; */
+  margin: 1em 0 1em 0;
+}
+.o-nas-kryza-1 {
+  width: 100%;
+  display: block;
+  margin: 1em 0 1em 0;
 }
 
 /* --- MEDIA QUERIES --- */
@@ -196,14 +207,20 @@ a:active {
 /* Landscape phone to portrait tablet */
 @media (min-width: 769px) {
   .col-1-of-2 {
-    max-height: 50vh;
+    /* max-height: 50vh; */
+    width: 40%;
+  }
+  .col-2-of-2 {
+    width: 50%;
+    justify-content: center;
   }
 }
 
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 1025px) {
   .col-1-of-2 {
-    max-height: 40vh;
+    /* max-height: 40vh; */
+    /* width: 40%; */
   }
 
   .o-nas-logo {
@@ -221,7 +238,7 @@ a:active {
 /* XLarge screen */
 @media (min-width: 1201px) {
   .col-1-of-2 {
-    width: 40%;
+    /* width: 40%; */
   }
 }
 
