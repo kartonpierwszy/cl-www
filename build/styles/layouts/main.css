@@ -79,12 +79,22 @@ a:active {
   margin: 1rem;
 }
 
+.logo-header {
+  height: 40px;
+  margin: 1rem;
+  margin-bottom: 2em;
+}
+
 /* --- LOGO MEDIA QUERIES --- */
 
 /* Landscape phones and down */
 @media (min-width: 481px) {
   .logo {
     height: 60px;
+  }
+  .logo-header {
+    height: 50px;
+    margin-bottom: 10em;
   }
 }
 
@@ -94,6 +104,10 @@ a:active {
     height: 80px;
     margin: 0.8rem;
   }
+  .logo-header {
+    height: 60px;
+    margin-bottom: 14em;
+  }
 }
 
 /* Portrait tablet to landscape and desktop */
@@ -101,10 +115,17 @@ a:active {
   .logo {
     height: 100px;
   }
+  .logo-header {
+    height: 60px;
+    margin-bottom: 16em;
+  }
 }
 
 /* XLarge screen */
 @media (min-width: 1201px) {
+  .logo-header {
+    margin-bottom: 18em;
+  }
 }
 
 /* --- END MEDIA QUERIES --- */
